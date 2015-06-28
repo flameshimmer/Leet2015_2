@@ -1,0 +1,690 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Source Files">
+      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
+      <Extensions>cpp;c;cc;cxx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="Header Files">
+      <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
+      <Extensions>h;hh;hpp;hxx;hm;inl;inc;xsd</Extensions>
+    </Filter>
+    <Filter Include="Resource Files">
+      <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
+      <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
+    </Filter>
+    <Filter Include="Solution2">
+      <UniqueIdentifier>{f796d173-6c55-4158-8623-b000a4bdc01d}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Helpers">
+      <UniqueIdentifier>{f4efd64f-289c-42e3-8924-1ab90f8c7741}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <Text Include="ReadMe.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="stdafx.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="targetver.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Solution2.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="stdafx.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Leet2015_2.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="2Sum.cpp">
+      <Filter>Solution2</Filter>
+    </ClCompile>
+    <ClCompile Include="3Sum.cpp">
+      <Filter>Solution2</Filter>
+    </ClCompile>
+    <ClCompile Include="3SumClosest.cpp">
+      <Filter>Solution2</Filter>
+    </ClCompile>
+    <ClCompile Include="4Sum.cpp">
+      <Filter>Solution2</Filter>
+    </ClCompile>
+    <ClCompile Include="AddAndSearchWordDataStructureDesign.cpp">
+      <Filter>Solution2</Filter>
+    </ClCompile>
+    <ClCompile Include="AddBinary.cpp">
+      <Filter>Solution2</Filter>
+    </ClCompile>
+    <ClCompile Include="AddTwoNumbers.cpp">
+      <Filter>Solution2</Filter>
+    </ClCompile>
+    <ClCompile Include="Anagrams.cpp">
+      <Filter>Solution2</Filter>
+    </ClCompile>
+    <ClCompile Include="BalancedBinaryTree.cpp">
+      <Filter>Solution2</Filter>
+    </ClCompile>
+    <ClCompile Include="BasicCalculator.cpp">
+      <Filter>Solution2</Filter>
+    </ClCompile>
+    <ClCompile Include="BasicCalculatorII.cpp">
+      <Filter>Solution2</Filter>
+    </ClCompile>
+    <ClCompile Include="BestTimeToBuyAndSellStock.cpp">
+      <Filter>Solution2</Filter>
+    </ClCompile>
+    <ClCompile Include="BestTimeToBuyAndSellStockII.cpp">
+      <Filter>Solution2</Filter>
+    </ClCompile>
+    <ClCompile Include="BestTimeToBuyAndSellStockIII.cpp">
+      <Filter>Solution2</Filter>
+    </ClCompile>
+    <ClCompile Include="BestTimeToBuyAndSellStockIV.cpp">
+      <Filter>Solution2</Filter>
+    </ClCompile>
+    <ClCompile Include="BinarySearchTreeIterator.cpp">
+      <Filter>Solution2</Filter>
+    </ClCompile>
+    <ClCompile Include="BinaryTreeInorderTraversal.cpp">
+      <Filter>Solution2</Filter>
+    </ClCompile>
+    <ClCompile Include="BinaryTreeLevelOrderTraversal.cpp">
+      <Filter>Solution2</Filter>
+    </ClCompile>
+    <ClCompile Include="BinaryTreeLevelOrderTraversalII.cpp">
+      <Filter>Solution2</Filter>
+    </ClCompile>
+    <ClCompile Include="BinaryTreeMaximumPathSum.cpp">
+      <Filter>Solution2</Filter>
+    </ClCompile>
+    <ClCompile Include="BinaryTreePostorderTraversal.cpp">
+      <Filter>Solution2</Filter>
+    </ClCompile>
+    <ClCompile Include="BinaryTreePreorderTraversal.cpp">
+      <Filter>Solution2</Filter>
+    </ClCompile>
+    <ClCompile Include="BinaryTreeRightSideView.cpp">
+      <Filter>Solution2</Filter>
+    </ClCompile>
+    <ClCompile Include="BinaryTreeUpsideDown.cpp">
+      <Filter>Solution2</Filter>
+    </ClCompile>
+    <ClCompile Include="BinaryTreeZigzagLevelOrderTraversal.cpp">
+      <Filter>Solution2</Filter>
+    </ClCompile>
+    <ClCompile Include="BitwiseAndOfNumbersRange.cpp">
+      <Filter>Solution2</Filter>
+    </ClCompile>
+    <ClCompile Include="Candy.cpp">
+      <Filter>Solution2</Filter>
+    </ClCompile>
+    <ClCompile Include="ClimbingStairs.cpp">
+      <Filter>Solution2</Filter>
+    </ClCompile>
+    <ClCompile Include="CloneGraph.cpp">
+      <Filter>Solution2</Filter>
+    </ClCompile>
+    <ClCompile Include="Combinations.cpp">
+      <Filter>Solution2</Filter>
+    </ClCompile>
+    <ClCompile Include="CombinationSum.cpp">
+      <Filter>Solution2</Filter>
+    </ClCompile>
+    <ClCompile Include="CombinationSumII.cpp">
+      <Filter>Solution2</Filter>
+    </ClCompile>
+    <ClCompile Include="CombinationSumIII.cpp">
+      <Filter>Solution2</Filter>
+    </ClCompile>
+    <ClCompile Include="CompareVersionNumbers.cpp">
+      <Filter>Solution2</Filter>
+    </ClCompile>
+    <ClCompile Include="ConstructBinaryTreeFromInorderAndPostorderTraversal.cpp">
+      <Filter>Solution2</Filter>
+    </ClCompile>
+    <ClCompile Include="ConstructBinaryTreeFromPreorderAndInorderTraversal.cpp">
+      <Filter>Solution2</Filter>
+    </ClCompile>
+    <ClCompile Include="ContainerWithMostWater.cpp">
+      <Filter>Solution2</Filter>
+    </ClCompile>
+    <ClCompile Include="ContainsDuplicate.cpp">
+      <Filter>Solution2</Filter>
+    </ClCompile>
+    <ClCompile Include="ContainsDuplicateII.cpp">
+      <Filter>Solution2</Filter>
+    </ClCompile>
+    <ClCompile Include="ContainsDuplicateIII.cpp">
+      <Filter>Solution2</Filter>
+    </ClCompile>
+    <ClCompile Include="ConvertSortedArrayToBinarySearchTree.cpp">
+      <Filter>Solution2</Filter>
+    </ClCompile>
+    <ClCompile Include="ConvertSortedListToBinarySearchTree.cpp">
+      <Filter>Solution2</Filter>
+    </ClCompile>
+    <ClCompile Include="CopyListWithRandomPointer.cpp">
+      <Filter>Solution2</Filter>
+    </ClCompile>
+    <ClCompile Include="CountAndSay.cpp">
+      <Filter>Solution2</Filter>
+    </ClCompile>
+    <ClCompile Include="CountCompleteTreeNodes.cpp">
+      <Filter>Solution2</Filter>
+    </ClCompile>
+    <ClCompile Include="CountPrimes.cpp">
+      <Filter>Solution2</Filter>
+    </ClCompile>
+    <ClCompile Include="CourseSchedule.cpp">
+      <Filter>Solution2</Filter>
+    </ClCompile>
+    <ClCompile Include="CourseScheduleII.cpp">
+      <Filter>Solution2</Filter>
+    </ClCompile>
+    <ClCompile Include="DecodeWays.cpp">
+      <Filter>Solution2</Filter>
+    </ClCompile>
+    <ClCompile Include="DistinctSubsequences.cpp">
+      <Filter>Solution2</Filter>
+    </ClCompile>
+    <ClCompile Include="DivideTwoIntegers.cpp">
+      <Filter>Solution2</Filter>
+    </ClCompile>
+    <ClCompile Include="DungeonGame.cpp">
+      <Filter>Solution2</Filter>
+    </ClCompile>
+    <ClCompile Include="EditDistance.cpp">
+      <Filter>Solution2</Filter>
+    </ClCompile>
+    <ClCompile Include="EvaluateReversePolishNotation.cpp">
+      <Filter>Solution2</Filter>
+    </ClCompile>
+    <ClCompile Include="ExcelSheetColumnNumber.cpp">
+      <Filter>Solution2</Filter>
+    </ClCompile>
+    <ClCompile Include="ExcelSheetColumnTitle.cpp">
+      <Filter>Solution2</Filter>
+    </ClCompile>
+    <ClCompile Include="FactorialTrailingZeroes.cpp">
+      <Filter>Solution2</Filter>
+    </ClCompile>
+    <ClCompile Include="FindMinimumInRotatedSortedArray.cpp">
+      <Filter>Solution2</Filter>
+    </ClCompile>
+    <ClCompile Include="FindMinimumInRotatedSortedArrayII.cpp">
+      <Filter>Solution2</Filter>
+    </ClCompile>
+    <ClCompile Include="FindPeakElement.cpp">
+      <Filter>Solution2</Filter>
+    </ClCompile>
+    <ClCompile Include="FirstMissingPositive.cpp">
+      <Filter>Solution2</Filter>
+    </ClCompile>
+    <ClCompile Include="FlattenBinaryTreeToLinkedList.cpp">
+      <Filter>Solution2</Filter>
+    </ClCompile>
+    <ClCompile Include="FractionToRecurringDecimal.cpp">
+      <Filter>Solution2</Filter>
+    </ClCompile>
+    <ClCompile Include="GasStation.cpp">
+      <Filter>Solution2</Filter>
+    </ClCompile>
+    <ClCompile Include="GenerateParentheses.cpp">
+      <Filter>Solution2</Filter>
+    </ClCompile>
+    <ClCompile Include="GrayCode.cpp">
+      <Filter>Solution2</Filter>
+    </ClCompile>
+    <ClCompile Include="HappyNumber.cpp">
+      <Filter>Solution2</Filter>
+    </ClCompile>
+    <ClCompile Include="HouseRobber.cpp">
+      <Filter>Solution2</Filter>
+    </ClCompile>
+    <ClCompile Include="HouseRobberII.cpp">
+      <Filter>Solution2</Filter>
+    </ClCompile>
+    <ClCompile Include="ImplementStackUsingQueues.cpp">
+      <Filter>Solution2</Filter>
+    </ClCompile>
+    <ClCompile Include="ImplementStrStr.cpp">
+      <Filter>Solution2</Filter>
+    </ClCompile>
+    <ClCompile Include="ImplementTrie.cpp">
+      <Filter>Solution2</Filter>
+    </ClCompile>
+    <ClCompile Include="InsertInterval.cpp">
+      <Filter>Solution2</Filter>
+    </ClCompile>
+    <ClCompile Include="InsertionSortList.cpp">
+      <Filter>Solution2</Filter>
+    </ClCompile>
+    <ClCompile Include="IntegerToRoman.cpp">
+      <Filter>Solution2</Filter>
+    </ClCompile>
+    <ClCompile Include="InterleavingString.cpp">
+      <Filter>Solution2</Filter>
+    </ClCompile>
+    <ClCompile Include="IntersectionOfTwoLinkedLists.cpp">
+      <Filter>Solution2</Filter>
+    </ClCompile>
+    <ClCompile Include="InvertBinaryTree.cpp">
+      <Filter>Solution2</Filter>
+    </ClCompile>
+    <ClCompile Include="IsomorphicStrings.cpp">
+      <Filter>Solution2</Filter>
+    </ClCompile>
+    <ClCompile Include="JumpGame.cpp">
+      <Filter>Solution2</Filter>
+    </ClCompile>
+    <ClCompile Include="JumpGameII.cpp">
+      <Filter>Solution2</Filter>
+    </ClCompile>
+    <ClCompile Include="KthLargestElementInAnArray.cpp">
+      <Filter>Solution2</Filter>
+    </ClCompile>
+    <ClCompile Include="LargestNumber.cpp">
+      <Filter>Solution2</Filter>
+    </ClCompile>
+    <ClCompile Include="LargestRectangleInHistogram.cpp">
+      <Filter>Solution2</Filter>
+    </ClCompile>
+    <ClCompile Include="Leet2015.cpp">
+      <Filter>Solution2</Filter>
+    </ClCompile>
+    <ClCompile Include="LengthOfLastWord.cpp">
+      <Filter>Solution2</Filter>
+    </ClCompile>
+    <ClCompile Include="LetterCombinationsOfAPhoneNumber .cpp">
+      <Filter>Solution2</Filter>
+    </ClCompile>
+    <ClCompile Include="LinkedListCycle.cpp">
+      <Filter>Solution2</Filter>
+    </ClCompile>
+    <ClCompile Include="LinkedListCycleII.cpp">
+      <Filter>Solution2</Filter>
+    </ClCompile>
+    <ClCompile Include="LongestCommonPrefix.cpp">
+      <Filter>Solution2</Filter>
+    </ClCompile>
+    <ClCompile Include="LongestConsecutiveSequence.cpp">
+      <Filter>Solution2</Filter>
+    </ClCompile>
+    <ClCompile Include="LongestPalindromicSubString.cpp">
+      <Filter>Solution2</Filter>
+    </ClCompile>
+    <ClCompile Include="LongestSubstringWithAtMostTwoDistinctCharacters.cpp">
+      <Filter>Solution2</Filter>
+    </ClCompile>
+    <ClCompile Include="LongestSubStringWithoutRepeatingCharacters.cpp">
+      <Filter>Solution2</Filter>
+    </ClCompile>
+    <ClCompile Include="LongestValidParentheses.cpp">
+      <Filter>Solution2</Filter>
+    </ClCompile>
+    <ClCompile Include="LRUCache.cpp">
+      <Filter>Solution2</Filter>
+    </ClCompile>
+    <ClCompile Include="MajorityElement.cpp">
+      <Filter>Solution2</Filter>
+    </ClCompile>
+    <ClCompile Include="MaximalRectangle.cpp">
+      <Filter>Solution2</Filter>
+    </ClCompile>
+    <ClCompile Include="MaximalSquare.cpp">
+      <Filter>Solution2</Filter>
+    </ClCompile>
+    <ClCompile Include="MaximumDepthOfBinaryTree.cpp">
+      <Filter>Solution2</Filter>
+    </ClCompile>
+    <ClCompile Include="MaximumGap.cpp">
+      <Filter>Solution2</Filter>
+    </ClCompile>
+    <ClCompile Include="MaximumProductSubarray.cpp">
+      <Filter>Solution2</Filter>
+    </ClCompile>
+    <ClCompile Include="MaximumSubarray.cpp">
+      <Filter>Solution2</Filter>
+    </ClCompile>
+    <ClCompile Include="MaxPointsOnALine.cpp">
+      <Filter>Solution2</Filter>
+    </ClCompile>
+    <ClCompile Include="MedianOfTwoSortedArrays.cpp">
+      <Filter>Solution2</Filter>
+    </ClCompile>
+    <ClCompile Include="MergeIntervals.cpp">
+      <Filter>Solution2</Filter>
+    </ClCompile>
+    <ClCompile Include="MergeKSortedLists.cpp">
+      <Filter>Solution2</Filter>
+    </ClCompile>
+    <ClCompile Include="MergeSortedArray.cpp">
+      <Filter>Solution2</Filter>
+    </ClCompile>
+    <ClCompile Include="MergeTwoSortedLists.cpp">
+      <Filter>Solution2</Filter>
+    </ClCompile>
+    <ClCompile Include="MinimumDepthOfBinaryTree.cpp">
+      <Filter>Solution2</Filter>
+    </ClCompile>
+    <ClCompile Include="MinimumPathSum.cpp">
+      <Filter>Solution2</Filter>
+    </ClCompile>
+    <ClCompile Include="MinimumSizeSubarraySum.cpp">
+      <Filter>Solution2</Filter>
+    </ClCompile>
+    <ClCompile Include="MinimumWindowSubstring.cpp">
+      <Filter>Solution2</Filter>
+    </ClCompile>
+    <ClCompile Include="MinStack.cpp">
+      <Filter>Solution2</Filter>
+    </ClCompile>
+    <ClCompile Include="MissingRanges.cpp">
+      <Filter>Solution2</Filter>
+    </ClCompile>
+    <ClCompile Include="MultiplyStrings.cpp">
+      <Filter>Solution2</Filter>
+    </ClCompile>
+    <ClCompile Include="NextPermutation.cpp">
+      <Filter>Solution2</Filter>
+    </ClCompile>
+    <ClCompile Include="NQueens.cpp">
+      <Filter>Solution2</Filter>
+    </ClCompile>
+    <ClCompile Include="NQueensII.cpp">
+      <Filter>Solution2</Filter>
+    </ClCompile>
+    <ClCompile Include="NumberOf1Bits.cpp">
+      <Filter>Solution2</Filter>
+    </ClCompile>
+    <ClCompile Include="NumberOfIslands.cpp">
+      <Filter>Solution2</Filter>
+    </ClCompile>
+    <ClCompile Include="OneEditDistance.cpp">
+      <Filter>Solution2</Filter>
+    </ClCompile>
+    <ClCompile Include="PalindromeNumber.cpp">
+      <Filter>Solution2</Filter>
+    </ClCompile>
+    <ClCompile Include="PalindromePartitioning.cpp">
+      <Filter>Solution2</Filter>
+    </ClCompile>
+    <ClCompile Include="PalindromePartitioningII.cpp">
+      <Filter>Solution2</Filter>
+    </ClCompile>
+    <ClCompile Include="PartitionList.cpp">
+      <Filter>Solution2</Filter>
+    </ClCompile>
+    <ClCompile Include="PascalsTriangle.cpp">
+      <Filter>Solution2</Filter>
+    </ClCompile>
+    <ClCompile Include="PascalsTriangleII.cpp">
+      <Filter>Solution2</Filter>
+    </ClCompile>
+    <ClCompile Include="PathSum.cpp">
+      <Filter>Solution2</Filter>
+    </ClCompile>
+    <ClCompile Include="PathSumII.cpp">
+      <Filter>Solution2</Filter>
+    </ClCompile>
+    <ClCompile Include="Permutations.cpp">
+      <Filter>Solution2</Filter>
+    </ClCompile>
+    <ClCompile Include="PermutationSequence.cpp">
+      <Filter>Solution2</Filter>
+    </ClCompile>
+    <ClCompile Include="PermutationsII.cpp">
+      <Filter>Solution2</Filter>
+    </ClCompile>
+    <ClCompile Include="PlusOne.cpp">
+      <Filter>Solution2</Filter>
+    </ClCompile>
+    <ClCompile Include="PopulatingNextRightPointersInEachNode.cpp">
+      <Filter>Solution2</Filter>
+    </ClCompile>
+    <ClCompile Include="PopulatingNextRightPointersInEachNodeII.cpp">
+      <Filter>Solution2</Filter>
+    </ClCompile>
+    <ClCompile Include="Pow.cpp">
+      <Filter>Solution2</Filter>
+    </ClCompile>
+    <ClCompile Include="ReadNCharactersGivenRead4.cpp">
+      <Filter>Solution2</Filter>
+    </ClCompile>
+    <ClCompile Include="ReadNCharactersGivenRead4II.cpp">
+      <Filter>Solution2</Filter>
+    </ClCompile>
+    <ClCompile Include="RecoverBinarySearchTree.cpp">
+      <Filter>Solution2</Filter>
+    </ClCompile>
+    <ClCompile Include="RectangleArea.cpp">
+      <Filter>Solution2</Filter>
+    </ClCompile>
+    <ClCompile Include="RegularExpressionMatching.cpp">
+      <Filter>Solution2</Filter>
+    </ClCompile>
+    <ClCompile Include="RemoveDuplicatesFromSortedArray.cpp">
+      <Filter>Solution2</Filter>
+    </ClCompile>
+    <ClCompile Include="RemoveDuplicatesFromSortedArrayII.cpp">
+      <Filter>Solution2</Filter>
+    </ClCompile>
+    <ClCompile Include="RemoveDuplicatesfromSortedList.cpp">
+      <Filter>Solution2</Filter>
+    </ClCompile>
+    <ClCompile Include="RemoveDuplicatesFromSortedListII.cpp">
+      <Filter>Solution2</Filter>
+    </ClCompile>
+    <ClCompile Include="RemoveElement.cpp">
+      <Filter>Solution2</Filter>
+    </ClCompile>
+    <ClCompile Include="RemoveLinkedListElements.cpp">
+      <Filter>Solution2</Filter>
+    </ClCompile>
+    <ClCompile Include="RemoveNthNodeFromEndOfList.cpp">
+      <Filter>Solution2</Filter>
+    </ClCompile>
+    <ClCompile Include="ReorderList.cpp">
+      <Filter>Solution2</Filter>
+    </ClCompile>
+    <ClCompile Include="RepeatedDNASequences.cpp">
+      <Filter>Solution2</Filter>
+    </ClCompile>
+    <ClCompile Include="RestoreIPAddresses.cpp">
+      <Filter>Solution2</Filter>
+    </ClCompile>
+    <ClCompile Include="ReverseBits.cpp">
+      <Filter>Solution2</Filter>
+    </ClCompile>
+    <ClCompile Include="ReverseInteger.cpp">
+      <Filter>Solution2</Filter>
+    </ClCompile>
+    <ClCompile Include="ReverseLinkedList.cpp">
+      <Filter>Solution2</Filter>
+    </ClCompile>
+    <ClCompile Include="ReverseLinkedListII.cpp">
+      <Filter>Solution2</Filter>
+    </ClCompile>
+    <ClCompile Include="ReverseNodesInKGroup.cpp">
+      <Filter>Solution2</Filter>
+    </ClCompile>
+    <ClCompile Include="ReverseWordsInAString.cpp">
+      <Filter>Solution2</Filter>
+    </ClCompile>
+    <ClCompile Include="ReverseWordsInAStringII.cpp">
+      <Filter>Solution2</Filter>
+    </ClCompile>
+    <ClCompile Include="RomanToInteger.cpp">
+      <Filter>Solution2</Filter>
+    </ClCompile>
+    <ClCompile Include="RotateArray.cpp">
+      <Filter>Solution2</Filter>
+    </ClCompile>
+    <ClCompile Include="RotateImage.cpp">
+      <Filter>Solution2</Filter>
+    </ClCompile>
+    <ClCompile Include="RotateList.cpp">
+      <Filter>Solution2</Filter>
+    </ClCompile>
+    <ClCompile Include="SameTree.cpp">
+      <Filter>Solution2</Filter>
+    </ClCompile>
+    <ClCompile Include="ScrambleString.cpp">
+      <Filter>Solution2</Filter>
+    </ClCompile>
+    <ClCompile Include="SearchA2DMatrix.cpp">
+      <Filter>Solution2</Filter>
+    </ClCompile>
+    <ClCompile Include="SearchForARange.cpp">
+      <Filter>Solution2</Filter>
+    </ClCompile>
+    <ClCompile Include="SearchInRotatedSortedArray.cpp">
+      <Filter>Solution2</Filter>
+    </ClCompile>
+    <ClCompile Include="SearchInRotatedSortedArrayII.cpp">
+      <Filter>Solution2</Filter>
+    </ClCompile>
+    <ClCompile Include="SearchInsertionPosition.cpp">
+      <Filter>Solution2</Filter>
+    </ClCompile>
+    <ClCompile Include="SetMatrixZeroes.cpp">
+      <Filter>Solution2</Filter>
+    </ClCompile>
+    <ClCompile Include="ShortestPalindrome.cpp">
+      <Filter>Solution2</Filter>
+    </ClCompile>
+    <ClCompile Include="SimplifyPath.cpp">
+      <Filter>Solution2</Filter>
+    </ClCompile>
+    <ClCompile Include="SingleNumber.cpp">
+      <Filter>Solution2</Filter>
+    </ClCompile>
+    <ClCompile Include="SingleNumberII.cpp">
+      <Filter>Solution2</Filter>
+    </ClCompile>
+    <ClCompile Include="SortColors.cpp">
+      <Filter>Solution2</Filter>
+    </ClCompile>
+    <ClCompile Include="SortList.cpp">
+      <Filter>Solution2</Filter>
+    </ClCompile>
+    <ClCompile Include="SpiralMatrix.cpp">
+      <Filter>Solution2</Filter>
+    </ClCompile>
+    <ClCompile Include="SpiralMatrixII.cpp">
+      <Filter>Solution2</Filter>
+    </ClCompile>
+    <ClCompile Include="Sqrt.cpp">
+      <Filter>Solution2</Filter>
+    </ClCompile>
+    <ClCompile Include="StringToInteger.cpp">
+      <Filter>Solution2</Filter>
+    </ClCompile>
+    <ClCompile Include="Subsets.cpp">
+      <Filter>Solution2</Filter>
+    </ClCompile>
+    <ClCompile Include="SubsetsII.cpp">
+      <Filter>Solution2</Filter>
+    </ClCompile>
+    <ClCompile Include="SubstringWithConcatenationOfAllWords.cpp">
+      <Filter>Solution2</Filter>
+    </ClCompile>
+    <ClCompile Include="SudokuSolver.cpp">
+      <Filter>Solution2</Filter>
+    </ClCompile>
+    <ClCompile Include="SummaryRanges.cpp">
+      <Filter>Solution2</Filter>
+    </ClCompile>
+    <ClCompile Include="SumRootToLeafNumbers.cpp">
+      <Filter>Solution2</Filter>
+    </ClCompile>
+    <ClCompile Include="SurroundedRegions.cpp">
+      <Filter>Solution2</Filter>
+    </ClCompile>
+    <ClCompile Include="SwapNodesInPairs.cpp">
+      <Filter>Solution2</Filter>
+    </ClCompile>
+    <ClCompile Include="SymmetricTree.cpp">
+      <Filter>Solution2</Filter>
+    </ClCompile>
+    <ClCompile Include="TextJustification.cpp">
+      <Filter>Solution2</Filter>
+    </ClCompile>
+    <ClCompile Include="TheSkylineProblem.cpp">
+      <Filter>Solution2</Filter>
+    </ClCompile>
+    <ClCompile Include="TrappingRainWater.cpp">
+      <Filter>Solution2</Filter>
+    </ClCompile>
+    <ClCompile Include="Triangle.cpp">
+      <Filter>Solution2</Filter>
+    </ClCompile>
+    <ClCompile Include="TwoSumII.cpp">
+      <Filter>Solution2</Filter>
+    </ClCompile>
+    <ClCompile Include="TwoSumIII.cpp">
+      <Filter>Solution2</Filter>
+    </ClCompile>
+    <ClCompile Include="UniqueBinarySearchTrees.cpp">
+      <Filter>Solution2</Filter>
+    </ClCompile>
+    <ClCompile Include="UniqueBinarySearchTreesII.cpp">
+      <Filter>Solution2</Filter>
+    </ClCompile>
+    <ClCompile Include="UniquePaths.cpp">
+      <Filter>Solution2</Filter>
+    </ClCompile>
+    <ClCompile Include="uniquePathsII.cpp">
+      <Filter>Solution2</Filter>
+    </ClCompile>
+    <ClCompile Include="ValidateBinarySearchTree.cpp">
+      <Filter>Solution2</Filter>
+    </ClCompile>
+    <ClCompile Include="ValidNumber.cpp">
+      <Filter>Solution2</Filter>
+    </ClCompile>
+    <ClCompile Include="ValidPalindrome.cpp">
+      <Filter>Solution2</Filter>
+    </ClCompile>
+    <ClCompile Include="ValidParentheses.cpp">
+      <Filter>Solution2</Filter>
+    </ClCompile>
+    <ClCompile Include="ValidSudoku.cpp">
+      <Filter>Solution2</Filter>
+    </ClCompile>
+    <ClCompile Include="WildcardMatching.cpp">
+      <Filter>Solution2</Filter>
+    </ClCompile>
+    <ClCompile Include="WordBreak.cpp">
+      <Filter>Solution2</Filter>
+    </ClCompile>
+    <ClCompile Include="WordBreakII.cpp">
+      <Filter>Solution2</Filter>
+    </ClCompile>
+    <ClCompile Include="WordLadder.cpp">
+      <Filter>Solution2</Filter>
+    </ClCompile>
+    <ClCompile Include="WordLadderII.cpp">
+      <Filter>Solution2</Filter>
+    </ClCompile>
+    <ClCompile Include="WordSearch.cpp">
+      <Filter>Solution2</Filter>
+    </ClCompile>
+    <ClCompile Include="WordSearchII.cpp">
+      <Filter>Solution2</Filter>
+    </ClCompile>
+    <ClCompile Include="ZigZagConversion.cpp">
+      <Filter>Solution2</Filter>
+    </ClCompile>
+    <ClCompile Include="Helpers.cpp">
+      <Filter>Helpers</Filter>
+    </ClCompile>
+    <ClCompile Include="ListNode.cpp">
+      <Filter>Helpers</Filter>
+    </ClCompile>
+  </ItemGroup>
+</Project>
