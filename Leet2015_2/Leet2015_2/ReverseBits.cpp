@@ -12,12 +12,48 @@ namespace Solution2
     namespace ReverseBits
     {
      
+		uint32_t reverseBits(uint32_t n) 
+		{
+			uint32_t start = 0;
+			uint32_t end = 31;
+			while (start < end)
+			{
+				if (((n >> start) & 1) ^ ((n >> end) & 1))
+				{
+					n ^= (1 << start) | (1 << end);
+				}
+				start++;
+				end--;
+			}
+			return n;
+		}
      
-     
+		namespace other
+		{
+			uint32_t reverseBits(uint32_t n)
+			{
+				uint32_t result = 0;
+				int i = 0;
+				while (i < 32)
+				{
+					if (n & (1 << i))
+					{
+						result += 1 << (31 - i);
+					}
+					i++;
+				}
+				return result;
+			}
+		}
      
         void Main()
         {
-         
+			uint32_t input = 43261596;
+			input = 4294967295;
+			uint32_t result = reverseBits(input);
+			printBits(input);
+			printBits(result);
+			print(result);
         }
     }
 }

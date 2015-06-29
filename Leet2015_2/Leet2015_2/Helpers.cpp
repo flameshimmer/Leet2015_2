@@ -88,9 +88,10 @@ void printBits(uint32_t input)
 	cout << "Binary: \n";
 	for (int i = 31; i >=0; i--)
 	{
-		if (input & (1 >> i))
+		uint32_t mask = 1 << (i);
+		if (input & mask)
 		{
-			cout << "1 ";
+			cout << "1";
 		}
 		else
 		{
