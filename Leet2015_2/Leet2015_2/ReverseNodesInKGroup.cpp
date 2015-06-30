@@ -18,14 +18,68 @@
 namespace Solution2
 {
     namespace ReverseNodesInKGroup
-    {
-     
-     
-     
+    {     
+		ListNode* reverse(ListNode* head, ListNode* prev, ListNode* post)
+		{
+			if (!head || !head->next) { return post; }
+			
+			ListNode* cur = head;
+			ListNode* next = cur->next;
+			ListNode* nN;
+			cur->next = NULL;
+			while (next)
+			{
+				nN = next->next;
+				next->next = cur;
+				cur = next;
+				next = nN;
+			}
+
+			prev->next = cur;
+			head->next = post;
+			return head;
+		}
+
+
+		ListNode* reverseKGroup(ListNode* head, int k) 
+		{
+			if (!head || !head->next || k < 2) { return head; }
+			ListNode* dummy = new ListNode(-1);
+			dummy->next = head;
+
+			ListNode* prev = NULL;
+			ListNode* start = NULL;
+			ListNode* end = NULL;
+			ListNode* post = NULL;
+			
+			ListNode* cur = dummy;
+			int count = 0;
+			while (count < k && cur && cur->next)
+			{
+				if (count == 0) { prev = cur; start = prev->next; }
+				if (count == k - 1) 
+				{ 
+					end = cur->next; 
+					post = end->next; 
+					end->next = NULL;
+					cur = reverse(start, prev, post);
+					count = 0;
+					continue;
+				}
+				count++;
+				cur = cur->next;
+			}
+			return dummy->next;
+		}
      
         void Main()
         {
-         
+			ListNode* l;
+			l = createList({ 1, 2, 3, 4 });
+			print(reverseKGroup(l, 2));
+
+			l = createList({ 1, 2 });
+			print(reverseKGroup(l, 2));
         }
     }
 }
