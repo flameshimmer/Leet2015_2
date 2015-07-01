@@ -15,9 +15,29 @@
 namespace Solution2
 {
     namespace TwoSumII
-    {
-     
-     
+    {     
+		vector<int> twoSum(vector<int>& numbers, int target) 
+		{
+			vector<int> result;
+			int len = numbers.size();
+			if (len < 2) { return result; }
+
+			int start = 0; 
+			int end = len-1;
+			while (start < end)
+			{
+				int sum = numbers[start] + numbers[end];
+				if (sum == target)
+				{
+					result.push_back(start + 1);
+					result.push_back(end + 1);
+					break;
+				}
+				else if (sum < target){ start++; }
+				else{ end--; }
+			}
+			return result;
+		}
      
      
         void Main()

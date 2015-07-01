@@ -12,10 +12,6 @@ int _tmain(int argc, _TCHAR* argv[])
 	// Runtime begin marker start
 	clock_t begin = clock();
 
-//Solution2::TwoSum::Main();
-//Solution2::ThreeSum::Main();
-//Solution2::ThreeSumClosest::Main();
-//Solution2::FourSum::Main();
 //Solution2::AddTwoNumbers::Main();
 //Solution2::AddBinary::Main();
 //Solution2::Anagrams::Main();
@@ -171,8 +167,6 @@ int _tmain(int argc, _TCHAR* argv[])
 //Solution2::CountPrimes::Main();
 //Solution2::PalindromePartitioning::Main();
 //Solution2::PalindromePartitioningII::Main();
-//Solution2::TwoSumII::Main();
-//Solution2::TwoSumIII::Main();
 //Solution2::SurroundedRegions::Main();
 //Solution2::FindPeakElement::Main();
 //Solution2::EvaluateReversePolishNotation::Main();
@@ -230,8 +224,15 @@ int _tmain(int argc, _TCHAR* argv[])
 	//Solution2::ReverseWordsInAStringII::Main(); // Medium
 	//Solution2::ReverseLinkedList::Main(); // Easy
 	//Solution2::ReverseLinkedListII::Main(); // Medium
-	Solution2::ReverseNodesInKGroup::Main();
+	//Solution2::ReverseNodesInKGroup::Main();
 
+//7/1/2015
+//Solution2::TwoSum::Main(); // Medium
+//Solution2::TwoSumII::Main(); // Medium	
+//Solution2::TwoSumIII::Main(); // Easy -----------> potential better way of doing it?
+//Solution2::ThreeSum::Main(); // Medium
+//Solution2::ThreeSumClosest::Main(); // Medium
+Solution2::FourSum::Main(); // Medium
 
 
 	// Runtime end marker

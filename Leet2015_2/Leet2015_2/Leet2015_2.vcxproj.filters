@@ -41,18 +41,6 @@
     <ClCompile Include="Leet2015_2.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="2Sum.cpp">
-      <Filter>Solution2</Filter>
-    </ClCompile>
-    <ClCompile Include="3Sum.cpp">
-      <Filter>Solution2</Filter>
-    </ClCompile>
-    <ClCompile Include="3SumClosest.cpp">
-      <Filter>Solution2</Filter>
-    </ClCompile>
-    <ClCompile Include="4Sum.cpp">
-      <Filter>Solution2</Filter>
-    </ClCompile>
     <ClCompile Include="AddAndSearchWordDataStructureDesign.cpp">
       <Filter>Solution2</Filter>
     </ClCompile>
@@ -685,6 +673,18 @@
     </ClCompile>
     <ClCompile Include="ListNode.cpp">
       <Filter>Helpers</Filter>
+    </ClCompile>
+    <ClCompile Include="TwoSum.cpp">
+      <Filter>Solution2</Filter>
+    </ClCompile>
+    <ClCompile Include="ThreeSum.cpp">
+      <Filter>Solution2</Filter>
+    </ClCompile>
+    <ClCompile Include="ThreeSumClosest.cpp">
+      <Filter>Solution2</Filter>
+    </ClCompile>
+    <ClCompile Include="FourSum.cpp">
+      <Filter>Solution2</Filter>
     </ClCompile>
   </ItemGroup>
 </Project>

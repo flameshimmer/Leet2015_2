@@ -84,10 +84,10 @@
     <ClInclude Include="targetver.h" />
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="2Sum.cpp" />
-    <ClCompile Include="3Sum.cpp" />
-    <ClCompile Include="3SumClosest.cpp" />
-    <ClCompile Include="4Sum.cpp" />
+    <ClCompile Include="TwoSum.cpp" />
+    <ClCompile Include="ThreeSum.cpp" />
+    <ClCompile Include="ThreeSumClosest.cpp" />
+    <ClCompile Include="FourSum.cpp" />
     <ClCompile Include="AddAndSearchWordDataStructureDesign.cpp" />
     <ClCompile Include="AddBinary.cpp" />
     <ClCompile Include="AddTwoNumbers.cpp" />

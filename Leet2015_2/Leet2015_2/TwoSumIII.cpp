@@ -15,13 +15,40 @@ namespace Solution2
 {
     namespace TwoSumIII
     {
-     
-     
+		
+		class TwoSum {
+		public:
+			unordered_map<int, int> map;
+			void add(int number) {
+				map[number]++;
+			}
+
+			bool find(int value) {
+				auto it = map.begin();
+				while (it != map.end())
+				{
+					auto it2 = map.find(value - it->first);
+					if (it2 != map.end() && (it2 != it || it->second > 1))
+					{
+						return true;
+					}
+					it++;
+				}
+				return false;
+			}
+		};
      
      
         void Main()
         {
-         
+			TwoSum twoSum;
+			twoSum.add(3);
+			twoSum.add(2);
+			twoSum.add(1);
+			twoSum.find(1);
+			twoSum.find(2);
+			twoSum.find(3);
+			twoSum.find(4);
         }
     }
 }
