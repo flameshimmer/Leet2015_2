@@ -281,9 +281,6 @@
     <ClCompile Include="LargestRectangleInHistogram.cpp">
       <Filter>Solution2</Filter>
     </ClCompile>
-    <ClCompile Include="Leet2015.cpp">
-      <Filter>Solution2</Filter>
-    </ClCompile>
     <ClCompile Include="LengthOfLastWord.cpp">
       <Filter>Solution2</Filter>
     </ClCompile>

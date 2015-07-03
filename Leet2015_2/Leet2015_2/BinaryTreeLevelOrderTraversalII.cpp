@@ -20,8 +20,37 @@ namespace Solution2
 {
     namespace BinaryTreeLevelOrderTraversalII
     {
-     
-     
+    
+		vector<vector<int>> levelOrderBottom(TreeNode* root) {
+			vector<vector<int>> results;
+			if (!root) { return results; }
+
+			queue<TreeNode*> q;
+			q.push(root);
+			int count = 1;
+			int nextCount = 0;
+			vector<int> result;
+
+			while (!q.empty())
+			{
+				TreeNode* cur = q.front();
+				result.push_back(cur->val);
+				q.pop();
+				count--;
+				if (cur->left) { q.push(cur->left); nextCount++; }
+				if (cur->right) { q.push(cur->right); nextCount++; }
+
+				if (count == 0)
+				{
+					results.push_back(result);
+					count = nextCount;
+					nextCount = 0;
+					result.clear();
+				}
+			}
+			reverse(results.begin(), results.end());
+			return results;
+		}
      
      
         void Main()

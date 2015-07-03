@@ -18,13 +18,57 @@ namespace Solution2
 {
     namespace BasicCalculatorII
     {
-     
-     
-     
+		int calculate(string s) {
+			int len = s.length();
+			if (len == 0) { return 0; }
+
+			int result = 0;
+			bool mul = false;
+			bool div = false;
+			bool isNeg = false;
+			int prev = 0;
+			for (int i = 0; i < len; i++)
+			{
+				char c = s[i];
+				switch (c)
+				{
+				case '+':
+					result += isNeg ? -prev : prev;
+					isNeg = false;
+				case ' ':
+					break;
+				case '-':
+					result += isNeg ? -prev : prev;
+					isNeg = true;
+					break;
+				case '*':
+					mul = true;
+					break;
+				case '/':
+					div = true;
+					break;
+				default:
+					int val = 0;
+					while (i < len && s[i] - '0' <= 9 && s[i] - '0' >= 0)
+					{
+						val = val * 10 + s[i] - '0';
+						i++;
+					}
+					i--;
+					if (mul) { prev *= val; }
+					else if (div) { prev /= val; }
+					else { prev = val; }
+					mul = false;
+					div = false;
+				}
+			}
+			result += isNeg ? -prev : prev;
+			return result;
+		}
      
         void Main()
         {
-         
+			print(calculate(" 3+5 / 2 "));
         }
     }
 }

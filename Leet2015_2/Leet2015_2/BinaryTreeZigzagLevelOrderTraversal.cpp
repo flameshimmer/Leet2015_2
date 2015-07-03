@@ -20,10 +20,41 @@
 namespace Solution2
 {
     namespace BinaryTreeZigzagLevelOrderTraversal
-    {
-     
-     
-     
+    {     
+		vector<vector<int>> zigzagLevelOrder(TreeNode* root) 
+		{
+			vector<vector<int>> results;
+			if (!root) { return results; }
+
+			vector<int> result;
+			queue<TreeNode*> q;
+			q.push(root);
+			int count =	1;
+			int nextCount = 0;
+			bool leftToRight = true;
+
+			while (!q.empty())
+			{
+				TreeNode* top = q.front();
+				result.push_back(top->val);
+				q.pop();
+
+				if (top->left) { q.push(top->left); nextCount++; }
+				if (top->right) { q.push(top->right); nextCount++; }
+
+				count--;
+				if (count == 0)
+				{
+					if (!leftToRight) { reverse(result.begin(), result.end());}
+					results.push_back(result);
+					result.clear();
+					count = nextCount;
+					nextCount = 0;
+					leftToRight = !leftToRight;
+				}
+			}
+			return results;
+		}     
      
         void Main()
         {

@@ -169,7 +169,6 @@
     <ClCompile Include="KthLargestElementInAnArray.cpp" />
     <ClCompile Include="LargestNumber.cpp" />
     <ClCompile Include="LargestRectangleInHistogram.cpp" />
-    <ClCompile Include="Leet2015.cpp" />
     <ClCompile Include="Leet2015_2.cpp" />
     <ClCompile Include="LengthOfLastWord.cpp" />
     <ClCompile Include="LetterCombinationsOfAPhoneNumber .cpp" />

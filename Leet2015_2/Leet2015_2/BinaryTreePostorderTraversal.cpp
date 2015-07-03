@@ -19,7 +19,38 @@ namespace Solution2
     namespace BinaryTreePostorderTraversal
     {
      
-     
+		vector<int> postorderTraversal(TreeNode* root) 
+		{
+			vector<int> result;
+			if (!root) { return result; }
+
+			stack<TreeNode*> s;	
+			TreeNode* cur = root;
+			TreeNode* lastVisitedNode = NULL;
+			while (!s.empty() || cur)
+			{
+				if (cur)
+				{
+					s.push(cur);
+					cur = cur->left;
+				}
+				else
+				{
+					TreeNode* top = s.top();
+					if (top->right && top->right != lastVisitedNode)
+					{
+						cur = top->right;
+					}
+					else
+					{
+						s.pop();
+						result.push_back(top->val);
+						lastVisitedNode = top;
+					}
+				}
+			}
+			return result;
+		}
      
      
         void Main()

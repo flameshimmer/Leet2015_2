@@ -11,12 +11,50 @@ namespace Solution2
     namespace BinarySearchTreeIterator
     {
      
-     
+		class BSTIterator {
+		private:
+			stack<TreeNode*> s;
+			TreeNode* cur;
+		public:			
+			BSTIterator(TreeNode *root) {
+				cur = root;
+			}
+
+			/** @return whether we have a next smallest number */
+			bool hasNext() {
+				return (cur != NULL || !s.empty());
+			}
+
+			/** @return the next smallest number */
+			int next() {
+				int result;
+				while (!s.empty() || cur != NULL)
+				{
+					if (cur)
+					{
+						s.push(cur);
+						cur = cur->left;
+					}
+					else
+					{
+						TreeNode* top = s.top();
+						result = top->val;
+						s.pop();
+						cur = top->right;
+						break;
+					}
+				}
+				return result;
+			}
+		};
      
      
         void Main()
         {
-         
+			TreeNode* root = new TreeNode(1);
+
+			BSTIterator i = BSTIterator(root);
+			while (i.hasNext()) cout << i.next();
         }
     }
 }

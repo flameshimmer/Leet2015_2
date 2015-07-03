@@ -15,9 +15,28 @@
 namespace Solution2
 {
     namespace BinaryTreeRightSideView
-    {
-     
-     
+    {     
+		void getNodes(TreeNode* node, vector<int>& result, int height, int& maxHeight)
+		{
+			if (!node) { return; }
+			if (height > maxHeight)
+			{
+				maxHeight = height;
+				result.push_back(node->val);
+			}
+			getNodes(node->right, result, height + 1, maxHeight);
+			getNodes(node->left, result, height + 1, maxHeight);
+		}
+
+		vector<int> rightSideView(TreeNode* root) 
+		{
+			vector<int> result;
+			if (!root) { return result; }
+
+			int maxHeight = 0;
+			getNodes(root, result, 1, maxHeight);
+			return result;
+		}
      
      
         void Main()
