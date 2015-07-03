@@ -10,12 +10,36 @@ namespace Solution2
     namespace BitwiseAndOfNumbersRange
     {
      
-     
+		int rangeBitwiseAnd(int m, int n) {
+			int diff = n - m;
+			if (m == n) { return m; }
+			int mask = 0;
+			while (diff)
+			{
+				mask = (mask << 1) | 1;
+				diff >>= 1;
+			}
+			return m & (~mask);
+		}
+
+		namespace other
+		{
+			int rangeBitwiseAnd(int m, int n) 
+			{
+				int mask = ~0; 
+				int count = 0;
+				while ((m&mask<<count) ^ (n&mask<<count))
+				{
+					count++;
+				}
+				return m & (mask << count);
+			}
+		}
      
      
         void Main()
         {
-         
+			print(rangeBitwiseAnd(5, 7));
         }
     }
 }

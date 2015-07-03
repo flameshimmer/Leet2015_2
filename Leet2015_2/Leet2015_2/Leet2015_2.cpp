@@ -11,35 +11,12 @@ int _tmain(int argc, _TCHAR* argv[])
 {
 	// Runtime begin marker start
 	clock_t begin = clock();
-	//Solution2::BitwiseAndOfNumbersRange::Main();
 	//Solution2::BestTimeToBuyAndSellStock::Main();
 	//Solution2::BestTimeToBuyAndSellStockII::Main();
 	//Solution2::BestTimeToBuyAndSellStockIII::Main();
 	//Solution2::BestTimeToBuyAndSellStockIV::Main();
 
 
-	//Solution2::Candy::Main();
-	//Solution2::ClimbingStairs::Main();
-	//Solution2::CloneGraph::Main();
-	//Solution2::Combinations::Main();
-	//Solution2::CombinationSum::Main();
-	//Solution2::CombinationSumII::Main();
-	//Solution2::CombinationSumIII::Main();
-	//Solution2::CompareVersionNumbers::Main();
-	//Solution2::ConstructBinaryTreeFromInorderAndPostorderTraversal::Main();
-	//Solution2::ConstructBinaryTreeFromPreorderAndInorderTraversal::Main();
-	//Solution2::ContainerWithMostWater::Main();
-	//Solution2::ContainsDuplicate::Main();
-	//Solution2::ContainsDuplicateII::Main();
-	//Solution2::ContainsDuplicateIII::Main();
-	//Solution2::ConvertSortedArrayToBinarySearchTree::Main();
-	//Solution2::ConvertSortedListToBinarySearchTree::Main();
-	//Solution2::CopyListWithRandomPointer::Main();
-	//Solution2::CountAndSay::Main();
-	//Solution2::CountCompleteTreeNodes::Main();
-	//Solution2::CountPrimes::Main();
-	//Solution2::CourseSchedule::Main();
-	//Solution2::CourseScheduleII::Main();
 	//Solution2::DecodeWays::Main();
 	//Solution2::DistinctSubsequences::Main();
 	//Solution2::DivideTwoIntegers::Main();
@@ -236,6 +213,30 @@ int _tmain(int argc, _TCHAR* argv[])
 //Solution2::BinaryTreeUpsideDown::Main(); // Medium
 //Solution2::BinaryTreePostorderTraversal::Main();  // Hard
 //Solution2::BinaryTreeRightSideView::Main(); // Medium
+//Solution2::BitwiseAndOfNumbersRange::Main(); // Medium
+//Solution2::Candy::Main(); // Hard
+
+Solution2::ClimbingStairs::Main();
+//Solution2::CloneGraph::Main();
+//Solution2::Combinations::Main();
+//Solution2::CombinationSum::Main();
+//Solution2::CombinationSumII::Main();
+//Solution2::CombinationSumIII::Main();
+//Solution2::CompareVersionNumbers::Main();
+//Solution2::ConstructBinaryTreeFromInorderAndPostorderTraversal::Main();
+//Solution2::ConstructBinaryTreeFromPreorderAndInorderTraversal::Main();
+//Solution2::ContainerWithMostWater::Main();
+//Solution2::ContainsDuplicate::Main();
+//Solution2::ContainsDuplicateII::Main();
+//Solution2::ContainsDuplicateIII::Main();
+//Solution2::ConvertSortedArrayToBinarySearchTree::Main();
+//Solution2::ConvertSortedListToBinarySearchTree::Main();
+//Solution2::CopyListWithRandomPointer::Main();
+//Solution2::CountAndSay::Main();
+//Solution2::CountCompleteTreeNodes::Main();
+//Solution2::CountPrimes::Main();
+//Solution2::CourseSchedule::Main();
+//Solution2::CourseScheduleII::Main();
 
 
 
