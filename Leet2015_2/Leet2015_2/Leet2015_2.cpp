@@ -213,11 +213,11 @@ int _tmain(int argc, _TCHAR* argv[])
 //Solution2::BinaryTreeUpsideDown::Main(); // Medium
 //Solution2::BinaryTreePostorderTraversal::Main();  // Hard
 //Solution2::BinaryTreeRightSideView::Main(); // Medium
-//Solution2::BitwiseAndOfNumbersRange::Main(); // Medium
+//Solution2::BitwiseAndOfNumbersRange::Main(); // Medium -------------------------> had some issues
 //Solution2::Candy::Main(); // Hard
+//Solution2::ClimbingStairs::Main(); // Easy
 
-Solution2::ClimbingStairs::Main();
-//Solution2::CloneGraph::Main();
+Solution2::CloneGraph::Main(); // Medium
 //Solution2::Combinations::Main();
 //Solution2::CombinationSum::Main();
 //Solution2::CombinationSumII::Main();

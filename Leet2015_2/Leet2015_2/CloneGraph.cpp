@@ -23,13 +23,43 @@
 //			   / \
 //			   \_/
 //
+/**
+* Definition for undirected graph.
+* struct UndirectedGraphNode {
+*     int label;
+*     vector<UndirectedGraphNode *> neighbors;
+*     UndirectedGraphNode(int x) : label(x) {};
+* };
+*/
 namespace Solution2
 {
     namespace CloneGraph
     {
-     
-     
-     
+		UndirectedGraphNode *cloneGraph(UndirectedGraphNode *node) {
+			if (!node) { return NULL; }
+			unordered_map<UndirectedGraphNode*, UndirectedGraphNode*> map;
+
+			queue<UndirectedGraphNode*> q;
+			q.push(node);
+			map[node] = new UndirectedGraphNode(node->label);
+
+			while (!q.empty())
+			{
+				UndirectedGraphNode* cur = q.front();
+				q.pop();
+
+				for (UndirectedGraphNode* child : cur->neighbors)
+				{
+					if (map.find(child) == map.end())
+					{
+						map[child] = new UndirectedGraphNode(child->label);
+						q.push(child);
+					}
+					map[cur]->neighbors.push_back(map[child]);
+				}
+			}
+			return map[node];
+		}  
      
         void Main()
         {
