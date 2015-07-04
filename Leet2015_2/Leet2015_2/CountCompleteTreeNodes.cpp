@@ -19,9 +19,20 @@ namespace Solution2
 {
     namespace CountCompleteTreeNodes
     {
-     
-     
-     
+		int countNodes(TreeNode* root) 
+		{
+			if (!root) { return 0; }
+			TreeNode* cur = root;
+			int lh = 0;
+			while (cur) { lh++; cur = cur->left;}
+			
+			cur = root;
+			int rh = 0;
+			while (cur) { rh++; cur = cur->right;}
+
+			if (lh == rh) { return pow(2, lh) - 1; }
+			else { return 1 + countNodes(root->left) + countNodes(root->right); }
+		}
      
         void Main()
         {

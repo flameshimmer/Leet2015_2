@@ -21,10 +21,39 @@
 namespace Solution2
 {
     namespace CourseSchedule
-    {
-     
-     
-     
+    {     
+		bool canFinish(int numCourses, vector<pair<int, int>>& prerequisites) 
+		{
+			vector<int>inDegree(numCourses, 0);
+			vector<vector<int>> children(numCourses, vector<int>(0));
+			int len = prerequisites.size();
+
+			for (pair<int, int> pre : prerequisites)
+			{
+				inDegree[pre.first]++;
+				children[pre.second].push_back(pre.first);
+			}
+
+			queue<int> q;
+			for (int i = 0; i < numCourses; i++)
+			{
+				if (inDegree[i] == 0) { q.push(i); }
+			}
+
+			int processed = 0;
+			while (!q.empty())
+			{
+				int cur = q.front();
+				q.pop();
+				processed++;
+				for (int i : children[cur])
+				{
+					inDegree[i]--;
+					if (inDegree[i] == 0) { q.push(i); }
+				}
+			}
+			return processed == numCourses;
+		}
      
         void Main()
         {

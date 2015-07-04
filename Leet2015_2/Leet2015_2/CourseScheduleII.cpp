@@ -25,13 +25,44 @@ namespace Solution2
 {
     namespace CourseScheduleII
     {
-     
-     
-     
+		vector<int> findOrder(int numCourses, vector<pair<int, int>>& prerequisites) 
+		{
+			vector<int> inDegree(numCourses, 0);
+			vector<vector<int>> children(numCourses, vector<int>());
+
+			for (pair<int, int> p : prerequisites)
+			{
+				inDegree[p.first]++;
+				children[p.second].push_back(p.first);
+			}
+			queue<int> q;
+			for (int i = 0; i < numCourses; i++)
+			{
+				if (inDegree[i] == 0) { q.push(i); }
+			}
+
+			vector<int>result;
+			int processed = 0;
+			while (!q.empty())
+			{
+				int cur = q.front();
+				q.pop();
+				processed++;
+				result.push_back(cur);
+
+				for (int i : children[cur])
+				{
+					inDegree[i]--;
+					if (inDegree[i] == 0) { q.push(i); }
+				}
+			}
+			
+			return (processed == numCourses) ? result : vector<int>();
+		}
      
         void Main()
         {
-         
+			print(findOrder(1, vector<pair<int, int>>()));
         }
     }
 }

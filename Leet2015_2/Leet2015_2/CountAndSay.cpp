@@ -12,14 +12,31 @@
 namespace Solution2
 {
     namespace CountAndSay
-    {
-     
-     
-     
-     
+    {   
+		string countAndSay(int n) 
+		{
+			string input = "1";
+
+			for (int i = 0; i < n-1; i++)
+			{
+				int len = input.length();
+				int j = 0;
+				string newInput = "";
+				while (j < len)
+				{
+					int count = 1;
+					while (j+1 < len && input[j] == input[j + 1]) { count++; j++; }
+					newInput += to_string(count) + input[j];
+					j++;
+				}
+				input = newInput;
+			}
+			return input;
+		}
+
         void Main()
         {
-         
+			print(countAndSay(1));
         }
     }
 }

@@ -13,7 +13,25 @@ namespace Solution2
     namespace ContainerWithMostWater
     {
      
-     
+		int maxArea(vector<int>& height) 
+		{
+			int len = height.size();
+			if (len < 2) { return 0; }
+
+			int start = 0; 
+			int end = len - 1;
+			int result = 0;
+			while (start < end)
+			{
+				int h = min(height[start], height[end]);
+				int curResult = (end - start) * h;
+				result = max(curResult, result);
+
+				while (start < end && height[start] <= h) { start++; }
+				while (start < end && height[end] <= h) { end--; }
+			}
+			return result;
+		}
      
      
         void Main()

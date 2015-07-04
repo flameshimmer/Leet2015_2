@@ -17,14 +17,6 @@ int _tmain(int argc, _TCHAR* argv[])
 	//Solution2::BestTimeToBuyAndSellStockIV::Main();
 
 
-	//Solution2::DecodeWays::Main();
-	//Solution2::DistinctSubsequences::Main();
-	//Solution2::DivideTwoIntegers::Main();
-	//Solution2::DungeonGame::Main();
-	//Solution2::EditDistance::Main();
-	//Solution2::EvaluateReversePolishNotation::Main();
-	//Solution2::ExcelSheetColumnNumber::Main();
-	//Solution2::ExcelSheetColumnTitle::Main();
 	//Solution2::FactorialTrailingZeroes::Main();
 	//Solution2::FindMinimumInRotatedSortedArray::Main();
 	//Solution2::FindMinimumInRotatedSortedArrayII::Main();
@@ -223,21 +215,29 @@ int _tmain(int argc, _TCHAR* argv[])
 	//Solution2::CombinationSumIII::Main(); // Medium
 	//Solution2::CompareVersionNumbers::Main();
 	//Solution2::ContainsDuplicate::Main(); // Easy
-	//Solution2::ContainsDuplicateII::Main();
+	//Solution2::ContainsDuplicateII::Main(); // Easy
 
-
-//Solution2::ContainsDuplicateIII::Main();
-//Solution2::ConstructBinaryTreeFromInorderAndPostorderTraversal::Main();
-//Solution2::ConstructBinaryTreeFromPreorderAndInorderTraversal::Main();
-//Solution2::ContainerWithMostWater::Main();
-//Solution2::ConvertSortedArrayToBinarySearchTree::Main();
-//Solution2::ConvertSortedListToBinarySearchTree::Main();
-//Solution2::CopyListWithRandomPointer::Main();
-//Solution2::CountAndSay::Main();
-//Solution2::CountCompleteTreeNodes::Main();
-//Solution2::CountPrimes::Main();
-//Solution2::CourseSchedule::Main();
-//Solution2::CourseScheduleII::Main();
+//7/4/2015
+//Solution2::ContainsDuplicateIII::Main(); // Medium ----------------------------------> had some issues
+//Solution2::ContainerWithMostWater::Main(); // Medium
+//Solution2::ConstructBinaryTreeFromInorderAndPostorderTraversal::Main(); // Medium
+//Solution2::ConstructBinaryTreeFromPreorderAndInorderTraversal::Main(); // Medium
+//Solution2::ConvertSortedArrayToBinarySearchTree::Main(); // Medium
+//Solution2::ConvertSortedListToBinarySearchTree::Main(); // Medium ----------------------> had some issues
+//Solution2::CopyListWithRandomPointer::Main(); // Hard
+//Solution2::CountAndSay::Main();  // Easy
+//Solution2::CountCompleteTreeNodes::Main();  // Medium ======================================> has better solve
+//Solution2::CountPrimes::Main();  // Easy ----------------------------------> had some issues
+//Solution2::CourseSchedule::Main();  // Medium
+//Solution2::CourseScheduleII::Main(); // Medium
+//Solution2::DecodeWays::Main(); // Medium
+Solution2::DistinctSubsequences::Main(); // Hard
+//Solution2::DivideTwoIntegers::Main(); // Medium
+//Solution2::DungeonGame::Main(); // Hard
+//Solution2::EditDistance::Main(); // Hard
+//Solution2::EvaluateReversePolishNotation::Main();  // Medium
+//Solution2::ExcelSheetColumnNumber::Main();  // Easy
+//Solution2::ExcelSheetColumnTitle::Main();	//Easy
 
 
 
