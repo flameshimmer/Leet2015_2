@@ -25,8 +25,33 @@ namespace Solution2
 {
     namespace CombinationSumIII
     {
-     
-     
+		void helper(int k, int target, int start, int level, vector<int>& result, vector<vector<int>>& results)
+		{
+			if (target <= 0 || level == k)
+			{
+				if (level == k && target == 0)
+				{
+					results.push_back(result);
+				}				
+				return;
+			}
+
+			for (int i = start; i <= 9; i++)
+			{
+				result.push_back(i);
+				helper(k, target - i, i + 1, level + 1, result, results);
+				result.pop_back();
+			}
+		}
+
+		vector<vector<int>> combinationSum3(int k, int n) 
+		{
+			vector<vector<int>> results;
+			if (k == 0 || n == 0) { return results; }
+			vector<int> result;
+			helper(k, n, 1, 0, result, results);
+			return results;
+		}
      
      
         void Main()

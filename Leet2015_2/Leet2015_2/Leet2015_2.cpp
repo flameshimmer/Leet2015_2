@@ -203,32 +203,33 @@ int _tmain(int argc, _TCHAR* argv[])
 
 
 //7/3/2015
-//Solution2::BasicCalculator::Main(); // Medium
-//Solution2::BasicCalculatorII::Main(); // Medium
-//Solution2::BinarySearchTreeIterator::Main(); // Medium
-//Solution2::BinaryTreeInorderTraversal::Main(); // Medium
-//Solution2::BinaryTreePreorderTraversal::Main(); // Easy
-//Solution2::BinaryTreeMaximumPathSum::Main(); // Medium  -----------------------> had some issues 
-//Solution2::BinaryTreeZigzagLevelOrderTraversal::Main();   // Medium
-//Solution2::BinaryTreeUpsideDown::Main(); // Medium
-//Solution2::BinaryTreePostorderTraversal::Main();  // Hard
-//Solution2::BinaryTreeRightSideView::Main(); // Medium
-//Solution2::BitwiseAndOfNumbersRange::Main(); // Medium -------------------------> had some issues
-//Solution2::Candy::Main(); // Hard
-//Solution2::ClimbingStairs::Main(); // Easy
+	//Solution2::BasicCalculator::Main(); // Medium
+	//Solution2::BasicCalculatorII::Main(); // Medium
+	//Solution2::BinarySearchTreeIterator::Main(); // Medium
+	//Solution2::BinaryTreeInorderTraversal::Main(); // Medium
+	//Solution2::BinaryTreePreorderTraversal::Main(); // Easy
+	//Solution2::BinaryTreeMaximumPathSum::Main(); // Medium  -----------------------> had some issues 
+	//Solution2::BinaryTreeZigzagLevelOrderTraversal::Main();   // Medium
+	//Solution2::BinaryTreeUpsideDown::Main(); // Medium
+	//Solution2::BinaryTreePostorderTraversal::Main();  // Hard
+	//Solution2::BinaryTreeRightSideView::Main(); // Medium
+	//Solution2::BitwiseAndOfNumbersRange::Main(); // Medium -------------------------> had some issues
+	//Solution2::Candy::Main(); // Hard
+	//Solution2::ClimbingStairs::Main(); // Easy
+	//Solution2::CloneGraph::Main(); // Medium
+	//Solution2::Combinations::Main(); // Medium
+	//Solution2::CombinationSum::Main(); // Medium
+	//Solution2::CombinationSumII::Main(); // Medium
+	//Solution2::CombinationSumIII::Main(); // Medium
+	//Solution2::CompareVersionNumbers::Main();
+	//Solution2::ContainsDuplicate::Main(); // Easy
+	//Solution2::ContainsDuplicateII::Main();
 
-Solution2::CloneGraph::Main(); // Medium
-//Solution2::Combinations::Main();
-//Solution2::CombinationSum::Main();
-//Solution2::CombinationSumII::Main();
-//Solution2::CombinationSumIII::Main();
-//Solution2::CompareVersionNumbers::Main();
+
+//Solution2::ContainsDuplicateIII::Main();
 //Solution2::ConstructBinaryTreeFromInorderAndPostorderTraversal::Main();
 //Solution2::ConstructBinaryTreeFromPreorderAndInorderTraversal::Main();
 //Solution2::ContainerWithMostWater::Main();
-//Solution2::ContainsDuplicate::Main();
-//Solution2::ContainsDuplicateII::Main();
-//Solution2::ContainsDuplicateIII::Main();
 //Solution2::ConvertSortedArrayToBinarySearchTree::Main();
 //Solution2::ConvertSortedListToBinarySearchTree::Main();
 //Solution2::CopyListWithRandomPointer::Main();

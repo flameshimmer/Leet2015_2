@@ -9,8 +9,19 @@ namespace Solution2
     namespace ContainsDuplicate
     {
      
-     
-     
+		bool containsDuplicate(vector<int>& nums) 
+		{
+			int len = nums.size();
+			if (len < 2) { return false; }
+
+			unordered_set<int> set;
+			for (int val : nums)
+			{
+				if (set.find(val) != set.end()) { return true; }
+				set.insert(val);
+			}
+			return false;
+		}     
      
         void Main()
         {

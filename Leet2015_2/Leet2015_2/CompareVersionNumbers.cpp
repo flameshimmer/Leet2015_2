@@ -16,13 +16,40 @@ namespace Solution2
 {
     namespace CompareVersionNumbers
     {
-     
-     
-     
+		int compareVersion(string version1, string version2) 
+		{
+			int len1 = version1.size();
+			int len2 = version2.size();
+			int i1 = 0;
+			int i2 = 0;
+
+			while (i1 < len1 || i2 < len2)
+			{
+				int v1 = 0;
+				while (i1 < len1 && version1[i1] != '.')
+				{
+					v1 = v1 * 10 + version1[i1] - '0';
+					i1++;
+				}
+				while (i1 < len1 && version1[i1] == '.') { i1++; }
+
+				int v2 = 0;
+				while (i2 < len2 && version2[i2] != '.')
+				{
+					v2 = v2 * 10 + version2[i2] - '0';
+					i2++;
+				}
+				while (i2 < len2 && version1[i2] == '.') { i2++; }
+
+				if (v1 > v2) { return 1; }
+				if (v1 < v2) { return -1; }
+			}
+			return 0;
+		}
      
         void Main()
         {
-         
+			print(compareVersion("0", "1"));
         }
     }
 }

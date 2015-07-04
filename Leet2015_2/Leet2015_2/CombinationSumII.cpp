@@ -20,9 +20,34 @@ namespace Solution2
 {
     namespace CombinationSumII
     {
-     
-     
-     
+		void helper(vector<int>& can, int start, int len, int target, vector<int>& result, vector<vector<int>>& results)
+		{
+			if (target == 0)
+			{
+				results.push_back(result);
+				return;
+			}
+			if (target < 0 || start >= len) { return; }
+			for (int i = start; i < len; i++)
+			{
+				result.push_back(can[i]);
+				helper(can, i + 1, len, target - can[i], result, results);
+				result.pop_back();
+
+				while (i + 1 < len && can[i] == can[i + 1]) { i++; }
+			}
+		}
+
+		vector<vector<int>> combinationSum2(vector<int>& candidates, int target) {
+			vector<vector<int>> results;
+			int len = candidates.size();
+			if (len == 0) { return results; }
+
+			sort(candidates.begin(), candidates.end());
+			vector<int>result;
+			helper(candidates, 0, len, target, result, results);
+			return results;
+		}
      
         void Main()
         {

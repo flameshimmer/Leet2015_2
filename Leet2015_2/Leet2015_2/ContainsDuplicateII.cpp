@@ -9,7 +9,27 @@ namespace Solution2
     namespace ContainsDuplicateII
     {
      
-     
+		bool containsNearbyDuplicate(vector<int>& nums, int k) 
+		{
+			int len = nums.size();
+			if (len < 2) { return false; }
+
+			unordered_map<int, int> map;
+			for (int i = 0; i < len; i++)
+			{
+				int c = nums[i];
+				if (map.find(c) == map.end())
+				{
+					map[c] = i;
+				}
+				else
+				{
+					if (i - map[c] <= k) { return true; }
+					map[c] = i;
+				}
+			}
+			return false;
+		}
      
      
         void Main()
