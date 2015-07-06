@@ -21,30 +21,29 @@ namespace Solution2
     {
 		int findPeakElement(vector<int>& nums) {
 			int len = nums.size();
-			if (len == 0) { return 0; }
-			
+			if (len < 0) { return 0; }
+
 			int start = 0;
 			int end = len - 1;
 			while (start < end)
 			{
-				if (start + 1 == end) { return max(nums[start], nums[end]); }
 				int mid = start + (end - start) / 2;
-				int lower = mid - 1 >= 0 ? nums[mid - 1] : INT_MIN;
 				int upper = mid + 1 < len ? nums[mid + 1] : INT_MIN;
-				if (lower < nums[mid] && nums[mid] > upper)
+				int lower = mid - 1 >= 0 ? nums[mid - 1] : INT_MIN;
+				if (lower < nums[mid] && upper < nums[mid])
 				{
 					return mid;
 				}
-				else if (lower < nums[mid])
+				else if (lower > nums[mid])
 				{
-					start = mid;
+					end = mid-1;
 				}
-				else if (upper < nums[mid])
+				else
 				{
-					end = mid;
+					start = mid + 1;
 				}
 			}
-			return nums[start] > nums[end] ? nums[start] : nums[end];
+			return nums[start] > nums[end] ? start : end;
 		}
      
         void Main()

@@ -16,8 +16,6 @@ int _tmain(int argc, _TCHAR* argv[])
 	//Solution2::BestTimeToBuyAndSellStockIII::Main();
 	//Solution2::BestTimeToBuyAndSellStockIV::Main();
 
-	//Solution2::ImplementStrStr::Main();
-	//Solution2::InsertInterval::Main();
 	//Solution2::InsertionSortList::Main();
 	//Solution2::IntegerToRoman::Main();
 	//Solution2::InterleavingString::Main();
@@ -220,28 +218,32 @@ int _tmain(int argc, _TCHAR* argv[])
 
 
 //7/5/2015
-//Solution2::MergeSortedArray::Main(); // Easy
-//Solution2::DungeonGame::Main(); // Hard ----------------------------------> had some issues
-//Solution2::EditDistance::Main(); // Hard
-//Solution2::EvaluateReversePolishNotation::Main();  // Medium
-//Solution2::ExcelSheetColumnNumber::Main();  // Easy
-//Solution2::ExcelSheetColumnTitle::Main();	//Easy
-//Solution2::FactorialTrailingZeroes::Main(); // Easy
-//Solution2::FindMinimumInRotatedSortedArray::Main(); //Medium ----------------------------------> had some issues
-//Solution2::FindMinimumInRotatedSortedArrayII::Main(); // Hard
-//Solution2::FirstMissingPositive::Main(); // Hard
-//Solution2::FlattenBinaryTreeToLinkedList::Main(); // Medium
-//Solution2::FractionToRecurringDecimal::Main(); //Medium
-Solution2::GasStation::Main(); // Medium
+	//Solution2::MergeSortedArray::Main(); // Easy
+	//Solution2::DungeonGame::Main(); // Hard ----------------------------------> had some issues
+	//Solution2::EditDistance::Main(); // Hard
+	//Solution2::EvaluateReversePolishNotation::Main();  // Medium
+	//Solution2::ExcelSheetColumnNumber::Main();  // Easy
+	//Solution2::ExcelSheetColumnTitle::Main();	//Easy
+	//Solution2::FactorialTrailingZeroes::Main(); // Easy
+	//Solution2::FindMinimumInRotatedSortedArray::Main(); //Medium ----------------------------------> had some issues
+	//Solution2::FindMinimumInRotatedSortedArrayII::Main(); // Hard
+	//Solution2::FirstMissingPositive::Main(); // Hard
+	//Solution2::FlattenBinaryTreeToLinkedList::Main(); // Medium
+	//Solution2::FractionToRecurringDecimal::Main(); //Medium
+
+
+// 7/6/2015
+//Solution2::GasStation::Main(); // Medium
 //Solution2::GenerateParentheses::Main(); // Medium
 //Solution2::GrayCode::Main(); // Medium
 //Solution2::HappyNumber::Main(); // Easy
 //Solution2::HouseRobber::Main(); // Easy
 //Solution2::HouseRobberII::Main(); // Medium
+
 //Solution2::ImplementStackUsingQueues::Main(); // Medium
 //Solution2::FindPeakElement::Main(); //Medium  ----------------------------------> had some issues
-
-
+Solution2::InsertInterval::Main(); // Hard
+//Solution2::ImplementStrStr::Main(); // Easy
 
 
 	// Runtime end marker

@@ -17,13 +17,32 @@ namespace Solution2
      
 		int canCompleteCircuit(vector<int>& gas, vector<int>& cost) 
 		{
+			int len = gas.size();
+			int start = 0;
+			int end = 0;
+			int sum = 0;
+			int count = 0;
 
+			while (start < len)
+			{
+				sum += gas[end%len] - cost[end%len];
+				count++;
+				while (sum < 0 && start <= end && start < len)
+				{
+					sum -= gas[start] - cost[start];
+					start++;
+					count--;
+				}
+				end++;
+				if (count == len) { return start; }
+			}
+			return -1;
 		}
      
      
         void Main()
         {
-         
+			print(canCompleteCircuit(createVector({ 1, 2, 3, 3 }), createVector({ 2, 1, 5, 1 })));
         }
     }
 }

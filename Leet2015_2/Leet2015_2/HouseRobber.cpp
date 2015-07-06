@@ -15,7 +15,18 @@ namespace Solution2
     namespace HouseRobber
     {
      
-     
+		int rob(vector<int>& nums) 
+		{
+			int len = nums.size();
+			if (len == 0) { return 0; }
+			vector<int> M(len + 1, 0);
+			M[1] = nums[0];
+			for (int i = 2; i < len+1; i++)
+			{
+				M[i] = max(M[i - 1], M[i - 2] + nums[i - 1]);
+			}
+			return M[len];
+		}
      
      
         void Main()

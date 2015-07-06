@@ -17,11 +17,26 @@
 namespace Solution2
 {
     namespace HappyNumber
-    {
-     
-     
-     
-     
+    {     
+		bool isHappy(int n) {
+			unordered_set<int> set;
+
+			while (set.find(n) == set.end())
+			{
+				set.insert(n);
+				int next = 0;
+				while (n)
+				{
+					int last = n % 10;
+					next += last * last;
+					n /= 10;
+				}
+				if (next == 1) { return true; }
+				n = next;
+			}
+			return false;
+		}
+
         void Main()
         {
          
