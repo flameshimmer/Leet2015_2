@@ -26,8 +26,35 @@ namespace Solution2
 {
     namespace FlattenBinaryTreeToLinkedList
     {
-     
-     
+		
+		TreeNode* flattenImpl(TreeNode* root)
+		{
+			if (!root || (!root->left && !root->right)) { return root; }
+			TreeNode* leftTail = flattenImpl(root->left);
+			TreeNode* rightTail = flattenImpl(root->right);
+			if (leftTail && rightTail)
+			{
+				leftTail->right = root->right;
+				root->right = root->left;
+				root->left = NULL;
+				return rightTail;
+			}
+			else if (leftTail)
+			{
+				root->right = root->left;
+				root->left = NULL;
+				return leftTail;
+			}
+			else
+			{
+				return rightTail;
+			}
+		}
+
+		void flatten(TreeNode* root) 
+		{			
+			flattenImpl(root);			
+		}
      
      
         void Main()

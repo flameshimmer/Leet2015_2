@@ -16,9 +16,19 @@
 namespace Solution2
 {
     namespace ExcelSheetColumnTitle
-    {
-     
-     
+    {     
+		string convertToTitle(int n) 
+		{
+			string result = "";
+			while (n)
+			{
+				n--;
+				char c = n % 26 + 'A';
+				result.insert(result.begin(), c);
+				n = n / 26;
+			}
+			return result;
+		}
      
      
         void Main()

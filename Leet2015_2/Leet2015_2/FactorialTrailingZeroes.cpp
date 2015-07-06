@@ -9,7 +9,18 @@ namespace Solution2
     namespace FactorialTrailingZeroes
     {
      
-     
+		int trailingZeroes(int n) 
+		{
+			if (n < 0) { return -1; }
+			int count = 0;
+			long long x = 5;
+			while (n >= x)
+			{
+				count += n / x;
+				x *= 5;
+			}
+			return count;
+		}
      
      
         void Main()

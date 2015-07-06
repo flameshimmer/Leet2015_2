@@ -15,7 +15,10 @@ namespace Solution2
     namespace GasStation
     {
      
-     
+		int canCompleteCircuit(vector<int>& gas, vector<int>& cost) 
+		{
+
+		}
      
      
         void Main()

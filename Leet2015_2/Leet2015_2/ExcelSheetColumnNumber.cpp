@@ -19,7 +19,17 @@ namespace Solution2
     namespace ExcelSheetColumnNumber
     {
      
-     
+		int titleToNumber(string s) {
+			int len = s.length();
+			if (len == 0) { return 0; }
+
+			int result = 0;
+			for (char c : s)
+			{
+				result = result * 26 + (c - 'A' + 1);
+			}
+			return result;
+		}
      
      
         void Main()

@@ -14,10 +14,22 @@
 namespace Solution2
 {
     namespace DistinctSubsequences
-    {
-     
-     
-     
+    {     
+		int numDistinct(string s, string t) 
+		{
+			int lens = s.length();
+			int lent = t.length();
+			vector<int> M(lent + 1, 0);
+			M[0] = 1;
+			for (int i = 1; i < lens + 1; i++)
+			{
+				for (int j = lent; j >= 1; j--)
+				{
+					if (s[i - 1] == t[j - 1]) { M[j] += M[j - 1]; }
+				}
+			}
+			return M[lent];
+		}     
      
         void Main()
         {

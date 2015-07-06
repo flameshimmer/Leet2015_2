@@ -16,21 +16,6 @@ int _tmain(int argc, _TCHAR* argv[])
 	//Solution2::BestTimeToBuyAndSellStockIII::Main();
 	//Solution2::BestTimeToBuyAndSellStockIV::Main();
 
-
-	//Solution2::FactorialTrailingZeroes::Main();
-	//Solution2::FindMinimumInRotatedSortedArray::Main();
-	//Solution2::FindMinimumInRotatedSortedArrayII::Main();
-	//Solution2::FindPeakElement::Main();
-	//Solution2::FirstMissingPositive::Main();
-	//Solution2::FlattenBinaryTreeToLinkedList::Main();
-	//Solution2::FractionToRecurringDecimal::Main();
-	//Solution2::GasStation::Main();
-	//Solution2::GenerateParentheses::Main();
-	//Solution2::GrayCode::Main();
-	//Solution2::HappyNumber::Main();
-	//Solution2::HouseRobber::Main();
-	//Solution2::HouseRobberII::Main();
-	//Solution2::ImplementStackUsingQueues::Main();
 	//Solution2::ImplementStrStr::Main();
 	//Solution2::InsertInterval::Main();
 	//Solution2::InsertionSortList::Main();
@@ -65,8 +50,7 @@ int _tmain(int argc, _TCHAR* argv[])
 	//Solution2::MaxPointsOnALine::Main();
 	//Solution2::MedianOfTwoSortedArrays::Main();
 	//Solution2::MergeIntervals::Main();
-	//Solution2::MergeKSortedLists::Main();
-	//Solution2::MergeSortedArray::Main();
+	//Solution2::MergeKSortedLists::Main();	
 	//Solution2::MergeTwoSortedLists::Main();
 	//Solution2::MinimumDepthOfBinaryTree::Main();
 	//Solution2::MinimumPathSum::Main();
@@ -218,27 +202,44 @@ int _tmain(int argc, _TCHAR* argv[])
 	//Solution2::ContainsDuplicateII::Main(); // Easy
 
 //7/4/2015
-//Solution2::ContainsDuplicateIII::Main(); // Medium ----------------------------------> had some issues
-//Solution2::ContainerWithMostWater::Main(); // Medium
-//Solution2::ConstructBinaryTreeFromInorderAndPostorderTraversal::Main(); // Medium
-//Solution2::ConstructBinaryTreeFromPreorderAndInorderTraversal::Main(); // Medium
-//Solution2::ConvertSortedArrayToBinarySearchTree::Main(); // Medium
-//Solution2::ConvertSortedListToBinarySearchTree::Main(); // Medium ----------------------> had some issues
-//Solution2::CopyListWithRandomPointer::Main(); // Hard
-//Solution2::CountAndSay::Main();  // Easy
-//Solution2::CountCompleteTreeNodes::Main();  // Medium ======================================> has better solve
-//Solution2::CountPrimes::Main();  // Easy ----------------------------------> had some issues
-//Solution2::CourseSchedule::Main();  // Medium
-//Solution2::CourseScheduleII::Main(); // Medium
-//Solution2::DecodeWays::Main(); // Medium
-Solution2::DistinctSubsequences::Main(); // Hard
-//Solution2::DivideTwoIntegers::Main(); // Medium
-//Solution2::DungeonGame::Main(); // Hard
+	//Solution2::ContainsDuplicateIII::Main(); // Medium ----------------------------------> had some issues
+	//Solution2::ContainerWithMostWater::Main(); // Medium
+	//Solution2::ConstructBinaryTreeFromInorderAndPostorderTraversal::Main(); // Medium
+	//Solution2::ConstructBinaryTreeFromPreorderAndInorderTraversal::Main(); // Medium
+	//Solution2::ConvertSortedArrayToBinarySearchTree::Main(); // Medium
+	//Solution2::ConvertSortedListToBinarySearchTree::Main(); // Medium ----------------------> had some issues
+	//Solution2::CopyListWithRandomPointer::Main(); // Hard
+	//Solution2::CountAndSay::Main();  // Easy
+	//Solution2::CountCompleteTreeNodes::Main();  // Medium ======================================> has better solve
+	//Solution2::CountPrimes::Main();  // Easy ----------------------------------> had some issues
+	//Solution2::CourseSchedule::Main();  // Medium
+	//Solution2::CourseScheduleII::Main(); // Medium
+	//Solution2::DecodeWays::Main(); // Medium
+	//Solution2::DistinctSubsequences::Main(); // Hard
+	//Solution2::DivideTwoIntegers::Main(); // Medium
+
+
+//7/5/2015
+//Solution2::MergeSortedArray::Main(); // Easy
+//Solution2::DungeonGame::Main(); // Hard ----------------------------------> had some issues
 //Solution2::EditDistance::Main(); // Hard
 //Solution2::EvaluateReversePolishNotation::Main();  // Medium
 //Solution2::ExcelSheetColumnNumber::Main();  // Easy
 //Solution2::ExcelSheetColumnTitle::Main();	//Easy
-
+//Solution2::FactorialTrailingZeroes::Main(); // Easy
+//Solution2::FindMinimumInRotatedSortedArray::Main(); //Medium ----------------------------------> had some issues
+//Solution2::FindMinimumInRotatedSortedArrayII::Main(); // Hard
+//Solution2::FirstMissingPositive::Main(); // Hard
+//Solution2::FlattenBinaryTreeToLinkedList::Main(); // Medium
+//Solution2::FractionToRecurringDecimal::Main(); //Medium
+Solution2::GasStation::Main(); // Medium
+//Solution2::GenerateParentheses::Main(); // Medium
+//Solution2::GrayCode::Main(); // Medium
+//Solution2::HappyNumber::Main(); // Easy
+//Solution2::HouseRobber::Main(); // Easy
+//Solution2::HouseRobberII::Main(); // Medium
+//Solution2::ImplementStackUsingQueues::Main(); // Medium
+//Solution2::FindPeakElement::Main(); //Medium  ----------------------------------> had some issues
 
 
 
