@@ -26,9 +26,29 @@ namespace Solution2
 {
     namespace IntersectionOfTwoLinkedLists
     {
-     
-     
-     
+		ListNode *getIntersectionNode(ListNode *headA, ListNode *headB) 
+		{
+			int lenA = 0;
+			ListNode* cur = headA;
+			while (cur) { lenA++; cur = cur->next; }
+
+			int lenB = 0;
+			cur = headB;
+			while (cur) { lenB++; cur = cur->next; }
+
+			int diff = lenA > lenB ? lenA - lenB : lenB - lenA;
+			ListNode* longer = lenA > lenB ? headA : headB;
+			ListNode* shorter = lenA > lenB ? headB : headA;
+
+			for (int i = 0; i < diff; i++) { longer = longer->next; }
+			while (longer && shorter)
+			{
+				if (longer == shorter) { return longer; }
+				longer = longer->next;
+				shorter = shorter->next;
+			}
+			return NULL;
+		}
      
         void Main()
         {

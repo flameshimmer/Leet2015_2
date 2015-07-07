@@ -19,8 +19,25 @@ namespace Solution2
     namespace InvertBinaryTree
     {
      
-     
-     
+		TreeNode* invertTree(TreeNode* root) 
+		{
+			if (!root || (!root->left && !root->right)) { return root; }
+
+			stack<TreeNode*> s;
+			s.push(root);
+			while (!s.empty())
+			{
+				TreeNode* cur = s.top();
+				s.pop();
+				TreeNode* leftChild = cur->left;
+				TreeNode* rightChild = cur->right;
+				if (leftChild) { s.push(leftChild); }
+				if (rightChild) { s.push(rightChild); }
+				cur->left = rightChild;
+				cur->right = leftChild;
+			}
+			return root;
+		}
      
         void Main()
         {

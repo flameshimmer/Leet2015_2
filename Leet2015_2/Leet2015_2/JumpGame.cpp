@@ -15,11 +15,22 @@
 namespace Solution2
 {
     namespace JumpGame
-    {
-     
-     
-     
-     
+    {     
+		bool canJump(vector<int>& nums) 
+		{
+			int len = nums.size();
+			if (len == 0) { return false; }
+			if (len == 1) { return true; }
+
+			int farest = 0;
+			for (int i = 0; i < len; i++)
+			{
+				if (i>farest) { return false; }
+				farest = max(farest, i + nums[i]);
+			}
+			return true;
+		}
+    
         void Main()
         {
          

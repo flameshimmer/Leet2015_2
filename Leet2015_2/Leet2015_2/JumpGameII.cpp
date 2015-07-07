@@ -17,8 +17,27 @@ namespace Solution2
     namespace JumpGameII
     {
      
-     
-     
+		int jump(vector<int>& nums) 
+		{
+			int len = nums.size();
+			if (len == 0) { return 0; }
+			
+			int start = 0;
+			int end = 0;
+			int reach = 0;
+			int count = 0;
+			while (reach < len-1)
+			{
+				count++;
+				for (int i = start; i <= end; i++)
+				{
+					reach = max(reach, nums[i] + i);
+				}
+				start = end + 1;
+				end = reach;
+			}
+			return count;
+		}
      
         void Main()
         {

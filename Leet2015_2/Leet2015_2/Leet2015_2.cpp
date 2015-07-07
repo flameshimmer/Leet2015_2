@@ -16,16 +16,6 @@ int _tmain(int argc, _TCHAR* argv[])
 	//Solution2::BestTimeToBuyAndSellStockIII::Main();
 	//Solution2::BestTimeToBuyAndSellStockIV::Main();
 
-	//Solution2::InsertionSortList::Main();
-	//Solution2::IntegerToRoman::Main();
-	//Solution2::InterleavingString::Main();
-	//Solution2::IntersectionOfTwoLinkedLists::Main();
-	//Solution2::InvertBinaryTree::Main();
-	//Solution2::IsomorphicStrings::Main();
-	//Solution2::JumpGame::Main();
-	//Solution2::JumpGameII::Main();
-	//Solution2::KthLargestElementInAnArray::Main();
-	//Solution2::LargestNumber::Main();
 	//Solution2::LargestRectangleInHistogram::Main();
 	//Solution2::LengthOfLastWord::Main();
 	//Solution2::LetterCombinationsOfAPhoneNumber::Main();
@@ -92,7 +82,6 @@ int _tmain(int argc, _TCHAR* argv[])
 	//Solution2::ReorderList::Main();
 	//Solution2::RepeatedDNASequences::Main();
 	//Solution2::RestoreIPAddresses::Main();
-	//Solution2::RomanToInteger::Main();
 	//Solution2::RotateArray::Main();
 	//Solution2::RotateImage::Main();
 	//Solution2::RotateList::Main();
@@ -233,17 +222,32 @@ int _tmain(int argc, _TCHAR* argv[])
 
 
 // 7/6/2015
-//Solution2::GasStation::Main(); // Medium
-//Solution2::GenerateParentheses::Main(); // Medium
-//Solution2::GrayCode::Main(); // Medium
-//Solution2::HappyNumber::Main(); // Easy
-//Solution2::HouseRobber::Main(); // Easy
-//Solution2::HouseRobberII::Main(); // Medium
+	//Solution2::GasStation::Main(); // Medium
+	//Solution2::GenerateParentheses::Main(); // Medium
+	//Solution2::GrayCode::Main(); // Medium
+	//Solution2::HappyNumber::Main(); // Easy
+	//Solution2::HouseRobber::Main(); // Easy
+	//Solution2::HouseRobberII::Main(); // Medium
+	//Solution2::ImplementStackUsingQueues::Main(); // Medium
+	//Solution2::FindPeakElement::Main(); //Medium  ----------------------------------> had some issues
+	//Solution2::InsertInterval::Main(); // Hard
 
-//Solution2::ImplementStackUsingQueues::Main(); // Medium
-//Solution2::FindPeakElement::Main(); //Medium  ----------------------------------> had some issues
-Solution2::InsertInterval::Main(); // Hard
-//Solution2::ImplementStrStr::Main(); // Easy
+// 7/7/2015
+//Solution2::InsertionSortList::Main(); //Medium
+//Solution2::IntegerToRoman::Main(); // Medium
+//Solution2::RomanToInteger::Main(); // Easy
+//Solution2::InterleavingString::Main(); // Hard
+//Solution2::IntersectionOfTwoLinkedLists::Main(); // Easy
+//Solution2::InvertBinaryTree::Main(); // Easy
+//Solution2::IsomorphicStrings::Main(); // Easy
+//Solution2::JumpGame::Main(); // Medium
+//Solution2::JumpGameII::Main(); // Hard ----------------------------------> had some issues
+Solution2::KthLargestElementInAnArray::Main(); // Medium
+
+
+
+//Solution2::LargestNumber::Main(); // Medium
+//Solution2::ImplementStrStr::Main(); // Easy----------------------------------> had some issues
 
 
 	// Runtime end marker

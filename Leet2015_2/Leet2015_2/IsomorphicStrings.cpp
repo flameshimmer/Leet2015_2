@@ -23,7 +23,27 @@ namespace Solution2
     namespace IsomorphicStrings
     {
      
-     
+		bool isIsomorphic(string s, string t) {
+			int lens = s.length();
+			int lent = t.length();
+			if (lens != lent)  { return false; }
+			
+			char map[256] = { 0 };
+			char mapTo[256] = { 0 };
+			for (int i = 0; i < lens; i++)
+			{
+				if ((map[s[i]] == NULL || map[s[i]] == t[i]) && (!mapTo[t[i]] || mapTo[t[i]] == s[i]))
+				{
+					map[s[i]] = t[i];
+					mapTo[t[i]] = s[i];
+				}
+				else
+				{
+					return false;
+				}
+			}
+			return true;
+		}
      
      
         void Main()
