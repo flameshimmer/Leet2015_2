@@ -15,17 +15,8 @@ int _tmain(int argc, _TCHAR* argv[])
 	//Solution2::BestTimeToBuyAndSellStockII::Main();
 	//Solution2::BestTimeToBuyAndSellStockIII::Main();
 	//Solution2::BestTimeToBuyAndSellStockIV::Main();
+	//Solution2::ImplementStrStr::Main(); // Easy----------------------------------> had some issues
 
-	//Solution2::LargestRectangleInHistogram::Main();
-	//Solution2::LengthOfLastWord::Main();
-	//Solution2::LetterCombinationsOfAPhoneNumber::Main();
-	//Solution2::LinkedListCycle::Main();
-	//Solution2::LinkedListCycleII::Main();
-	//Solution2::LongestCommonPrefix::Main();
-	//Solution2::LongestConsecutiveSequence::Main();
-	//Solution2::LongestPalindromeSubString::Main();
-	//Solution2::LongestSubstringWithAtMostTwoDistinctCharacters::Main();
-	//Solution2::LongestSubStringWithoutRepeatingCharacters::Main();
 	//Solution2::LongestValidParentheses::Main();
 	//Solution2::LRUCacheEntry::Main();
 	//Solution2::MajorityElement::Main();
@@ -233,21 +224,31 @@ int _tmain(int argc, _TCHAR* argv[])
 	//Solution2::InsertInterval::Main(); // Hard
 
 // 7/7/2015
-//Solution2::InsertionSortList::Main(); //Medium
-//Solution2::IntegerToRoman::Main(); // Medium
-//Solution2::RomanToInteger::Main(); // Easy
-//Solution2::InterleavingString::Main(); // Hard
-//Solution2::IntersectionOfTwoLinkedLists::Main(); // Easy
-//Solution2::InvertBinaryTree::Main(); // Easy
-//Solution2::IsomorphicStrings::Main(); // Easy
-//Solution2::JumpGame::Main(); // Medium
-//Solution2::JumpGameII::Main(); // Hard ----------------------------------> had some issues
-Solution2::KthLargestElementInAnArray::Main(); // Medium
+	//Solution2::InsertionSortList::Main(); //Medium
+	//Solution2::IntegerToRoman::Main(); // Medium
+	//Solution2::RomanToInteger::Main(); // Easy
+	//Solution2::InterleavingString::Main(); // Hard
+	//Solution2::IntersectionOfTwoLinkedLists::Main(); // Easy
+	//Solution2::InvertBinaryTree::Main(); // Easy
+	//Solution2::IsomorphicStrings::Main(); // Easy
+	//Solution2::JumpGame::Main(); // Medium
+	//Solution2::JumpGameII::Main(); // Hard ----------------------------------> had some issues
+	//Solution2::KthLargestElementInAnArray::Main(); // Medium ----------------------------------> had some issues
 
 
+// 7/8/2015
+//Solution2::LargestNumber::Main(); // Medium ----------------------------------> had some issues
+//Solution2::LargestRectangleInHistogram::Main(); //Hard
+//Solution2::LengthOfLastWord::Main(); // Easy
+//Solution2::LetterCombinationsOfAPhoneNumber::Main(); // Medium
+//Solution2::LinkedListCycle::Main(); // Medium
+Solution2::LinkedListCycleII::Main(); // Medium
+//Solution2::LongestCommonPrefix::Main(); // Easy
+//Solution2::LongestConsecutiveSequence::Main(); //Hard
+//Solution2::LongestPalindromeSubString::Main(); // Medium
+//Solution2::LongestSubstringWithAtMostTwoDistinctCharacters::Main(); //Hard
+//Solution2::LongestSubStringWithoutRepeatingCharacters::Main(); // Medium
 
-//Solution2::LargestNumber::Main(); // Medium
-//Solution2::ImplementStrStr::Main(); // Easy----------------------------------> had some issues
 
 
 	// Runtime end marker

@@ -15,7 +15,18 @@ namespace Solution2
     namespace LengthOfLastWord
     {
      
-     
+		int lengthOfLastWord(string s) {
+			int len = s.length();
+			if (len == 0) { return 0; }
+			int start = len-1;
+			int end = len - 1;
+			
+			while (start >= 0 && s[start] == ' '){ start--; }
+			end = start;
+			while (start >= 0 && s[start] != ' '){ start--; }
+
+			return end - start;
+		}
      
      
         void Main()

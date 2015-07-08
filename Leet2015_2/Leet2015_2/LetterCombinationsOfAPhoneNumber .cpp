@@ -22,8 +22,35 @@ namespace Solution2
 {
     namespace LetterCombinationsOfAPhoneNumber 
     {
+		void combine(string digits, int level, vector<string>& candidates, string& result, vector<string>& results)
+		{
+			if (level == digits.size())
+			{
+				results.push_back(result);
+				return;
+			}
+
+			int v = digits[level] - '0';
+			for (char c : candidates[v])
+			{
+				result.push_back(c);
+				combine(digits, level + 1, candidates, result, results);
+				result.pop_back();
+			}
+		}
      
-     
+		vector<string> letterCombinations(string digits) 
+		{
+			vector<string> results;
+			int len = digits.size();
+			if (len == 0) { return results; }
+
+			vector<string> candidates = {"", "", "abc", "def", "ghi", "jkl", "mno", "pqrs", "tuv", "wxyz"};
+
+			string result;
+			combine(digits, 0, candidates, result, results);
+			return results;
+		}
      
      
         void Main()
