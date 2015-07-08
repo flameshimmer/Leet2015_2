@@ -8,7 +8,7 @@ namespace Solution2
 	namespace AddBinary{ void Main(); }
 	namespace Anagrams{ void Main(); }
 	namespace LongestSubStringWithoutRepeatingCharacters{ void Main(); }
-	namespace LongestPalindromeSubString{ void Main(); }
+	namespace LongestPalindromicSubString{ void Main(); }
 	namespace LongestCommonPrefix{ void Main(); }
 	namespace LongestValidParentheses{ void Main(); }
 	namespace LongestConsecutiveSequence{ void Main(); }

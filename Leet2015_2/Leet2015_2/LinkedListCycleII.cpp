@@ -13,28 +13,21 @@ namespace Solution2
 		ListNode *detectCycle(ListNode *head) 
 		{
 			if (!head || !head->next) { return NULL; }
+			ListNode* fast = head->next->next;
+			ListNode* slow = head->next;
 
-			ListNode* slow = head;
-			ListNode* fast = head;
-			
 			while (fast && fast->next)
 			{
-				if (fast == slow && fast != head)
-				{
-					break;
-				}
-				else
-				{
-					fast = fast->next->next;
-					slow = slow->next;
-				}
+				if (fast == slow) { break; }
+				fast = fast->next->next;
+				slow = slow->next;
 			}
-			if (fast == NULL || fast->next == NULL) { return NULL; }
+			if (!fast || !fast->next) { return NULL; }
 			fast = head;
 			while (fast != slow)
 			{
-				slow = slow->next;
 				fast = fast->next;
+				slow = slow->next;
 			}
 			return fast;
 		}

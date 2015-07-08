@@ -242,10 +242,10 @@ int _tmain(int argc, _TCHAR* argv[])
 //Solution2::LengthOfLastWord::Main(); // Easy
 //Solution2::LetterCombinationsOfAPhoneNumber::Main(); // Medium
 //Solution2::LinkedListCycle::Main(); // Medium
-Solution2::LinkedListCycleII::Main(); // Medium
+//Solution2::LinkedListCycleII::Main(); // Medium ----------------------------------> had some issues
 //Solution2::LongestCommonPrefix::Main(); // Easy
 //Solution2::LongestConsecutiveSequence::Main(); //Hard
-//Solution2::LongestPalindromeSubString::Main(); // Medium
+Solution2::LongestPalindromicSubString::Main(); // Medium
 //Solution2::LongestSubstringWithAtMostTwoDistinctCharacters::Main(); //Hard
 //Solution2::LongestSubStringWithoutRepeatingCharacters::Main(); // Medium
 
