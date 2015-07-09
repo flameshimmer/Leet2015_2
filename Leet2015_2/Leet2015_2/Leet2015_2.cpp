@@ -17,16 +17,6 @@ int _tmain(int argc, _TCHAR* argv[])
 	//Solution2::BestTimeToBuyAndSellStockIV::Main();
 	//Solution2::ImplementStrStr::Main(); // Easy----------------------------------> had some issues
 
-	//Solution2::LongestValidParentheses::Main();
-	//Solution2::LRUCacheEntry::Main();
-	//Solution2::MajorityElement::Main();
-	//Solution2::MaximalRectangle::Main();
-	//Solution2::MaximalSquare::Main();
-	//Solution2::MaximumDepthOfBinaryTree::Main();
-	//Solution2::MaximumGap::Main();
-	//Solution2::MaximumProductSubarray::Main();
-	//Solution2::MaximumSubarray::Main();
-	//Solution2::MaxPointsOnALine::Main();
 	//Solution2::MedianOfTwoSortedArrays::Main();
 	//Solution2::MergeIntervals::Main();
 	//Solution2::MergeKSortedLists::Main();	
@@ -248,6 +238,19 @@ int _tmain(int argc, _TCHAR* argv[])
 	//Solution2::LongestPalindromicSubString::Main(); // Medium ----------------------------------> had better way of doing it
 	//Solution2::LongestSubstringWithAtMostTwoDistinctCharacters::Main(); //Hard ----------------------------------> may have better way to do it
 	//Solution2::LongestSubStringWithoutRepeatingCharacters::Main(); // Medium
+
+
+// 7/8/2015
+//Solution2::LongestValidParentheses::Main(); // Hard
+Solution2::LRUCacheEntry::Main(); // Hard
+//Solution2::MajorityElement::Main(); // Easy
+//Solution2::MaximalRectangle::Main(); // Hard
+//Solution2::MaximalSquare::Main(); // Medium
+//Solution2::MaximumDepthOfBinaryTree::Main(); // Easy
+//Solution2::MaximumGap::Main(); // Hard
+//Solution2::MaximumProductSubarray::Main(); // Medium
+//Solution2::MaximumSubarray::Main(); // Medium
+//Solution2::MaxPointsOnALine::Main(); // Hard
 
 
 
