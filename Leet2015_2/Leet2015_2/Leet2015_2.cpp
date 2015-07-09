@@ -237,17 +237,17 @@ int _tmain(int argc, _TCHAR* argv[])
 
 
 // 7/8/2015
-//Solution2::LargestNumber::Main(); // Medium ----------------------------------> had some issues
-//Solution2::LargestRectangleInHistogram::Main(); //Hard
-//Solution2::LengthOfLastWord::Main(); // Easy
-//Solution2::LetterCombinationsOfAPhoneNumber::Main(); // Medium
-//Solution2::LinkedListCycle::Main(); // Medium
-//Solution2::LinkedListCycleII::Main(); // Medium ----------------------------------> had some issues
-//Solution2::LongestCommonPrefix::Main(); // Easy
-//Solution2::LongestConsecutiveSequence::Main(); //Hard
-Solution2::LongestPalindromicSubString::Main(); // Medium
-//Solution2::LongestSubstringWithAtMostTwoDistinctCharacters::Main(); //Hard
-//Solution2::LongestSubStringWithoutRepeatingCharacters::Main(); // Medium
+	//Solution2::LargestNumber::Main(); // Medium ----------------------------------> had some issues
+	//Solution2::LargestRectangleInHistogram::Main(); //Hard
+	//Solution2::LengthOfLastWord::Main(); // Easy
+	//Solution2::LetterCombinationsOfAPhoneNumber::Main(); // Medium
+	//Solution2::LinkedListCycle::Main(); // Medium
+	//Solution2::LinkedListCycleII::Main(); // Medium ----------------------------------> had some issues
+	//Solution2::LongestCommonPrefix::Main(); // Easy
+	//Solution2::LongestConsecutiveSequence::Main(); //Hard
+	//Solution2::LongestPalindromicSubString::Main(); // Medium ----------------------------------> had better way of doing it
+	//Solution2::LongestSubstringWithAtMostTwoDistinctCharacters::Main(); //Hard ----------------------------------> may have better way to do it
+	//Solution2::LongestSubStringWithoutRepeatingCharacters::Main(); // Medium
 
 
 
