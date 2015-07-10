@@ -17,11 +17,6 @@ int _tmain(int argc, _TCHAR* argv[])
 	//Solution2::BestTimeToBuyAndSellStockIV::Main();
 	//Solution2::ImplementStrStr::Main(); // Easy----------------------------------> had some issues
 
-	//Solution2::MedianOfTwoSortedArrays::Main();
-	//Solution2::MergeIntervals::Main();
-	//Solution2::MergeKSortedLists::Main();	
-	//Solution2::MergeTwoSortedLists::Main();
-	//Solution2::MinimumDepthOfBinaryTree::Main();
 	//Solution2::MinimumPathSum::Main();
 	//Solution2::MinimumSizeSubarraySum::Main();
 	//Solution2::MinimumWindowSubstring::Main();
@@ -241,16 +236,25 @@ int _tmain(int argc, _TCHAR* argv[])
 
 
 // 7/9/2015
-//Solution2::LongestValidParentheses::Main(); // Hard
-//Solution2::LRUCacheEntry::Main(); // Hard ----------------------------------> had some issues
-//Solution2::MajorityElement::Main(); // Easy
-//Solution2::MaximalRectangle::Main(); // Hard
-Solution2::MaximalSquare::Main(); // Medium
+	//Solution2::LongestValidParentheses::Main(); // Hard
+	//Solution2::LRUCacheEntry::Main(); // Hard ----------------------------------> had some issues
+	//Solution2::MajorityElement::Main(); // Easy
+	//Solution2::MaximalRectangle::Main(); // Hard
+	//Solution2::MaximalSquare::Main(); // Medium
+
+// 7/10/2015
 //Solution2::MaximumDepthOfBinaryTree::Main(); // Easy
+//Solution2::MinimumDepthOfBinaryTree::Main(); // Easy
 //Solution2::MaximumGap::Main(); // Hard
-//Solution2::MaximumProductSubarray::Main(); // Medium
+Solution2::MaximumProductSubarray::Main(); // Medium
 //Solution2::MaximumSubarray::Main(); // Medium
 //Solution2::MaxPointsOnALine::Main(); // Hard
+//Solution2::MedianOfTwoSortedArrays::Main(); // Hard
+//Solution2::MergeIntervals::Main(); // Hard
+//Solution2::MergeKSortedLists::Main();	 // Hard
+//Solution2::MergeTwoSortedLists::Main(); // Easy
+
+
 
 
 
