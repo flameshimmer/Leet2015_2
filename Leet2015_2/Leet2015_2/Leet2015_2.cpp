@@ -240,12 +240,12 @@ int _tmain(int argc, _TCHAR* argv[])
 	//Solution2::LongestSubStringWithoutRepeatingCharacters::Main(); // Medium
 
 
-// 7/8/2015
+// 7/9/2015
 //Solution2::LongestValidParentheses::Main(); // Hard
-Solution2::LRUCacheEntry::Main(); // Hard
+//Solution2::LRUCacheEntry::Main(); // Hard ----------------------------------> had some issues
 //Solution2::MajorityElement::Main(); // Easy
 //Solution2::MaximalRectangle::Main(); // Hard
-//Solution2::MaximalSquare::Main(); // Medium
+Solution2::MaximalSquare::Main(); // Medium
 //Solution2::MaximumDepthOfBinaryTree::Main(); // Easy
 //Solution2::MaximumGap::Main(); // Hard
 //Solution2::MaximumProductSubarray::Main(); // Medium

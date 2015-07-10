@@ -10,8 +10,27 @@ namespace Solution2
     namespace MajorityElement
     {
      
-     
-     
+		int majorityElement(vector<int>& nums) {
+			int len = nums.size();
+			if (len == 0) { return -1; }
+			int result = nums[0];
+			int count = 0;
+
+			for (int val : nums)
+			{
+				if (val == result) { count++; }
+				else
+				{
+					count--;
+					if (count == 0)
+					{
+						count = 1;
+						result = val;
+					}
+				}
+			}
+			return result;
+		}
      
         void Main()
         {
