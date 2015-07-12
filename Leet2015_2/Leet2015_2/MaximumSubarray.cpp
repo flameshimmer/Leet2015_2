@@ -9,10 +9,20 @@
 namespace Solution2
 {
     namespace MaximumSubarray
-    {
-     
-     
-     
+    {     
+		int maxSubArray(vector<int>& nums) {
+			int len = nums.size();
+			if (len == 0) { return 0; }
+
+			int maxSum = nums[0];
+			int sum = nums[0];
+			for (int i = 1; i < len; i++)
+			{
+				sum = max(0, sum) + nums[i];
+				maxSum = max(maxSum, sum);
+			}
+			return maxSum;
+		}
      
         void Main()
         {

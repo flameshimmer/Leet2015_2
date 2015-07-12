@@ -139,6 +139,9 @@ void print(int input);
 // unsigned int
 void print(uint32_t input);
 
+// double
+void print(double input);
+
 // boolean
 void print(bool input);
 

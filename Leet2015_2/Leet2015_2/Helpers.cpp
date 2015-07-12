@@ -57,6 +57,11 @@ void print(int input)
 	cout << "integer: " << input << "\n";
 }
 
+void print(double input)
+{
+	cout << "double: " << input << "\n";
+}
+
 void print(string input)
 {
 	cout << "string: " << input << "\n";

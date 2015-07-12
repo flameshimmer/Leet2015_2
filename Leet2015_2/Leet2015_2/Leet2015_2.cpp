@@ -243,17 +243,18 @@ int _tmain(int argc, _TCHAR* argv[])
 	//Solution2::MaximalSquare::Main(); // Medium
 
 // 7/10/2015
-//Solution2::MaximumDepthOfBinaryTree::Main(); // Easy
-//Solution2::MinimumDepthOfBinaryTree::Main(); // Easy
-//Solution2::MaximumGap::Main(); // Hard
-Solution2::MaximumProductSubarray::Main(); // Medium
-//Solution2::MaximumSubarray::Main(); // Medium
-//Solution2::MaxPointsOnALine::Main(); // Hard
-//Solution2::MedianOfTwoSortedArrays::Main(); // Hard
-//Solution2::MergeIntervals::Main(); // Hard
-//Solution2::MergeKSortedLists::Main();	 // Hard
-//Solution2::MergeTwoSortedLists::Main(); // Easy
+	//Solution2::MaximumDepthOfBinaryTree::Main(); // Easy
+	//Solution2::MinimumDepthOfBinaryTree::Main(); // Easy
+	//Solution2::MaximumGap::Main(); // Hard----------------------------------> had some issues(forgot the algo)
+	//Solution2::MaximumProductSubarray::Main(); // Medium ----------------------------------> had some issues
+	//Solution2::MaximumSubarray::Main(); // Medium
+	//Solution2::MaxPointsOnALine::Main(); // Hard
+	//Solution2::MergeTwoSortedLists::Main(); // Easy
 
+// 7/11/2015
+//Solution2::MergeKSortedLists::Main();	 // Hard ----------------------------------> found a better way of doing it
+//Solution2::MergeIntervals::Main(); // Hard
+Solution2::MedianOfTwoSortedArrays::Main(); // Hard
 
 
 
