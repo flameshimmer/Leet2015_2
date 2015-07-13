@@ -17,16 +17,6 @@ int _tmain(int argc, _TCHAR* argv[])
 	//Solution2::BestTimeToBuyAndSellStockIV::Main();
 	//Solution2::ImplementStrStr::Main(); // Easy----------------------------------> had some issues
 
-	//Solution2::MinimumPathSum::Main();
-	//Solution2::MinimumSizeSubarraySum::Main();
-	//Solution2::MinimumWindowSubstring::Main();
-	//Solution2::MinStack::Main();
-	//Solution2::MissingRanges::Main();
-	//Solution2::MultiplyStrings::Main();
-	//Solution2::NextPermutation::Main();
-	//Solution2::NQueens::Main();
-	//Solution2::NQueensII::Main();
-	//Solution2::NumberOfIslands::Main();
 	//Solution2::OneEditDistance::Main();
 	//Solution2::PalindromeNumber::Main();
 	//Solution2::PalindromePartitioning::Main();
@@ -252,11 +242,21 @@ int _tmain(int argc, _TCHAR* argv[])
 	//Solution2::MergeTwoSortedLists::Main(); // Easy
 
 // 7/11/2015
-//Solution2::MergeKSortedLists::Main();	 // Hard ----------------------------------> found a better way of doing it
-//Solution2::MergeIntervals::Main(); // Hard
-Solution2::MedianOfTwoSortedArrays::Main(); // Hard
+	//Solution2::MergeKSortedLists::Main();	 // Hard ----------------------------------> found a better way of doing it
+	//Solution2::MergeIntervals::Main(); // Hard
+	//Solution2::MedianOfTwoSortedArrays::Main(); // Hard
 
-
+// 7/12/2015
+//Solution2::MinimumPathSum::Main(); // Medium
+//Solution2::MinimumSizeSubarraySum::Main(); // Medium
+//Solution2::MinimumWindowSubstring::Main(); // Hard
+Solution2::MinStack::Main(); // Easy
+//Solution2::MissingRanges::Main(); // Medium
+//Solution2::MultiplyStrings::Main(); // Medium
+//Solution2::NextPermutation::Main(); // Medium
+//Solution2::NQueens::Main(); // Hard
+//Solution2::NQueensII::Main(); // Hard
+//Solution2::NumberOfIslands::Main(); // Medium
 
 
 	// Runtime end marker

@@ -91,13 +91,13 @@ namespace Solution2
 				if (m1 == m2) { return m1; }
 				else if (m1 < m2)
 				{
-					start1 = medianIndex1R+1;
-					end2 = medianIndex2L-1;
+					start1 = medianIndex1L;
+					end2 = medianIndex2R;
 				}
 				else
 				{
-					start2 = medianIndex2R+1;
-					end1 = medianIndex1L-1;
+					start2 = medianIndex2L;
+					end1 = medianIndex1R;
 				}
 			} while (start1 <= end1 && start2 <= end2);
 
