@@ -17,13 +17,6 @@ int _tmain(int argc, _TCHAR* argv[])
 	//Solution2::BestTimeToBuyAndSellStockIV::Main();
 	//Solution2::ImplementStrStr::Main(); // Easy----------------------------------> had some issues
 
-	//Solution2::OneEditDistance::Main();
-	//Solution2::PalindromeNumber::Main();
-	//Solution2::PalindromePartitioning::Main();
-	//Solution2::PalindromePartitioningII::Main();
-	//Solution2::PartitionList::Main();
-	//Solution2::PascalsTriangle::Main();
-	//Solution2::PascalsTriangleII::Main();
 	//Solution2::PathSum::Main();
 	//Solution2::PathSumII::Main();
 	//Solution2::Permutation::Main();
@@ -244,7 +237,7 @@ int _tmain(int argc, _TCHAR* argv[])
 // 7/11/2015
 	//Solution2::MergeKSortedLists::Main();	 // Hard ----------------------------------> found a better way of doing it
 	//Solution2::MergeIntervals::Main(); // Hard
-	//Solution2::MedianOfTwoSortedArrays::Main(); // Hard
+	//Solution2::MedianOfTwoSortedArrays::Main(); // Hard----------------------------------> need some work still
 
 // 7/12/2015
 	//Solution2::MinimumPathSum::Main(); // Medium
@@ -259,6 +252,13 @@ int _tmain(int argc, _TCHAR* argv[])
 //Solution2::NextPermutation::Main(); // Medium
 //Solution2::NQueens::Main(); // Hard
 //Solution2::NQueensII::Main(); // Hard
+//Solution2::OneEditDistance::Main(); // Medium ----------------------------------> had some issues
+//Solution2::PalindromeNumber::Main(); // Easy ----------------------------------> not any extra space?
+Solution2::PalindromePartitioning::Main(); // Medium
+//Solution2::PalindromePartitioningII::Main(); // Hard
+//Solution2::PartitionList::Main(); // Medium
+//Solution2::PascalsTriangle::Main(); // Easy
+//Solution2::PascalsTriangleII::Main(); // Easy
 
 
 

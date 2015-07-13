@@ -16,14 +16,35 @@
 namespace Solution2
 {
     namespace PalindromeNumber
-    {
-     
-     
+    {     
+		bool isPalindrome(int x) {
+			if (x < 0) { return false; }
+			long long div = 1;
+			int n = x;
+			while (n)
+			{
+				div *= 10;
+				n /= 10;
+			}
+			div /= 10;
+
+			while (x)
+			{
+				int lastDigit = x % 10;
+				int firstDigit = x / div;
+				if (lastDigit != firstDigit) { return false; }
+				x = (x % div) / 10;
+				div /= 100;
+			}
+			return true;
+		}
      
      
         void Main()
         {
-         
+			print(isPalindrome(1000000001));
+			print(isPalindrome(121));
+			print(isPalindrome(-101));
         }
     }
 }

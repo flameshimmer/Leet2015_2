@@ -17,10 +17,45 @@
 namespace Solution2
 {
     namespace NextPermutation
-    {
-     
-     
-     
+    {     
+		void swap(vector<int>& nums, int start, int end)
+		{
+			int temp = nums[start];
+			nums[start] = nums[end];
+			nums[end] = temp;
+		}
+		void reverse(vector<int>& nums, int start, int end)
+		{
+			while (start < end)
+			{
+				swap(nums, start, end);
+				start++;
+				end--;
+			}		
+		}
+
+		void nextPermutation(vector<int>& nums) {
+			int len = nums.size();
+			if (len < 2) { return; }
+
+			int cur = len - 2;
+			while (cur >= 0)
+			{
+				if (nums[cur] < nums[cur + 1]) { break; }
+				cur--;
+			}
+			if (cur < 0) { reverse(nums, 0, len - 1); return; }
+
+			int cur2 = len - 1;
+			while (cur2 > cur)
+			{
+				if (nums[cur2] > nums[cur]){ break; }
+				cur2--;
+			}
+			swap(nums, cur, cur2);
+			reverse(nums, cur + 1, len - 1);
+		}
+    
      
         void Main()
         {
