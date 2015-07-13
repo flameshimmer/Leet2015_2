@@ -25,9 +25,40 @@ namespace Solution2
 {
     namespace NumberOfIslands
     {
-     
-     
-     
+		void flipOnes(vector<vector<char>>& grid, int row, int col, int rowCount, int colCount)
+		{
+			if (row < 0 || row >= rowCount || col < 0 || col >= colCount) { return; }
+			if (grid[row][col] == '1')
+			{
+				grid[row][col] = '0';
+				flipOnes(grid, row, col - 1, rowCount, colCount);
+				flipOnes(grid, row, col + 1, rowCount, colCount);
+				flipOnes(grid, row - 1, col, rowCount, colCount);
+				flipOnes(grid, row + 1, col, rowCount, colCount);
+			}
+		}
+
+		int numIslands(vector<vector<char>>& grid) 
+		{
+			int rowCount = grid.size();
+			if (rowCount == 0) { return 0; }
+			int colCount = grid[0].size();
+			if (colCount == 0) { return 0; }
+
+			int count = 0;
+			for (int i = 0; i < rowCount; i++)
+			{
+				for (int j = 0; j < colCount; j++)
+				{
+					if (grid[i][j] == '1')
+					{
+						count++;
+						flipOnes(grid, i, j, rowCount, colCount);
+					}
+				}
+			}
+			return count;
+		}
      
         void Main()
         {

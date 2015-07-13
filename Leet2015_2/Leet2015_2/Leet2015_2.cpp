@@ -247,16 +247,19 @@ int _tmain(int argc, _TCHAR* argv[])
 	//Solution2::MedianOfTwoSortedArrays::Main(); // Hard
 
 // 7/12/2015
-//Solution2::MinimumPathSum::Main(); // Medium
-//Solution2::MinimumSizeSubarraySum::Main(); // Medium
-//Solution2::MinimumWindowSubstring::Main(); // Hard
-Solution2::MinStack::Main(); // Easy
-//Solution2::MissingRanges::Main(); // Medium
-//Solution2::MultiplyStrings::Main(); // Medium
+	//Solution2::MinimumPathSum::Main(); // Medium
+	//Solution2::MinimumSizeSubarraySum::Main(); // Medium
+	//Solution2::MinimumWindowSubstring::Main(); // Hard
+	//Solution2::MinStack::Main(); // Easy
+	//Solution2::MissingRanges::Main(); // Medium
+	//Solution2::NumberOfIslands::Main(); // Medium
+	//Solution2::MultiplyStrings::Main(); // Medium
+
+// 7/13/2015
 //Solution2::NextPermutation::Main(); // Medium
 //Solution2::NQueens::Main(); // Hard
 //Solution2::NQueensII::Main(); // Hard
-//Solution2::NumberOfIslands::Main(); // Medium
+
 
 
 	// Runtime end marker
