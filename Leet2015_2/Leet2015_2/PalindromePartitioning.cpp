@@ -28,15 +28,23 @@ namespace Solution2
 		}
 
 
-		void partition(string& s, int start, vector<string>& result, vector<vector<string>>& results)
+		void partition(string& s, int len, int start, vector<string>& result, vector<vector<string>>& results)
 		{
-			if (start == s.length()) 
+			if (start == len) 
 			{
 				results.push_back(result);
 				return;
 			}
 
-
+			for (int i = start; i < len; i++)
+			{
+				if (isPalindrome(s, start, i))
+				{
+					result.push_back(s.substr(start, i-start + 1));
+					partition(s, len, i+1, result, results);
+					result.pop_back();
+				}			
+			}
 		}
 
 		vector<vector<string>> partition(string s) 
@@ -45,14 +53,14 @@ namespace Solution2
 			int len = s.length();
 			if (len == 0) { return results; }
 			vector<string> result;
-			vector<vector<bool>> P()
-
+			partition(s, len, 0, result, results);
+			return results;
 		}
      
      
         void Main()
         {
-         
+			print(partition("aab"));
         }
     }
 }

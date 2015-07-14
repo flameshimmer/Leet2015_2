@@ -13,10 +13,37 @@
 namespace Solution2
 {
     namespace PartitionList
-    {
-     
-     
-     
+    {     
+		ListNode* partition(ListNode* head, int x) {
+			if (!head || !head->next) { return head; }
+			
+			ListNode* less = NULL;
+			ListNode* lessTail = NULL;
+			ListNode* more = NULL;
+			ListNode* moreTail = NULL;
+
+			ListNode* cur = head;
+			while (cur)
+			{
+				if (cur->val < x)
+				{
+					if (!less) { less = cur; }
+					else { lessTail->next = cur; }
+					lessTail = cur;
+				}
+				else
+				{
+					if (!more) { more = cur; }
+					else { moreTail->next = cur;}
+					moreTail = cur;
+				}
+				cur = cur->next;
+			}
+			if (lessTail) { lessTail->next = more; }
+			if (moreTail) { moreTail->next = NULL; }
+
+			return less == NULL ? more : less;
+		}
      
         void Main()
         {

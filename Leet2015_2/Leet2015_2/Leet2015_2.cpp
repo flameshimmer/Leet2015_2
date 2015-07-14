@@ -249,16 +249,16 @@ int _tmain(int argc, _TCHAR* argv[])
 	//Solution2::MultiplyStrings::Main(); // Medium
 
 // 7/13/2015
-//Solution2::NextPermutation::Main(); // Medium
-//Solution2::NQueens::Main(); // Hard
-//Solution2::NQueensII::Main(); // Hard
-//Solution2::OneEditDistance::Main(); // Medium ----------------------------------> had some issues
-//Solution2::PalindromeNumber::Main(); // Easy ----------------------------------> not any extra space?
-Solution2::PalindromePartitioning::Main(); // Medium
-//Solution2::PalindromePartitioningII::Main(); // Hard
-//Solution2::PartitionList::Main(); // Medium
-//Solution2::PascalsTriangle::Main(); // Easy
-//Solution2::PascalsTriangleII::Main(); // Easy
+	//Solution2::NextPermutation::Main(); // Medium
+	//Solution2::NQueens::Main(); // Hard
+	//Solution2::NQueensII::Main(); // Hard
+	//Solution2::OneEditDistance::Main(); // Medium ----------------------------------> had some issues
+	//Solution2::PalindromeNumber::Main(); // Easy ----------------------------------> not any extra space?
+	//Solution2::PalindromePartitioning::Main(); // Medium
+	//Solution2::PalindromePartitioningII::Main(); // Hard ----------------------------------> had some issues
+	//Solution2::PartitionList::Main(); // Medium
+	//Solution2::PascalsTriangle::Main(); // Easy
+	//Solution2::PascalsTriangleII::Main(); // Easy
 
 
 
