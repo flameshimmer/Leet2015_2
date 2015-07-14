@@ -20,9 +20,39 @@ namespace Solution2
 {
     namespace PathSumII
     {
-     
-     
-     
+		void pathSumImpl(TreeNode* node, int sum, vector<int>& result, vector<vector<int>>& results)
+		{			
+			if (!node->left && !node->right)
+			{
+				if (node->val == sum)
+				{					
+					result.push_back(node->val);
+					results.push_back(result);
+					result.pop_back();
+				}
+				return;
+			}
+			result.push_back(node->val);
+			sum -= node->val;
+			if (node->left)
+			{
+				pathSumImpl(node->left, sum, result, results);
+			}
+			if (node->right)
+			{
+				pathSumImpl(node->right, sum, result, results);
+			}
+			result.pop_back();
+		}
+
+		vector<vector<int>> pathSum(TreeNode* root, int sum) 
+		{
+			vector<vector<int>> results;
+			if (!root) { return results; }
+			vector<int> result;
+
+			pathSumImpl(root, sum, result, results);
+		}     
      
         void Main()
         {

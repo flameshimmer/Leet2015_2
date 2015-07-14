@@ -19,12 +19,27 @@ namespace Solution2
     namespace PathSum
     {
      
-     
+		bool hasPathSumImpl(TreeNode* node, int sum)
+		{
+			if (!node->left && !node->right) { return sum == node->val; }
+			bool left = (node->left && hasPathSumImpl(node->left, sum - node->val));
+			bool right = (node->right && hasPathSumImpl(node->right, sum - node->val));
+			return left || right;
+		}
+
+		bool hasPathSum(TreeNode* root, int sum) 
+		{
+			if (!root) { return false; }
+			return hasPathSumImpl(root, sum);
+		}
      
      
         void Main()
         {
-         
+			TreeNode* n1 = new TreeNode(-2);
+			TreeNode* n2 = new TreeNode(-3);
+			n1->right = n2;
+			print(hasPathSum(n1, -3));
         }
     }
 }

@@ -17,17 +17,7 @@ int _tmain(int argc, _TCHAR* argv[])
 	//Solution2::BestTimeToBuyAndSellStockIV::Main();
 	//Solution2::ImplementStrStr::Main(); // Easy----------------------------------> had some issues
 
-	//Solution2::PathSum::Main();
-	//Solution2::PathSumII::Main();
-	//Solution2::Permutation::Main();
-	//Solution2::PermutationII::Main();
-	//Solution2::PermutationSequence::Main();
-	//Solution2::PlusOne::Main();
-	//Solution2::PopulatingNextRightPointersInEachNode::Main();
-	//Solution2::PopulatingNextRightPointersInEachNodeII::Main();
-	//Solution2::Pow::Main();
-	//Solution2::ReadNCharactersGivenRead4::Main();
-	//Solution2::ReadNCharactersGivenRead4II::Main();
+
 	//Solution2::RecoverBinarySearchTree::Main();
 	//Solution2::RectangleArea::Main();
 	//Solution2::RegularExpressionMatching::Main();
@@ -260,7 +250,18 @@ int _tmain(int argc, _TCHAR* argv[])
 	//Solution2::PascalsTriangle::Main(); // Easy
 	//Solution2::PascalsTriangleII::Main(); // Easy
 
-
+// 7/14/2015
+Solution2::PathSum::Main(); // Easy
+//Solution2::PathSumII::Main(); // Medium
+//Solution2::Permutation::Main(); // Medium
+//Solution2::PermutationII::Main(); // Hard
+//Solution2::PermutationSequence::Main(); // Medium
+//Solution2::PlusOne::Main(); // Easy
+//Solution2::PopulatingNextRightPointersInEachNode::Main(); // Medium
+//Solution2::PopulatingNextRightPointersInEachNodeII::Main(); // Hard
+//Solution2::Pow::Main(); // Medium
+//Solution2::ReadNCharactersGivenRead4::Main(); // Easy
+//Solution2::ReadNCharactersGivenRead4II::Main(); // Hard
 
 	// Runtime end marker
 	clock_t end = clock();
