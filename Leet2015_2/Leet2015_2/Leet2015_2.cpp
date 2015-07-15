@@ -251,12 +251,14 @@ int _tmain(int argc, _TCHAR* argv[])
 	//Solution2::PascalsTriangleII::Main(); // Easy
 
 // 7/14/2015
-Solution2::PathSum::Main(); // Easy
-//Solution2::PathSumII::Main(); // Medium
-//Solution2::Permutation::Main(); // Medium
-//Solution2::PermutationII::Main(); // Hard
-//Solution2::PermutationSequence::Main(); // Medium
-//Solution2::PlusOne::Main(); // Easy
+	//Solution2::PathSum::Main(); // Easy  ----------------------------------> had some issues
+	//Solution2::PathSumII::Main(); // Medium
+	//Solution2::Permutation::Main(); // Medium
+	//Solution2::PermutationII::Main(); // Hard
+	//Solution2::PlusOne::Main(); // Easy
+
+// 7/15/2015
+Solution2::PermutationSequence::Main(); // Medium
 //Solution2::PopulatingNextRightPointersInEachNode::Main(); // Medium
 //Solution2::PopulatingNextRightPointersInEachNodeII::Main(); // Hard
 //Solution2::Pow::Main(); // Medium

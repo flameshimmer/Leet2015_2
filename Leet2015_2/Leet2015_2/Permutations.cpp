@@ -11,8 +11,39 @@ namespace Solution2
     namespace Permutations
     {
      
-     
-     
+		void permute(vector<int>& nums, int len, int level, vector<bool>& can, vector<int>&result, vector<vector<int>>& results)
+		{
+			if (level == len)
+			{
+				results.push_back(result);
+				return;
+			}
+
+			for (int i = 0; i < len; i++)
+			{
+				if (can[i])
+				{
+					result.push_back(nums[i]);
+					can[i] = false;
+					permute(nums, len, level + 1, can, result, results);
+					can[i] = true;
+					result.pop_back();
+				}
+			}
+
+		}
+
+		vector<vector<int>> permute(vector<int>& nums) 
+		{
+			vector<vector<int>> results;
+			int len = nums.size();
+			if (len == 0) { return results; }
+
+			vector<int> result;
+			vector<bool>can(len, true);
+			permute(nums, len, 0, can, result, results);
+			return results;
+		}
      
         void Main()
         {

@@ -20,8 +20,9 @@ namespace Solution2
     namespace PermutationSequence
     {
      
-     
-     
+		string getPermutation(int n, int k) {
+
+		}
      
         void Main()
         {
