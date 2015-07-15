@@ -21,12 +21,34 @@ namespace Solution2
     {
      
 		string getPermutation(int n, int k) {
+			vector<int> options(n, 0);
+			int permCount = 1;
+			for (int i = 0; i < n; i++)
+			{
+				options[i] = i+1;
+				permCount *= i + 1;
+			}
 
+			k--;
+			string targetNum;
+
+			for (int i = 0; i < n; i++)
+			{
+				permCount /= n - i;
+				int index = k / permCount;
+				targetNum.push_back(options[index] + '0');
+				for (int i = index; i < n - 1; i++)
+				{
+					options[i] = options[i + 1];
+				}
+				k %= permCount;
+			}
+			return targetNum;
 		}
      
         void Main()
         {
-         
+			print(getPermutation(1, 1));
         }
     }
 }

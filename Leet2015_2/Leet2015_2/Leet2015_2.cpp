@@ -18,14 +18,12 @@ int _tmain(int argc, _TCHAR* argv[])
 	//Solution2::ImplementStrStr::Main(); // Easy----------------------------------> had some issues
 
 
-	//Solution2::RecoverBinarySearchTree::Main();
-	//Solution2::RectangleArea::Main();
+
 	//Solution2::RegularExpressionMatching::Main();
 	//Solution2::RemoveDuplicatesFromSortedArray::Main();
 	//Solution2::RemoveDuplicatesFromSortedArrayII::Main();
 	//Solution2::RemoveDuplicatesfromSortedList::Main();
 	//Solution2::RemoveDuplicatesFromSortedListII::Main();
-	//Solution2::RemoveElement::Main();
 	//Solution2::RemoveLinkedListElements::Main();
 	//Solution2::RemoveNthNodeFromEndOfList::Main();
 	//Solution2::ReorderList::Main();
@@ -258,12 +256,15 @@ int _tmain(int argc, _TCHAR* argv[])
 	//Solution2::PlusOne::Main(); // Easy
 
 // 7/15/2015
-Solution2::PermutationSequence::Main(); // Medium
+//Solution2::PermutationSequence::Main(); // Medium
 //Solution2::PopulatingNextRightPointersInEachNode::Main(); // Medium
-//Solution2::PopulatingNextRightPointersInEachNodeII::Main(); // Hard
+Solution2::PopulatingNextRightPointersInEachNodeII::Main(); // Hard
 //Solution2::Pow::Main(); // Medium
 //Solution2::ReadNCharactersGivenRead4::Main(); // Easy
 //Solution2::ReadNCharactersGivenRead4II::Main(); // Hard
+//Solution2::RecoverBinarySearchTree::Main(); // Hard
+//Solution2::RectangleArea::Main(); // Easy
+//Solution2::RemoveElement::Main(); // Easy
 
 	// Runtime end marker
 	clock_t end = clock();

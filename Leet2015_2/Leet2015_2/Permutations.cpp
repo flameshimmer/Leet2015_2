@@ -8,7 +8,7 @@
 
 namespace Solution2
 {
-    namespace Permutations
+    namespace Permutation
     {
      
 		void permute(vector<int>& nums, int len, int level, vector<bool>& can, vector<int>&result, vector<vector<int>>& results)
@@ -47,7 +47,12 @@ namespace Solution2
      
         void Main()
         {
-         
+			vector<int> input;
+			input = { 1, 2, 3 };
+			print(permute(input));
+
+			input = { 1, 2, 3, 4 };
+			print(permute(input));
         }
     }
 }

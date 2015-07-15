@@ -33,15 +33,23 @@
 
 namespace Solution2
 {
-    namespace PopulatingNextRightPointersInEachNode
-    {
-     
-     
-     
-     
-        void Main()
-        {
-         
-        }
-    }
+	namespace PopulatingNextRightPointersInEachNode
+	{
+
+		void connect(TreeLinkNode *root)
+		{
+			if (!root || !root->left || !root->right) { return; }
+
+			root->left->next = root->right;
+			root->right->next = root->next ? root->next->left : NULL;
+
+			connect(root->left);
+			connect(root->right);
+		}
+
+		void Main()
+		{
+
+		}
+	}
 }
