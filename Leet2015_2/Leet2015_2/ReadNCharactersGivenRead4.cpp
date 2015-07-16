@@ -15,7 +15,7 @@ namespace Solution2
 {
     namespace ReadNCharactersGivenRead4
     {
-		int read4(char *buf);
+		int read4(char *buf){ return 0; }
 		/**
 		* @param buf Destination buffer
 		* @param n   Maximum number of characters to read

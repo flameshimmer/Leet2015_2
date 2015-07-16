@@ -11,34 +11,44 @@ namespace Solution2
 {
     namespace RecoverBinarySearchTree
     {
-		void findNodes(TreeNode* node, int min, int max, TreeNode*& t1, TreeNode*&t2)
+		void findNode(TreeNode* node, TreeNode*& prev, TreeNode*& n1, TreeNode*& n2)
 		{
-			if (!node) { return; }
-			if (t1 && t2) { return; }
-			if (node->val <= min || node->val >= max) 
+			if (!node){ return; }
+
+			findNode(node->left, prev, n1, n2);
+			if (prev && prev->val > node->val)
 			{
-				if (!t1) { t1 = node; }
-				else { t2 = node; }
+				if (!n1) { n1 = prev; }
+				n2 = node;
 			}
-			findNodes(node->left, min, node->val, t1, t2);
-			findNodes(node->right, node->val, max, t1, t2);
+			prev = node;
+			findNode(node->right, prev, n1, n2);
 		}
 
-		void recoverTree(TreeNode* root) 
+		void recoverTree(TreeNode* root)
 		{
 			if (!root) { return; }
-			TreeNode* t1 = NULL;
-			TreeNode* t2 = NULL;
-			findNodes(root, INT_MIN, INT_MAX, t1, t2);
-			if (!t1 || !t2) { return; }
-			int temp = t1->val;
-			t1->val = t2->val;
-			t2->val = temp;
+			TreeNode* n1 = NULL;
+			TreeNode* n2 = NULL;
+			TreeNode* prev = NULL;
+			findNode(root, prev, n1, n2);
+			if (n1 && n2)
+			{
+				int temp = n1->val;
+				n1->val = n2->val;
+				n2->val = temp;
+			}
 		}
      
         void Main()
         {
-         
+			TreeNode* n1 = new TreeNode(3);
+			TreeNode* n2 = new TreeNode(1);
+			TreeNode* n3 = new TreeNode(2);
+
+			n1->left = n2;
+			n1->right = n3;
+			recoverTree(n1);
         }
     }
 }
