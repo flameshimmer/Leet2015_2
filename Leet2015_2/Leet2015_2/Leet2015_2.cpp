@@ -256,15 +256,17 @@ int _tmain(int argc, _TCHAR* argv[])
 	//Solution2::PlusOne::Main(); // Easy
 
 // 7/15/2015
-//Solution2::PermutationSequence::Main(); // Medium
-//Solution2::PopulatingNextRightPointersInEachNode::Main(); // Medium
-Solution2::PopulatingNextRightPointersInEachNodeII::Main(); // Hard
-//Solution2::Pow::Main(); // Medium
-//Solution2::ReadNCharactersGivenRead4::Main(); // Easy
-//Solution2::ReadNCharactersGivenRead4II::Main(); // Hard
-//Solution2::RecoverBinarySearchTree::Main(); // Hard
-//Solution2::RectangleArea::Main(); // Easy
-//Solution2::RemoveElement::Main(); // Easy
+	//Solution2::PermutationSequence::Main(); // Medium ----------------------------------> had some issues, completely forget how to do it
+	//Solution2::PopulatingNextRightPointersInEachNode::Main(); // Medium
+	//Solution2::PopulatingNextRightPointersInEachNodeII::Main(); // Hard
+
+// 7/16/2015
+	//Solution2::Pow::Main(); // Medium
+	//Solution2::ReadNCharactersGivenRead4::Main(); // Easy ----------------------------------> had some issues
+	//Solution2::ReadNCharactersGivenRead4II::Main(); // Hard
+	Solution2::RecoverBinarySearchTree::Main(); // Hard
+	//Solution2::RectangleArea::Main(); // Easy
+	//Solution2::RemoveElement::Main(); // Easy
 
 	// Runtime end marker
 	clock_t end = clock();

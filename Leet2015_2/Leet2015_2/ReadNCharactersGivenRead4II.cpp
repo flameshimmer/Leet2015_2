@@ -16,8 +16,41 @@ namespace Solution2
     namespace ReadNCharactersGivenRead4II
     {
      
-     
-     
+		// Forward declaration of the read4 API.
+		int read4(char *buf);
+		/**
+		* @param buf Destination buffer
+		* @param n   Maximum number of characters to read
+		* @return    The number of characters read
+		*/
+		
+		char temp[4];
+		int tempIndex = 4;
+		int readCount = 0;
+
+		int read(char *buf, int n) 
+		{
+			int remain = n;
+			for (; tempIndex < readCount && remain > 0; tempIndex++)
+			{
+				*buf = temp[tempIndex];
+				buf++;
+				remain--;
+			}
+
+			while (remain)
+			{
+				readCount = read4(temp);
+				for (tempIndex = 0; tempIndex < readCount && remain > 0; tempIndex++)
+				{
+					*buf = temp[tempIndex];
+					buf++;
+					remain--;
+				}
+				if (readCount < 4) { break; }
+			}
+			return n - remain;
+		}
      
         void Main()
         {
