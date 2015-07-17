@@ -19,8 +19,7 @@ int _tmain(int argc, _TCHAR* argv[])
 	//Solution2::RegularExpressionMatching::Main();
 
 
-	
-	//Solution2::RotateList::Main();
+	//Solution2::RotateImage::Main(); // Medium	
 	//Solution2::ScrambleString::Main();
 	//Solution2::SearchA2DMatrix::Main();
 	//Solution2::SearchForARange::Main();
@@ -266,9 +265,11 @@ int _tmain(int argc, _TCHAR* argv[])
 	//Solution2::RemoveNthNodeFromEndOfList::Main(); // Easy
 	//Solution2::ReorderList::Main(); // Medium
 	//Solution2::RepeatedDNASequences::Main(); // Medium
-Solution2::RestoreIPAddresses::Main(); // Medium
-//Solution2::RotateArray::Main(); // Easy
-//Solution2::RotateImage::Main(); // Medium
+	//Solution2::RotateArray::Main(); // Easy
+	//Solution2::RestoreIPAddresses::Main(); // Medium
+	//Solution2::RotateList::Main(); // Medium
+
+
 
 	// Runtime end marker
 	clock_t end = clock();
