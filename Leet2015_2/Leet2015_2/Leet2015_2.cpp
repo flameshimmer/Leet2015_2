@@ -20,10 +20,6 @@ int _tmain(int argc, _TCHAR* argv[])
 
 
 	//Solution2::RegularExpressionMatching::Main();
-	//Solution2::RemoveDuplicatesFromSortedArray::Main();
-	//Solution2::RemoveDuplicatesFromSortedArrayII::Main();
-	//Solution2::RemoveDuplicatesfromSortedList::Main();
-	//Solution2::RemoveDuplicatesFromSortedListII::Main();
 	//Solution2::RemoveLinkedListElements::Main();
 	//Solution2::RemoveNthNodeFromEndOfList::Main();
 	//Solution2::ReorderList::Main();
@@ -264,9 +260,13 @@ int _tmain(int argc, _TCHAR* argv[])
 	//Solution2::Pow::Main(); // Medium
 	//Solution2::ReadNCharactersGivenRead4::Main(); // Easy ----------------------------------> had some issues
 	//Solution2::ReadNCharactersGivenRead4II::Main(); // Hard
-	Solution2::RecoverBinarySearchTree::Main(); // Hard
+	//Solution2::RecoverBinarySearchTree::Main(); // Hard----------------------------------> had some issues. completely  forgot how to do it. Need to look at iterative way to do it too.
 	//Solution2::RectangleArea::Main(); // Easy
 	//Solution2::RemoveElement::Main(); // Easy
+	//Solution2::RemoveDuplicatesFromSortedArray::Main();
+Solution2::RemoveDuplicatesFromSortedArrayII::Main();
+//Solution2::RemoveDuplicatesfromSortedList::Main();
+//Solution2::RemoveDuplicatesFromSortedListII::Main();
 
 	// Runtime end marker
 	clock_t end = clock();

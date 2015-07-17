@@ -12,8 +12,12 @@ namespace Solution2
     namespace RectangleArea
     {
      
-     
-     
+		int computeArea(int A, int B, int C, int D, int E, int F, int G, int H) 
+		{
+			int result = (C - A) * (D - B) + (G - E) * (H - F);
+			if (C < E || B > H || G < A || F > D) { return result; }
+			return result - (min(D, H) - max(B, F)) * (min(C, G) - max(A, E));
+		}
      
         void Main()
         {

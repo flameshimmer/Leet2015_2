@@ -15,8 +15,24 @@ namespace Solution2
     namespace RemoveDuplicatesFromSortedArray
     {
      
-     
-     
+		int removeDuplicates(vector<int>& nums) 
+		{
+			int len = nums.size();
+			if (len < 2) { return len; }
+
+			int slow = 1;
+			int fast = 1;
+			while (fast < len)
+			{
+				if (nums[fast] != nums[fast - 1])
+				{
+					nums[slow] = nums[fast];
+					slow++;
+				}
+				fast++;
+			}
+			return slow;
+		}
      
         void Main()
         {
