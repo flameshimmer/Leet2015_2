@@ -13,8 +13,9 @@ namespace Solution2
     namespace RestoreIPAddresses
     {
      
-     
-     
+		vector<string> restoreIpAddresses(string s) {
+
+		}
      
         void Main()
         {

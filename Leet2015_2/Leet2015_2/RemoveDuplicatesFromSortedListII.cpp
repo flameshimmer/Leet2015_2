@@ -10,14 +10,37 @@
 namespace Solution2
 {
     namespace RemoveDuplicatesFromSortedListII
-    {
-     
-     
-     
+    {     
+		ListNode* deleteDuplicates(ListNode* head) 
+		{
+			if (!head || !head->next) { return head; }
+			ListNode* newHead = NULL;
+			ListNode* newTail = NULL;
+			ListNode* cur = head;
+						
+			while (cur)
+			{
+				int count = 1;
+				while (cur->next && cur->val == cur->next->val)
+				{
+					count++;
+					cur = cur->next;
+				}
+				if (count == 1)
+				{
+					if (!newHead) { newHead = cur; }
+					else { newTail->next = cur; }
+					newTail = cur;
+				}
+				cur = cur->next;
+			}
+			if (newTail) { newTail->next = NULL; }
+			return newHead;
+		}
      
         void Main()
         {
-         
+			print(deleteDuplicates(createList({ 1, 2, 2 })));
         }
     }
 }

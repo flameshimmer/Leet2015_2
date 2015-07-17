@@ -16,17 +16,10 @@ int _tmain(int argc, _TCHAR* argv[])
 	//Solution2::BestTimeToBuyAndSellStockIII::Main();
 	//Solution2::BestTimeToBuyAndSellStockIV::Main();
 	//Solution2::ImplementStrStr::Main(); // Easy----------------------------------> had some issues
-
-
-
 	//Solution2::RegularExpressionMatching::Main();
-	//Solution2::RemoveLinkedListElements::Main();
-	//Solution2::RemoveNthNodeFromEndOfList::Main();
-	//Solution2::ReorderList::Main();
-	//Solution2::RepeatedDNASequences::Main();
-	//Solution2::RestoreIPAddresses::Main();
-	//Solution2::RotateArray::Main();
-	//Solution2::RotateImage::Main();
+
+
+	
 	//Solution2::RotateList::Main();
 	//Solution2::ScrambleString::Main();
 	//Solution2::SearchA2DMatrix::Main();
@@ -263,10 +256,19 @@ int _tmain(int argc, _TCHAR* argv[])
 	//Solution2::RecoverBinarySearchTree::Main(); // Hard----------------------------------> had some issues. completely  forgot how to do it. Need to look at iterative way to do it too.
 	//Solution2::RectangleArea::Main(); // Easy
 	//Solution2::RemoveElement::Main(); // Easy
-	//Solution2::RemoveDuplicatesFromSortedArray::Main();
-Solution2::RemoveDuplicatesFromSortedArrayII::Main();
-//Solution2::RemoveDuplicatesfromSortedList::Main();
-//Solution2::RemoveDuplicatesFromSortedListII::Main();
+	//Solution2::RemoveDuplicatesFromSortedArray::Main(); // Easy
+
+// 7/17/2015
+	//Solution2::RemoveDuplicatesFromSortedArrayII::Main(); // Medium
+	//Solution2::RemoveDuplicatesfromSortedList::Main(); // Easy
+	//Solution2::RemoveDuplicatesFromSortedListII::Main(); // Medium
+	//Solution2::RemoveLinkedListElements::Main(); // Easy
+	//Solution2::RemoveNthNodeFromEndOfList::Main(); // Easy
+	//Solution2::ReorderList::Main(); // Medium
+	//Solution2::RepeatedDNASequences::Main(); // Medium
+Solution2::RestoreIPAddresses::Main(); // Medium
+//Solution2::RotateArray::Main(); // Easy
+//Solution2::RotateImage::Main(); // Medium
 
 	// Runtime end marker
 	clock_t end = clock();
