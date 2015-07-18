@@ -11,15 +11,8 @@ int _tmain(int argc, _TCHAR* argv[])
 {
 	// Runtime begin marker start
 	clock_t begin = clock();
-	//Solution2::BestTimeToBuyAndSellStock::Main();
-	//Solution2::BestTimeToBuyAndSellStockII::Main();
-	//Solution2::BestTimeToBuyAndSellStockIII::Main();
-	//Solution2::BestTimeToBuyAndSellStockIV::Main();
-	//Solution2::ImplementStrStr::Main(); // Easy----------------------------------> had some issues
-	//Solution2::RegularExpressionMatching::Main();
 
 
-	//Solution2::RotateImage::Main(); // Medium	
 	//Solution2::ScrambleString::Main();
 	//Solution2::SearchA2DMatrix::Main();
 	//Solution2::SearchForARange::Main();
@@ -58,8 +51,7 @@ int _tmain(int argc, _TCHAR* argv[])
 	//Solution2::ValidNumber::Main();
 	//Solution2::ValidPalindrome::Main();
 	//Solution2::ValidParentheses::Main();
-	//Solution2::ValidSudoku::Main();
-	//Solution2::WildcardMatching::Main();
+	//Solution2::ValidSudoku::Main();	
 	//Solution2::WordBreak::Main();
 	//Solution2::WordBreakII::Main();
 	//Solution2::WordLadder::Main();
@@ -269,6 +261,15 @@ int _tmain(int argc, _TCHAR* argv[])
 	//Solution2::RestoreIPAddresses::Main(); // Medium
 	//Solution2::RotateList::Main(); // Medium
 
+// 7/18/2015
+//Solution2::BestTimeToBuyAndSellStock::Main(); // Medium
+//Solution2::BestTimeToBuyAndSellStockII::Main(); // Medium
+Solution2::BestTimeToBuyAndSellStockIII::Main(); // Hard
+//Solution2::BestTimeToBuyAndSellStockIV::Main(); // Hard
+//Solution2::ImplementStrStr::Main(); // Easy----------------------------------> had some issues
+//Solution2::RegularExpressionMatching::Main(); // Hard
+//Solution2::RotateImage::Main(); // Medium	
+//Solution2::WildcardMatching::Main(); // Hard
 
 
 	// Runtime end marker

@@ -9,9 +9,28 @@ namespace Solution2
 {
     namespace BestTimeToBuyAndSellStock
     {
-     
-     
-     
+          
+		int maxProfit(vector<int>& prices) {
+			int len = prices.size();
+			if (len < 2) { return 0; }
+
+			vector<int> minPrices(len);
+			int minVal = INT_MAX;
+			for (int i = 0; i < len; i++)
+			{
+				minVal = min(minVal, prices[i]);
+				minPrices[i] = minVal;
+			}
+
+			int result = 0;
+			int maxVal = INT_MIN;
+			for (int i = len - 1; i >= 0; i--)
+			{
+				maxVal = max(maxVal, prices[i]);
+				result = max(result, maxVal - minPrices[i]);
+			}
+			return result;
+		}
      
         void Main()
         {
