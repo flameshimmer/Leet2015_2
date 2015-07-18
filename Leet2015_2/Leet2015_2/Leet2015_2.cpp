@@ -12,6 +12,7 @@ int _tmain(int argc, _TCHAR* argv[])
 	// Runtime begin marker start
 	clock_t begin = clock();
 
+	Solution2::ImplementStrStr::Main(); // Easy----------------------------------> had some issues
 
 	//Solution2::ScrambleString::Main();
 	//Solution2::SearchA2DMatrix::Main();
@@ -264,12 +265,12 @@ int _tmain(int argc, _TCHAR* argv[])
 // 7/18/2015
 //Solution2::BestTimeToBuyAndSellStock::Main(); // Medium
 //Solution2::BestTimeToBuyAndSellStockII::Main(); // Medium
-Solution2::BestTimeToBuyAndSellStockIII::Main(); // Hard
-//Solution2::BestTimeToBuyAndSellStockIV::Main(); // Hard
-//Solution2::ImplementStrStr::Main(); // Easy----------------------------------> had some issues
-//Solution2::RegularExpressionMatching::Main(); // Hard
-//Solution2::RotateImage::Main(); // Medium	
-//Solution2::WildcardMatching::Main(); // Hard
+//Solution2::BestTimeToBuyAndSellStockIII::Main(); // Hard
+//Solution2::BestTimeToBuyAndSellStockIV::Main(); // Hard----------------------------------> had some issues, completely forget the solve
+//Solution2::RegularExpressionMatching::Main(); // Hard ----------------------------------> had some issues
+//Solution2::WildcardMatching::Main(); // Hard----------------------------------> had some issues
+Solution2::RotateImage::Main(); // Medium	
+
 
 
 	// Runtime end marker

@@ -16,27 +16,28 @@ namespace Solution2
 			int len = prices.size();
 			if (len < 2) { return 0; }
 
-			vector<int> smallestBefore(len);
-			vector<int> largestAfter(len);
+			vector<int> first(len);
 			int minVal = INT_MAX;
+			int maxP1 = 0;
+			vector<int> second(len);
 			int maxVal = 0;
+			int maxP2 = 0;
+
 			for (int i = 0; i < len; i++)
 			{
-				smallestBefore[i] = minVal;
+				maxP1 = max(maxP1, max(0, prices[i] - minVal));
+				first[i] = maxP1;
 				minVal = min(minVal, prices[i]);
 
-				largestAfter[len - 1 - i] = maxVal;
-				maxVal = max(maxVal, prices[len-1-i]);
+				maxP2 = max(maxP2, max(0, maxVal - prices[len - 1 - i]));
+				second[len - 1 - i] = maxP2;
+				maxVal = max(maxVal, prices[len - 1 - i]);
 			}
 
 			int result = 0;
-			int leftProfit = 0;
-			int rightProfit = 0;
 			for (int i = 0; i < len; i++)
 			{
-				leftProfit = max(leftProfit, max(0, prices[i] - smallestBefore[i]));
-				rightProfit = max(0, largestAfter[i] - prices[i]);
-				result = max(result, leftProfit + rightProfit);
+				result = max(result, first[i] + second[i]);
 			}
 			return result;
 		}

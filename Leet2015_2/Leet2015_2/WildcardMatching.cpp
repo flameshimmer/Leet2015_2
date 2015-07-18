@@ -23,13 +23,34 @@ namespace Solution2
 {
     namespace WildcardMatching
     {
-     
-     
-     
+		bool isMatch(const char* s, const char* p)
+		{
+			const char* star = NULL;
+			const char* ss = s;
+			while (*s)
+			{
+				if (*p == *s || *p == '?') { p++; s++; continue; }
+				if (*p == '*') { star = p++; ss = s; continue; }
+				if (star) { p = star + 1; s = ++ss; continue; }
+				return false;
+			}
+			while (*p == '*') { p++; }
+			return !*p;
+		}
+
+		bool isMatch(string s, string p) {
+			return isMatch(s.c_str(), p.c_str());
+		}
      
         void Main()
         {
-         
+			isMatch("aa", "a");
+			isMatch("aa", "aa");
+			isMatch("aaa", "aa");
+			isMatch("aa", "*");
+			isMatch("aa", "a*");
+			isMatch("ab", "?*");
+			isMatch("aab", "c*a*b");
         }
     }
 }
