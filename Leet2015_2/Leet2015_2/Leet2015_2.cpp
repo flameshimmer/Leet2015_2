@@ -12,17 +12,7 @@ int _tmain(int argc, _TCHAR* argv[])
 	// Runtime begin marker start
 	clock_t begin = clock();
 
-	Solution2::ImplementStrStr::Main(); // Easy----------------------------------> had some issues
-
-	//Solution2::ScrambleString::Main();
-	//Solution2::SearchA2DMatrix::Main();
-	//Solution2::SearchForARange::Main();
-	//Solution2::SearchInRotatedSortedArray::Main();
-	//Solution2::SearchInRotatedSortedArrayII::Main();
-	//Solution2::SearchInsertionPosition::Main();
-	//Solution2::SetMatrixZeroes::Main();
-	//Solution2::ShortestPalindrome::Main();
-	//Solution2::SimplifyPath::Main();
+	//Solution2::StringToInteger::Main(); // Easy
 	//Solution2::SingleNumber::Main();
 	//Solution2::SingleNumberII::Main();
 	//Solution2::SortColors::Main();
@@ -38,7 +28,6 @@ int _tmain(int argc, _TCHAR* argv[])
 	//Solution2::SumRootToLeafNumbers::Main();
 	//Solution2::SurroundedRegions::Main();
 	//Solution2::SwapNodesInPairs::Main();
-	//Solution2::StringToInteger::Main(); // Easy
 	//Solution2::TextJustification::Main();
 	//Solution2::TheSkylineProblem::Main();
 	//Solution2::TrappingRainWater::Main();
@@ -274,7 +263,17 @@ int _tmain(int argc, _TCHAR* argv[])
 
 
 // 7/19/2015
+//Solution2::ShortestPalindrome::Main();
+Solution2::ImplementStrStr::Main(); // Easy----------------------------------> had some issues
 //Solution2::RotateImage::Main(); // Medium	
+//Solution2::ScrambleString::Main();  // Hard
+//Solution2::SearchA2DMatrix::Main(); // Medium	
+//Solution2::SearchForARange::Main(); // Medium	
+//Solution2::SearchInRotatedSortedArray::Main(); // Hard
+//Solution2::SearchInRotatedSortedArrayII::Main(); // Medium
+//Solution2::SearchInsertionPosition::Main(); // Medium	
+//Solution2::SetMatrixZeroes::Main(); // Medium	
+//Solution2::SimplifyPath::Main(); // Medium	
 
 
 
