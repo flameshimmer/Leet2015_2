@@ -683,5 +683,11 @@
     <ClCompile Include="FourSum.cpp">
       <Filter>Solution2</Filter>
     </ClCompile>
+    <ClCompile Include="DeleteNodeInALinkedList.cpp">
+      <Filter>Solution2</Filter>
+    </ClCompile>
+    <ClCompile Include="PalindromeLinkedList.cpp">
+      <Filter>Solution2</Filter>
+    </ClCompile>
   </ItemGroup>
 </Project>

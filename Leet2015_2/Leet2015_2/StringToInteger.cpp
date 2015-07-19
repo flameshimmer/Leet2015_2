@@ -34,7 +34,9 @@ namespace Solution2
     namespace StringToInteger
     {
      
-     
+		//int myAtoi(string str) {
+
+		//}
      
      
         void Main()

@@ -22,7 +22,17 @@ namespace Solution2
     namespace SymmetricTree
     {
      
-     
+		bool isSymmetric(TreeNode* a, TreeNode* b)
+		{
+			if (!a && !b) { return true; }
+			if (!a || !b || a->val != b->val) { return false; }
+			return isSymmetric(a->left, b->right) && isSymmetric(a->right, b->left);
+		}
+
+		bool isSymmetric(TreeNode* root) {
+			if (!root) { return true; }
+			return isSymmetric(root->left, root->right);
+		}
      
      
         void Main()

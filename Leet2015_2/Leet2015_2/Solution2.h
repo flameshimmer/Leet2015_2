@@ -211,4 +211,6 @@ namespace Solution2
 	namespace TheSkylineProblem{ void Main(); }
 	namespace WordLadder{ void Main(); }
 	namespace WordLadderII{ void Main(); }
+	namespace DeleteNodeInALinkedList{ void Main(); }
+	namespace PalindromeLinkedList{ void Main(); }
 };

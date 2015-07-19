@@ -84,6 +84,8 @@
     <ClInclude Include="targetver.h" />
   </ItemGroup>
   <ItemGroup>
+    <ClCompile Include="DeleteNodeInALinkedList.cpp" />
+    <ClCompile Include="PalindromeLinkedList.cpp" />
     <ClCompile Include="TwoSum.cpp" />
     <ClCompile Include="ThreeSum.cpp" />
     <ClCompile Include="ThreeSumClosest.cpp" />

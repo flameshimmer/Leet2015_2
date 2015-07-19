@@ -29,8 +29,7 @@ int _tmain(int argc, _TCHAR* argv[])
 	//Solution2::SortList::Main();
 	//Solution2::SpiralMatrix::Main();
 	//Solution2::SpiralMatrixII::Main();
-	//Solution2::Sqrt::Main();
-	//Solution2::StringToInteger::Main();
+	//Solution2::Sqrt::Main
 	//Solution2::Subsets::Main();
 	//Solution2::SubsetsII::Main();
 	//Solution2::SubstringWithConcatenationOfAllWords::Main();
@@ -39,7 +38,7 @@ int _tmain(int argc, _TCHAR* argv[])
 	//Solution2::SumRootToLeafNumbers::Main();
 	//Solution2::SurroundedRegions::Main();
 	//Solution2::SwapNodesInPairs::Main();
-	//Solution2::SymmetricTree::Main();
+	//Solution2::StringToInteger::Main(); // Easy
 	//Solution2::TextJustification::Main();
 	//Solution2::TheSkylineProblem::Main();
 	//Solution2::TrappingRainWater::Main();
@@ -50,8 +49,7 @@ int _tmain(int argc, _TCHAR* argv[])
 	//Solution2::UniquePathsII::Main();
 	//Solution2::ValidateBinarySearchTree::Main();
 	//Solution2::ValidNumber::Main();
-	//Solution2::ValidPalindrome::Main();
-	//Solution2::ValidParentheses::Main();
+	//Solution2::ValidPalindrome::Main
 	//Solution2::ValidSudoku::Main();	
 	//Solution2::WordBreak::Main();
 	//Solution2::WordBreakII::Main();
@@ -263,13 +261,20 @@ int _tmain(int argc, _TCHAR* argv[])
 	//Solution2::RotateList::Main(); // Medium
 
 // 7/18/2015
-//Solution2::BestTimeToBuyAndSellStock::Main(); // Medium
-//Solution2::BestTimeToBuyAndSellStockII::Main(); // Medium
-//Solution2::BestTimeToBuyAndSellStockIII::Main(); // Hard
-//Solution2::BestTimeToBuyAndSellStockIV::Main(); // Hard----------------------------------> had some issues, completely forget the solve
-//Solution2::RegularExpressionMatching::Main(); // Hard ----------------------------------> had some issues
-//Solution2::WildcardMatching::Main(); // Hard----------------------------------> had some issues
-Solution2::RotateImage::Main(); // Medium	
+	//Solution2::BestTimeToBuyAndSellStock::Main(); // Medium
+	//Solution2::BestTimeToBuyAndSellStockII::Main(); // Medium
+	//Solution2::BestTimeToBuyAndSellStockIII::Main(); // Hard
+	//Solution2::BestTimeToBuyAndSellStockIV::Main(); // Hard----------------------------------> had some issues, completely forget the solve
+	//Solution2::RegularExpressionMatching::Main(); // Hard ----------------------------------> had some issues
+	//Solution2::WildcardMatching::Main(); // Hard----------------------------------> had some issues
+	//Solution2::ValidParentheses::Main(); // Easy
+	//Solution2::SymmetricTree::Main(); // Easy
+	//Solution2::DeleteNodeInALinkedList::Main(); // Easy
+	//Solution2::PalindromeLinkedList::Main(); // Easy
+
+
+// 7/19/2015
+//Solution2::RotateImage::Main(); // Medium	
 
 
 
