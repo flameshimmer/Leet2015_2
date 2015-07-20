@@ -40,14 +40,38 @@
 namespace Solution2
 {
     namespace ScrambleString
-    {
-     
-     
-     
+    {     
+		bool isScramble(string s1, string s2) 
+		{
+			int len1 = s1.length();
+			int len2 = s2.length();
+
+			if (len1 != len2) { return false; }
+			if (s1 == s2) { return true; }
+
+			char count[256] = { 0 };
+			for (int i = 0; i < len1; i++)
+			{
+				count[s1[i]] ++;
+				count[s2[i]] --;
+			}
+			for (int i = 0; i < 256; i++)
+			{
+				if (count[i] != 0) { return false; }
+			}
+
+			for (int i = 1; i < len1; i++)
+			{
+				if (isScramble(s1.substr(0, i), s2.substr(0, i)) && isScramble(s1.substr(i), s2.substr(i))) { return true; }
+				if (isScramble(s1.substr(0, i), s2.substr(len1 - i)) && isScramble(s1.substr(i), s2.substr(0, len1-i))) { return true; }
+			}
+			return false;
+		}
      
         void Main()
         {
-         
+			print(isScramble("ab", "ba"));
+			print(isScramble("ab", "aa"));
         }
     }
 }

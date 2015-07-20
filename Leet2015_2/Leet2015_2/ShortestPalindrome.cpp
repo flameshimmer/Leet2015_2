@@ -13,13 +13,35 @@ namespace Solution2
 {
     namespace ShortestPalindrome
     {
-     
-     
-     
+		string shortestPalindrome(string s) 
+		{
+			int len = s.length();
+			if (len < 2) { return s; }
+
+			string rev = s;
+			reverse(rev.begin(), rev.end());
+			string l = s + "#" + rev;
+
+			vector<int> next(l.size(), 0);
+			for (int i = 1; i < l.size(); i++)
+			{
+				int j = next[i - 1];
+				while (j > 0 && l[i] != l[j])
+				{
+					j = next[j - 1];
+				}
+				if (l[i] == l[j]) { j++; }
+				next[i] = j;
+			}
+
+			int notFitLen = len - next[l.size() - 1];
+			string fr = rev.substr(0, notFitLen);
+			return fr + s;
+		}
      
         void Main()
         {
-         
+			print(shortestPalindrome("abb"));
         }
     }
 }

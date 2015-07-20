@@ -263,18 +263,17 @@ int _tmain(int argc, _TCHAR* argv[])
 
 
 // 7/19/2015
-//Solution2::ShortestPalindrome::Main();
-Solution2::ImplementStrStr::Main(); // Easy----------------------------------> had some issues
-//Solution2::RotateImage::Main(); // Medium	
-//Solution2::ScrambleString::Main();  // Hard
+	//Solution2::ImplementStrStr::Main(); // Easy----------------------------------> had some issues, forget KMP
+	//Solution2::ShortestPalindrome::Main(); // Hard ---------------------------------> had some issues, completely forget the solve
+	//Solution2::ScrambleString::Main();  // Hard
+//Solution2::SearchInRotatedSortedArray::Main(); // Hard
+Solution2::SearchInRotatedSortedArrayII::Main(); // Medium
 //Solution2::SearchA2DMatrix::Main(); // Medium	
 //Solution2::SearchForARange::Main(); // Medium	
-//Solution2::SearchInRotatedSortedArray::Main(); // Hard
-//Solution2::SearchInRotatedSortedArrayII::Main(); // Medium
 //Solution2::SearchInsertionPosition::Main(); // Medium	
 //Solution2::SetMatrixZeroes::Main(); // Medium	
 //Solution2::SimplifyPath::Main(); // Medium	
-
+//Solution2::RotateImage::Main(); // Medium	
 
 
 	// Runtime end marker
