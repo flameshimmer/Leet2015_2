@@ -264,17 +264,19 @@ int _tmain(int argc, _TCHAR* argv[])
 	//Solution2::SimplifyPath::Main(); // Medium	
 
 // 7/20/2015
-//Solution2::RotateImage::Main(); // Medium	
-//Solution2::StringToInteger::Main(); // Easy
-//Solution2::SingleNumber::Main();
-//Solution2::SingleNumberII::Main();
-//Solution2::SortColors::Main();
-//Solution2::SortList::Main();
-//Solution2::SpiralMatrix::Main();
-//Solution2::SpiralMatrixII::Main();
-//Solution2::Sqrt::Main
-//Solution2::Subsets::Main();
-//Solution2::SubsetsII::Main();
+	//Solution2::PowerOfTwo::Main(); // Easy	
+	//Solution2::ProductOfArrayExceptSelf::Main(); // Medium	
+	//Solution2::RotateImage::Main(); // Medium	
+	//Solution2::StringToInteger::Main(); // Easy
+	//Solution2::SingleNumber::Main(); // Medium	
+	//Solution2::SingleNumberII::Main(); // Medium ----------------------------------> had some issues
+Solution2::SortColors::Main(); // Medium	
+//Solution2::SortList::Main(); // Medium	
+//Solution2::SpiralMatrix::Main(); // Medium	
+//Solution2::SpiralMatrixII::Main(); // Medium	
+//Solution2::Sqrt::Main // Medium	
+//Solution2::Subsets::Main(); // Medium	
+//Solution2::SubsetsII::Main(); // Medium	
 
 
 	// Runtime end marker

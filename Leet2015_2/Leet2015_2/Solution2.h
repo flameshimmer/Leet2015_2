@@ -213,4 +213,6 @@ namespace Solution2
 	namespace WordLadderII{ void Main(); }
 	namespace DeleteNodeInALinkedList{ void Main(); }
 	namespace PalindromeLinkedList{ void Main(); }
+	namespace PowerOfTwo{ void Main(); }
+	namespace ProductOfArrayExceptSelf{ void Main(); }
 };

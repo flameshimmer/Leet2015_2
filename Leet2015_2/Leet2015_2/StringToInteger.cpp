@@ -8,11 +8,6 @@
 //  Notes : It is intended for this problem to be specified vaguely
 //		  (ie, no given input specs).You are responsible to gather all the input requirements up front.
 //
-//		  Update(2015 - 02 - 10) :
-//		  The signature of the C++ function had been updated.
-//		  If you still see your function signature accepts a const char * argument, 
-//		  please click the reload button  to reset your code definition.
-
 //Requirements for atoi:
 //The function first discards as many whitespace characters as necessary 
 //until the first non - whitespace character is found.Then, starting from this character, 
@@ -33,10 +28,33 @@ namespace Solution2
 {
     namespace StringToInteger
     {
-     
-		//int myAtoi(string str) {
+		bool isNum(char c)
+		{
+			return c >= '0' && c <= '9';
+		}
 
-		//}
+		int myAtoi(string str) {
+			int len = str.length();
+			if (len == 0) { return 0; }
+
+			int start = 0;
+			while (start < len && str[start] == ' ') { start++; }
+			if (str[start] != '+' && str[start] != '-' && !isNum(str[start])) { return 0; }
+			
+			int sign = 1;
+			if (str[start] == '-') { sign = -1; }
+			if (str[start] == '+' || str[start] == '-') { start++; }
+			
+			long long result = 0;
+			while (start < len && isNum(str[start]))
+			{
+				result = result * 10 + sign * (str[start] - '0');
+				if (result > INT_MAX) { return INT_MAX; }
+				if (result < INT_MIN) { return INT_MIN; }
+				start++;
+			}
+			return (int)result;
+		}
      
      
         void Main()

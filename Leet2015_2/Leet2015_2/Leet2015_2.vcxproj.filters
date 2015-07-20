@@ -689,5 +689,11 @@
     <ClCompile Include="PalindromeLinkedList.cpp">
       <Filter>Solution2</Filter>
     </ClCompile>
+    <ClCompile Include="PowerOfTwo.cpp">
+      <Filter>Solution2</Filter>
+    </ClCompile>
+    <ClCompile Include="ProductOfArrayExceptSelf.cpp">
+      <Filter>Solution2</Filter>
+    </ClCompile>
   </ItemGroup>
 </Project>
