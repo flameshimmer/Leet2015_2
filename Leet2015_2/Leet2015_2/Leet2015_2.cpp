@@ -270,10 +270,12 @@ int _tmain(int argc, _TCHAR* argv[])
 	//Solution2::StringToInteger::Main(); // Easy
 	//Solution2::SingleNumber::Main(); // Medium	
 	//Solution2::SingleNumberII::Main(); // Medium ----------------------------------> had some issues
-Solution2::SortColors::Main(); // Medium	
-//Solution2::SortList::Main(); // Medium	
-//Solution2::SpiralMatrix::Main(); // Medium	
-//Solution2::SpiralMatrixII::Main(); // Medium	
+	//Solution2::SortColors::Main(); // Medium	
+	//Solution2::SortList::Main(); // Medium	
+	//Solution2::SpiralMatrix::Main(); // Medium	----------------------------------> had some issues
+	//Solution2::SpiralMatrixII::Main(); // Medium	
+
+// 7/21/2015
 //Solution2::Sqrt::Main // Medium	
 //Solution2::Subsets::Main(); // Medium	
 //Solution2::SubsetsII::Main(); // Medium	
