@@ -21,7 +21,23 @@ namespace Solution2
     namespace SearchA2DMatrix
     {
      
-     
+		bool searchMatrix(vector<vector<int>>& matrix, int target) {
+
+			int rowCount = matrix.size();
+			if (rowCount == 0) { return false; }
+			int colCount = matrix[0].size();
+			if (colCount == 0) { return false; }
+
+			int i = 0; 
+			int j = colCount - 1;
+			while (i < rowCount && j >= 0)
+			{
+				if (matrix[i][j] == target) { return true; }
+				else if (matrix[i][j] < target) { i++; }
+				else { j--; }
+			}
+			return false;
+		}
      
      
         void Main()

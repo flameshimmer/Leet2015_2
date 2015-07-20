@@ -15,13 +15,62 @@ namespace Solution2
 {
     namespace SearchForARange
     {
-     
-     
-     
+
+		int findLeftIndex(vector<int>& nums, int target)
+		{
+			int start = 0;
+			int end = nums.size() - 1;
+
+			while (start < end)
+			{
+				int mid = start + (end - start) / 2;
+				if (nums[mid] < target)
+				{
+					start = mid + 1;
+				}
+				else
+				{
+					end = mid;
+				}
+			}
+			if (start == end && nums[start] == target) { return start; }
+			return -1;
+		}
+
+		int findRightIndex(vector<int>& nums, int target)
+		{
+			int start = 0;
+			int end = nums.size() - 1;
+
+			while (start < end)
+			{
+				int mid = start + (end - start + 1) / 2;
+				if (nums[mid] > target)
+				{
+					end = mid - 1;
+				}
+				else
+				{
+					start = mid;
+				}
+			}
+			if (start == end && nums[start] == target) { return start; }
+			return -1;
+		}
+
+		vector<int> searchRange(vector<int>& nums, int target) {
+			vector<int> result(2, -1);
+			int len = nums.size();
+			if (len == 0) { return result; }
+
+			result[0] = findLeftIndex(nums, target);
+			result[1] = findRightIndex(nums, target);
+			return result;
+		}
      
         void Main()
         {
-         
+			print(searchRange(createVector({ 5, 7, 7, 8, 8, 10 }), 8));
         }
     }
 }

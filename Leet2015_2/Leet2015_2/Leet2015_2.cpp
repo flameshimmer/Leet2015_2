@@ -12,16 +12,6 @@ int _tmain(int argc, _TCHAR* argv[])
 	// Runtime begin marker start
 	clock_t begin = clock();
 
-	//Solution2::StringToInteger::Main(); // Easy
-	//Solution2::SingleNumber::Main();
-	//Solution2::SingleNumberII::Main();
-	//Solution2::SortColors::Main();
-	//Solution2::SortList::Main();
-	//Solution2::SpiralMatrix::Main();
-	//Solution2::SpiralMatrixII::Main();
-	//Solution2::Sqrt::Main
-	//Solution2::Subsets::Main();
-	//Solution2::SubsetsII::Main();
 	//Solution2::SubstringWithConcatenationOfAllWords::Main();
 	//Solution2::SudokuSolver::Main();
 	//Solution2::SummaryRanges::Main();
@@ -261,19 +251,30 @@ int _tmain(int argc, _TCHAR* argv[])
 	//Solution2::DeleteNodeInALinkedList::Main(); // Easy
 	//Solution2::PalindromeLinkedList::Main(); // Easy
 
-
 // 7/19/2015
 	//Solution2::ImplementStrStr::Main(); // Easy----------------------------------> had some issues, forget KMP
 	//Solution2::ShortestPalindrome::Main(); // Hard ---------------------------------> had some issues, completely forget the solve
 	//Solution2::ScrambleString::Main();  // Hard
-//Solution2::SearchInRotatedSortedArray::Main(); // Hard
-Solution2::SearchInRotatedSortedArrayII::Main(); // Medium
-//Solution2::SearchA2DMatrix::Main(); // Medium	
-//Solution2::SearchForARange::Main(); // Medium	
-//Solution2::SearchInsertionPosition::Main(); // Medium	
-//Solution2::SetMatrixZeroes::Main(); // Medium	
-//Solution2::SimplifyPath::Main(); // Medium	
+	//Solution2::SearchInRotatedSortedArray::Main(); // Hard
+	//Solution2::SearchInRotatedSortedArrayII::Main(); // Medium
+	//Solution2::SearchA2DMatrix::Main(); // Medium	
+	//Solution2::SearchForARange::Main(); // Medium	
+	//Solution2::SearchInsertionPosition::Main(); // Medium	
+	//Solution2::SetMatrixZeroes::Main(); // Medium	
+	//Solution2::SimplifyPath::Main(); // Medium	
+
+// 7/20/2015
 //Solution2::RotateImage::Main(); // Medium	
+//Solution2::StringToInteger::Main(); // Easy
+//Solution2::SingleNumber::Main();
+//Solution2::SingleNumberII::Main();
+//Solution2::SortColors::Main();
+//Solution2::SortList::Main();
+//Solution2::SpiralMatrix::Main();
+//Solution2::SpiralMatrixII::Main();
+//Solution2::Sqrt::Main
+//Solution2::Subsets::Main();
+//Solution2::SubsetsII::Main();
 
 
 	// Runtime end marker
