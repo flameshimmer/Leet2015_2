@@ -12,16 +12,6 @@ int _tmain(int argc, _TCHAR* argv[])
 	// Runtime begin marker start
 	clock_t begin = clock();
 
-	//Solution2::SubstringWithConcatenationOfAllWords::Main();
-	//Solution2::SudokuSolver::Main();
-	//Solution2::SummaryRanges::Main();
-	//Solution2::SumRootToLeafNumbers::Main();
-	//Solution2::SurroundedRegions::Main();
-	//Solution2::SwapNodesInPairs::Main();
-	//Solution2::TextJustification::Main();
-	//Solution2::TheSkylineProblem::Main();
-	//Solution2::TrappingRainWater::Main();
-	//Solution2::Triangle::Main();
 	//Solution2::UniqueBinarySearchTrees::Main();
 	//Solution2::UniqueBinarySearchTreesII::Main(); 
 	//Solution2::UniquePaths::Main();
@@ -274,11 +264,22 @@ int _tmain(int argc, _TCHAR* argv[])
 	//Solution2::SortList::Main(); // Medium	
 	//Solution2::SpiralMatrix::Main(); // Medium	----------------------------------> had some issues
 	//Solution2::SpiralMatrixII::Main(); // Medium	
+	//Solution2::Subsets::Main(); // Medium	
+	//Solution2::SubsetsII::Main(); // Medium	
 
 // 7/21/2015
-//Solution2::Sqrt::Main // Medium	
-//Solution2::Subsets::Main(); // Medium	
-//Solution2::SubsetsII::Main(); // Medium	
+//Solution2::Sqrt::Main // Medium
+//Solution2::SubstringWithConcatenationOfAllWords::Main();
+//Solution2::SudokuSolver::Main();
+//Solution2::SummaryRanges::Main();
+//Solution2::SumRootToLeafNumbers::Main();
+//Solution2::SurroundedRegions::Main();
+//Solution2::SwapNodesInPairs::Main();
+//Solution2::TextJustification::Main();
+//Solution2::TheSkylineProblem::Main();
+//Solution2::TrappingRainWater::Main();
+//Solution2::Triangle::Main();
+
 
 
 	// Runtime end marker
