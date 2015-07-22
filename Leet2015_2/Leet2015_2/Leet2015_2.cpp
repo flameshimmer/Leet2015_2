@@ -11,9 +11,11 @@ int _tmain(int argc, _TCHAR* argv[])
 {
 	// Runtime begin marker start
 	clock_t begin = clock();
+	//Solution2::TheSkylineProblem::Main(); // Hard
+	//Solution2::Sqrt::Main // Medium
+	//Solution2::TextJustification::Main(); // Hard
 
-	//Solution2::UniqueBinarySearchTrees::Main();
-	//Solution2::UniqueBinarySearchTreesII::Main(); 
+
 	//Solution2::UniquePaths::Main();
 	//Solution2::UniquePathsII::Main();
 	//Solution2::ValidateBinarySearchTree::Main();
@@ -268,17 +270,17 @@ int _tmain(int argc, _TCHAR* argv[])
 	//Solution2::SubsetsII::Main(); // Medium	
 
 // 7/21/2015
-//Solution2::Sqrt::Main // Medium
-//Solution2::SubstringWithConcatenationOfAllWords::Main();
-//Solution2::SudokuSolver::Main();
-//Solution2::SummaryRanges::Main();
-//Solution2::SumRootToLeafNumbers::Main();
-//Solution2::SurroundedRegions::Main();
-//Solution2::SwapNodesInPairs::Main();
-//Solution2::TextJustification::Main();
-//Solution2::TheSkylineProblem::Main();
-//Solution2::TrappingRainWater::Main();
-//Solution2::Triangle::Main();
+	//Solution2::SummaryRanges::Main(); // Easy
+	//Solution2::SumRootToLeafNumbers::Main(); // Medium	
+	//Solution2::SwapNodesInPairs::Main(); // Medium	
+Solution2::SurroundedRegions::Main(); // Medium	
+
+//Solution2::SubstringWithConcatenationOfAllWords::Main(); // Hard
+//Solution2::SudokuSolver::Main(); // Hard
+//Solution2::TrappingRainWater::Main(); // Hard
+//Solution2::Triangle::Main(); // Medium
+//Solution2::UniqueBinarySearchTrees::Main(); // Medium
+//Solution2::UniqueBinarySearchTreesII::Main();  // Medium
 
 
 

@@ -21,9 +21,23 @@ namespace Solution2
 {
     namespace SumRootToLeafNumbers
     {
-     
-     
-     
+		void getSum(TreeNode* node, int parentVal, int& sum)
+		{
+			if (!node) { return; }
+			int curVal = parentVal * 10 + node->val;
+			if (!node->left && !node->right)
+			{
+				sum += curVal;
+			}
+			getSum(node->left, curVal, sum);
+			getSum(node->right, curVal, sum);
+		}
+
+		int sumNumbers(TreeNode* root) {
+			int sum = 0;
+			getSum(root, 0, sum);
+			return sum;
+		}
      
         void Main()
         {
