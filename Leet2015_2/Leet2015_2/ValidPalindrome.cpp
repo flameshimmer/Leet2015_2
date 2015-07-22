@@ -17,7 +17,22 @@ namespace Solution2
     namespace ValidPalindrome
     {
      
-     
+		bool isPalindrome(string s) {
+			int len = s.length();
+			if (len == 0) { return true; }
+
+			int start = 0;
+			int end = len - 1;
+			while (start < end)
+			{
+				while (start < end && !isalnum(s[start])) { start++; }
+				while (start < end && !isalnum(s[end])) { end--; }
+				if (tolower(s[start]) != tolower(s[end])) { return false; }
+				start++;
+				end--;
+			}
+			return true;
+		}
      
      
         void Main()

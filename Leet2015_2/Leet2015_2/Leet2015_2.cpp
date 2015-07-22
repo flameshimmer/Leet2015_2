@@ -11,23 +11,15 @@ int _tmain(int argc, _TCHAR* argv[])
 {
 	// Runtime begin marker start
 	clock_t begin = clock();
+
+
 	//Solution2::TheSkylineProblem::Main(); // Hard
 	//Solution2::Sqrt::Main // Medium
 	//Solution2::TextJustification::Main(); // Hard
-
-
-	//Solution2::UniquePaths::Main();
-	//Solution2::UniquePathsII::Main();
+	//Solution2::ValidNumber::Main(); // Hard
 	//Solution2::ValidateBinarySearchTree::Main();
-	//Solution2::ValidNumber::Main();
-	//Solution2::ValidPalindrome::Main
-	//Solution2::ValidSudoku::Main();	
-	//Solution2::WordBreak::Main();
-	//Solution2::WordBreakII::Main();
 	//Solution2::WordLadder::Main();
 	//Solution2::WordLadderII::Main();
-	//Solution2::WordSearch::Main();
-	//Solution2::WordSearchII::Main();
 	//Solution2::ZigZagConversion::Main();
 
 
@@ -273,14 +265,25 @@ int _tmain(int argc, _TCHAR* argv[])
 	//Solution2::SummaryRanges::Main(); // Easy
 	//Solution2::SumRootToLeafNumbers::Main(); // Medium	
 	//Solution2::SwapNodesInPairs::Main(); // Medium	
-Solution2::SurroundedRegions::Main(); // Medium	
+	//Solution2::SurroundedRegions::Main(); // Medium	----------------------------------> had some issues
+	//Solution2::UniquePaths::Main(); // Medium
+	//Solution2::UniquePathsII::Main();// Medium
+	//Solution2::ValidPalindrome::Main // Easy
+	//Solution2::ValidSudoku::Main(); // Easy----------------------------------> had some issues
 
+
+// 7/22/2015
 //Solution2::SubstringWithConcatenationOfAllWords::Main(); // Hard
 //Solution2::SudokuSolver::Main(); // Hard
 //Solution2::TrappingRainWater::Main(); // Hard
 //Solution2::Triangle::Main(); // Medium
 //Solution2::UniqueBinarySearchTrees::Main(); // Medium
 //Solution2::UniqueBinarySearchTreesII::Main();  // Medium
+//Solution2::WordBreak::Main();
+//Solution2::WordBreakII::Main();
+//Solution2::WordSearch::Main();
+//Solution2::WordSearchII::Main();
+
 
 
 
