@@ -16,9 +16,9 @@ namespace Solution2
 {
     namespace SubstringWithConcatenationOfAllWords
     {
-     
-     
-     
+		vector<int> findSubstring(string s, vector<string>& words) {
+
+		}
      
         void Main()
         {

@@ -30,90 +30,61 @@ namespace Solution2
 {
 	namespace TextJustification
 	{
-		
-		string pipeWords(list<string>& curLine, int wordCount, int remainWidth, bool isLastLine)
+		string pipeWords(vector<string>& words, int start, int end, int remainWidth)
 		{
-			string line;
-			if (wordCount == 1 || isLastLine)
+			if (start > end) { return string(remainWidth, ' '); }
+			string line = words[start];
+			int extra = 0;
+			int gapCount = end - start;
+			for (int i = start + 1; i <= end; i++)
 			{
-				while (!curLine.empty())
+				if (start == end || end == words.size() - 1) { extra = 0; }
+				else
 				{
-					if (line.length() > 0) { line += " ";}
-					line += curLine.front();
-					curLine.pop_front(); 
+					extra = (remainWidth + gapCount - 1) / gapCount;
+					gapCount--;
+					remainWidth -= extra;
 				}
-				line += string(remainWidth, ' ');
+				line += string(extra + 1, ' ') + words[i];
 			}
-			else
-			{
-				while (!curLine.empty())
-				{
-					int extraSpace = remainWidth / (wordCount - 1);
-					if (extraSpace * (wordCount - 1) < remainWidth) { extraSpace++; }
-					string curWord = curLine.front();
-					curLine.pop_front();
-					if (line.length() == 0) { line += curWord; continue; }
-					line += " ";
-					for (int i = 0; i < extraSpace && remainWidth > 0; i++)
-					{
-						line += " ";
-						remainWidth--;
-					}
-					line += curWord;
-					wordCount--;
-				}
-			}
+			if (remainWidth) { line += string(remainWidth, ' '); }
 			return line;
 		}
 
 		vector<string> fullJustify(vector<string>& words, int maxWidth)
 		{
-			vector<string> results;
+			vector<string> result;
 			int len = words.size();
 
-			int remainWidth = maxWidth;
-			list<string> curLine;
-			int wordCount = 0;
-			for (int i = 0; i < len; i++)
+			int start = 0;
+			while (start < len)
 			{
-				string w = words[i];
-				int wl = w.length();
-				int prefixSpace = (wordCount == 0) ? 0 : 1;
-				if (remainWidth >= wl + prefixSpace)
+				int end = start;
+				int remainWidth = maxWidth;
+				while (end < len && words[end].length() + (start == end ? 0 : 1) <= remainWidth)
 				{
-					remainWidth -= wl + prefixSpace;
-					wordCount++;
-					curLine.push_back(w);
+					remainWidth -= words[end].length() + (start == end ? 0 : 1);
+					end++;
 				}
-				else
-				{
-					string line = pipeWords(curLine, wordCount, remainWidth, false);
-					results.push_back(line);
-					wordCount = 0;
-					remainWidth = maxWidth;
-					i--;
-				}
+				end--;
+				result.push_back(pipeWords(words, start, end, remainWidth));
+				start = end + 1;
 			}
-			string line = pipeWords(curLine, wordCount, remainWidth, true);
-			results.push_back(line);
-			return results;
+			return result;
 		}
 
 		void Main()
 		{		
 			vector<string> input;
 
+
+			input = { "Here", "is", "an", "example", "of", "text", "justification." };
+			print(fullJustify(input, 16));
+
 			input = { "Give", "me", "my", "Romeo;", "and,", "when", "he", "shall", "die,", "Take", "him", "and", "cut", "him", "out", "in", "little", "stars,", "And", "he", "will", "make", "the", "face", "of", "heaven", "so", "fine", "That", "all", "the", "world", "will", "be", "in", "love", "with", "night", "And", "pay", "no", "worship", "to", "the", "garish", "sun." };
 			print(fullJustify(input, 25));
 			input = { "Listen", "to", "many,", "speak", "to", "a", "few." };
 			print(fullJustify(input, 6));
-
-
-
-		
-			input = { "Here", "is", "an", "example", "of", "text", "justification." };
-			print(fullJustify(input, 15));
-
 
 			
 			input = { "Do", "all", "the", "good", "you", "can,", "By", "all", "the", "means", "you", "can,", "In", "all", "the", "ways", "you", "can,", "In", "all", "the", "places", "you", "can,", "At", "all", "the", "times", "you", "can,", "To", "all", "the", "people", "you", "can,", "As", "long", "as", "ever", "you", "can." };

@@ -272,8 +272,8 @@ int _tmain(int argc, _TCHAR* argv[])
 
 
 // 7/22/2015
-Solution2::TextJustification::Main(); // Hard ----------------------------------> had some issues. Emgod. Took 1.5 hours
-//Solution2::SubstringWithConcatenationOfAllWords::Main(); // Hard
+	//Solution2::TextJustification::Main(); // Hard ----------------------------------> had some issues. Emgod. Took 1.5 hours
+Solution2::SubstringWithConcatenationOfAllWords::Main(); // Hard
 //Solution2::SudokuSolver::Main(); // Hard
 //Solution2::TrappingRainWater::Main(); // Hard
 //Solution2::Triangle::Main(); // Medium
