@@ -274,9 +274,12 @@ int _tmain(int argc, _TCHAR* argv[])
 // 7/22/2015
 	//Solution2::TextJustification::Main(); // Hard ----------------------------------> had some issues. Emgod. Took 1.5 hours
 	//Solution2::LowestCommonAncestorOfABinarySearchTree::Main(); // Easy
-Solution2::ImplementQueueUsingStacks::Main();
 
-//Solution2::SudokuSolver::Main(); // Hard
+// 7/23/2015
+	//Solution2::SubstringWithConcatenationOfAllWords::Main(); // Hard----------------------------------> has a more complicated but faster solve, jumped over that.
+Solution2::SudokuSolver::Main(); // Hard
+
+//Solution2::ImplementQueueUsingStacks::Main(); Easy
 //Solution2::TrappingRainWater::Main(); // Hard
 //Solution2::Triangle::Main(); // Medium
 //Solution2::UniqueBinarySearchTrees::Main(); // Medium
@@ -285,7 +288,6 @@ Solution2::ImplementQueueUsingStacks::Main();
 //Solution2::WordBreakII::Main();
 //Solution2::WordSearch::Main();
 //Solution2::WordSearchII::Main();
-//Solution2::SubstringWithConcatenationOfAllWords::Main(); // Hard
 
 
 
