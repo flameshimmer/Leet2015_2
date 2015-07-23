@@ -215,4 +215,5 @@ namespace Solution2
 	namespace PalindromeLinkedList{ void Main(); }
 	namespace PowerOfTwo{ void Main(); }
 	namespace ProductOfArrayExceptSelf{ void Main(); }
+	namespace LowestCommonAncestorOfABinarySearchTree{ void Main(); }
 };
