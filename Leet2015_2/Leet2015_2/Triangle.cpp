@@ -18,14 +18,30 @@
 namespace Solution2
 {
     namespace Triangle
-    {
-     
-     
-     
+    {     
+		int minimumTotal(vector<vector<int>>& tri) 
+		{
+			int rowCount = tri.size();
+			if (rowCount == 0) { return 0; }
+
+			vector<int> M(tri[rowCount - 1].size(), 0);
+			copy(tri[rowCount - 1].begin(), tri[rowCount - 1].end(), M.begin());
+
+			for (int j = rowCount - 2; j >= 0; j --)
+			{
+				for (int i = 0; i < tri[j].size(); i++)
+				{
+					M[i] = min(M[i], M[i + 1]) + tri[j][i];
+				}
+			}
+
+			return M[0];
+		}
      
         void Main()
         {
-         
+			vector<vector<int>>input = { { -1 }, { 2, 3 }, {1,  -1, -3 } };
+			print(minimumTotal(input));
         }
     }
 }

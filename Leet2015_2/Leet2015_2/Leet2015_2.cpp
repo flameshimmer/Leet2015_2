@@ -277,11 +277,12 @@ int _tmain(int argc, _TCHAR* argv[])
 
 // 7/23/2015
 	//Solution2::SubstringWithConcatenationOfAllWords::Main(); // Hard----------------------------------> has a more complicated but faster solve, jumped over that.
-Solution2::SudokuSolver::Main(); // Hard
+	//Solution2::SudokuSolver::Main(); // Hard----------------------------------> had some issues. Found a much simpler and faster way to do this. Yay
+	Solution2::Triangle::Main(); // Medium
 
 //Solution2::ImplementQueueUsingStacks::Main(); Easy
 //Solution2::TrappingRainWater::Main(); // Hard
-//Solution2::Triangle::Main(); // Medium
+
 //Solution2::UniqueBinarySearchTrees::Main(); // Medium
 //Solution2::UniqueBinarySearchTreesII::Main();  // Medium
 //Solution2::WordBreak::Main();

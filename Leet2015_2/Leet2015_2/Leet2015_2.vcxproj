@@ -85,6 +85,8 @@
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="DeleteNodeInALinkedList.cpp" />
+    <ClCompile Include="ImplementQueueUsingStacks.cpp" />
+    <ClCompile Include="LowestCommonAncestorOfABinarySearchTree.cpp" />
     <ClCompile Include="PalindromeLinkedList.cpp" />
     <ClCompile Include="PowerOfTwo.cpp" />
     <ClCompile Include="ProductOfArrayExceptSelf.cpp" />
