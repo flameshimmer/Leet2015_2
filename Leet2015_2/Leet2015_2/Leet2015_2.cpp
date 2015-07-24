@@ -12,16 +12,6 @@ int _tmain(int argc, _TCHAR* argv[])
 	// Runtime begin marker start
 	clock_t begin = clock();
 
-
-	//Solution2::TheSkylineProblem::Main(); // Hard
-	//Solution2::Sqrt::Main // Medium
-	//Solution2::ValidNumber::Main(); // Hard
-	//Solution2::ValidateBinarySearchTree::Main();
-	//Solution2::WordLadder::Main();
-	//Solution2::WordLadderII::Main();
-	//Solution2::ZigZagConversion::Main();
-
-
 //6/29/2015
 	//Solution2::ReverseInteger::Main(); // Easy
 	//Solution2::ReverseBits::Main(); // Easy
@@ -275,6 +265,7 @@ int _tmain(int argc, _TCHAR* argv[])
 	//Solution2::TextJustification::Main(); // Hard ----------------------------------> had some issues. Emgod. Took 1.5 hours
 	//Solution2::LowestCommonAncestorOfABinarySearchTree::Main(); // Easy
 
+
 // 7/23/2015
 	//Solution2::SubstringWithConcatenationOfAllWords::Main(); // Hard----------------------------------> has a more complicated but faster solve, jumped over that.
 	//Solution2::SudokuSolver::Main(); // Hard----------------------------------> had some issues. Found a much simpler and faster way to do this. Yay
@@ -283,11 +274,20 @@ int _tmain(int argc, _TCHAR* argv[])
 	//Solution2::ImplementQueueUsingStacks::Main(); //Easy
 	//Solution2::UniqueBinarySearchTrees::Main(); // Medium
 	//Solution2::UniqueBinarySearchTreesII::Main();  // Medium----------------------------------> had some issues.
+	//Solution2::WordBreak::Main();
+	//Solution2::WordBreakII::Main();----------------------------------> had some issues.
+	//Solution2::ValidateBinarySearchTree::Main();  // Medium
 
-Solution2::WordBreak::Main();
-//Solution2::WordBreakII::Main();
-//Solution2::WordSearch::Main();
-//Solution2::WordSearchII::Main();
+
+// 7/24/2015
+//Solution2::WordSearch::Main(); // Medium
+//Solution2::WordSearchII::Main(); // Hard
+//Solution2::TheSkylineProblem::Main(); // Hard
+//Solution2::Sqrt::Main // Medium
+//Solution2::ValidNumber::Main(); // Hard
+//Solution2::WordLadder::Main(); // Medium
+//Solution2::WordLadderII::Main(); // Hard
+//Solution2::ZigZagConversion::Main(); // Easy
 
 
 
