@@ -280,14 +280,14 @@ int _tmain(int argc, _TCHAR* argv[])
 
 
 // 7/24/2015
-//Solution2::WordSearch::Main(); // Medium
+Solution2::WordSearch::Main(); // Medium
 //Solution2::WordSearchII::Main(); // Hard
-//Solution2::TheSkylineProblem::Main(); // Hard
 //Solution2::Sqrt::Main // Medium
 //Solution2::ValidNumber::Main(); // Hard
 //Solution2::WordLadder::Main(); // Medium
 //Solution2::WordLadderII::Main(); // Hard
 //Solution2::ZigZagConversion::Main(); // Easy
+//Solution2::TheSkylineProblem::Main(); // Hard ---------------------------------> had some issues, completely forget the solve
 
 
 
