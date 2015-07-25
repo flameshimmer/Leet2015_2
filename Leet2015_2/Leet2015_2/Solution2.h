@@ -216,4 +216,5 @@ namespace Solution2
 	namespace PowerOfTwo{ void Main(); }
 	namespace ProductOfArrayExceptSelf{ void Main(); }
 	namespace LowestCommonAncestorOfABinarySearchTree{ void Main(); }
+	namespace LowestCommonAncestorOfABinaryTree{ void Main(); }
 };

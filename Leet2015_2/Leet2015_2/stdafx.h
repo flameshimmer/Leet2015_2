@@ -169,3 +169,5 @@ TreeNode* createTree(vector<int> data, int deliminator);
 void linkTreeNodes(TreeNode* root, TreeNode* l, TreeNode* r);
 void linkTreeNodes(TreeLinkNode* root, TreeLinkNode* l, TreeLinkNode* r);
 
+// set
+void print(unordered_set<string> set);

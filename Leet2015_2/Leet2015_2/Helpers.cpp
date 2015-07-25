@@ -20,6 +20,17 @@ void print(int input[], int len)
 	cout << input[len - 1] << "\n";
 }
 
+void print(unordered_set<string> set)
+{
+	cout << "\nSet: \n";
+	int len = set.size();
+	for (string s : set)
+	{
+		cout << s << "\n";
+	}
+}
+
+
 void print(vector<int> input)
 {
 	cout << "\nVector: ";

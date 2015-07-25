@@ -56,6 +56,7 @@
     <Link>
       <SubSystem>Console</SubSystem>
       <GenerateDebugInformation>true</GenerateDebugInformation>
+      <Profile>true</Profile>
     </Link>
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
@@ -87,6 +88,7 @@
     <ClCompile Include="DeleteNodeInALinkedList.cpp" />
     <ClCompile Include="ImplementQueueUsingStacks.cpp" />
     <ClCompile Include="LowestCommonAncestorOfABinarySearchTree.cpp" />
+    <ClCompile Include="LowestCommonAncestorOfABinaryTree.cpp" />
     <ClCompile Include="PalindromeLinkedList.cpp" />
     <ClCompile Include="PowerOfTwo.cpp" />
     <ClCompile Include="ProductOfArrayExceptSelf.cpp" />

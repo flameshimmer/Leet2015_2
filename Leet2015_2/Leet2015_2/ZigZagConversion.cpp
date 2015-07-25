@@ -15,14 +15,38 @@
 namespace Solution2
 {
     namespace ZigZagConversion
-    {
-     
-     
-     
+    {     
+		string convert(string s, int numRows) {
+			if (numRows == 1) { return s; }
+
+			int lens = s.length();
+			int distance = (numRows - 1) * 2;
+			string result;
+			for (int i = 0; i < lens; i += distance)
+			{
+				result.push_back(s[i]);
+			}
+			
+			for (int i = 1; i <= numRows - 2; i++)
+			{
+				int gap = 2 * i;
+				for (int j = i; j < lens; j += gap)
+				{
+					result.push_back(s[j]);
+					gap = distance - gap;
+				}
+			}
+			for (int i = numRows - 1; i < lens; i+= distance)
+			{
+				result.push_back(s[i]);
+			}
+			return result;
+		}
      
         void Main()
         {
-         
+			print(convert("ABCD", 4));
+			print(convert("PAYPALISHIRING", 3));
         }
     }
 }
