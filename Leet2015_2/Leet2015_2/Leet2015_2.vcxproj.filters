@@ -704,5 +704,20 @@
     <ClCompile Include="LowestCommonAncestorOfABinaryTree.cpp">
       <Filter>Solution2</Filter>
     </ClCompile>
+    <ClCompile Include="KthSmallestElementInABST.cpp">
+      <Filter>Solution2</Filter>
+    </ClCompile>
+    <ClCompile Include="SearchA2DMatrixII.cpp">
+      <Filter>Solution2</Filter>
+    </ClCompile>
+    <ClCompile Include="SlidingWindowMaximum.cpp">
+      <Filter>Solution2</Filter>
+    </ClCompile>
+    <ClCompile Include="NumberOfDigitOne.cpp">
+      <Filter>Solution2</Filter>
+    </ClCompile>
+    <ClCompile Include="MajorityElementII.cpp">
+      <Filter>Solution2</Filter>
+    </ClCompile>
   </ItemGroup>
 </Project>

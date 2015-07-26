@@ -217,4 +217,9 @@ namespace Solution2
 	namespace ProductOfArrayExceptSelf{ void Main(); }
 	namespace LowestCommonAncestorOfABinarySearchTree{ void Main(); }
 	namespace LowestCommonAncestorOfABinaryTree{ void Main(); }
+	namespace MajorityElementII{ void Main(); }
+	namespace NumberOfDigitOne{ void Main(); }
+	namespace SlidingWindowMaximum{ void Main(); }
+	namespace SearchA2DMatrixII{ void Main(); }
+	namespace KthSmallestElementInABST{ void Main(); }
 };

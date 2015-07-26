@@ -87,11 +87,16 @@
   <ItemGroup>
     <ClCompile Include="DeleteNodeInALinkedList.cpp" />
     <ClCompile Include="ImplementQueueUsingStacks.cpp" />
+    <ClCompile Include="KthSmallestElementInABST.cpp" />
     <ClCompile Include="LowestCommonAncestorOfABinarySearchTree.cpp" />
     <ClCompile Include="LowestCommonAncestorOfABinaryTree.cpp" />
+    <ClCompile Include="MajorityElementII.cpp" />
+    <ClCompile Include="NumberOfDigitOne.cpp" />
     <ClCompile Include="PalindromeLinkedList.cpp" />
     <ClCompile Include="PowerOfTwo.cpp" />
     <ClCompile Include="ProductOfArrayExceptSelf.cpp" />
+    <ClCompile Include="SearchA2DMatrixII.cpp" />
+    <ClCompile Include="SlidingWindowMaximum.cpp" />
     <ClCompile Include="TwoSum.cpp" />
     <ClCompile Include="ThreeSum.cpp" />
     <ClCompile Include="ThreeSumClosest.cpp" />
