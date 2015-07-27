@@ -299,7 +299,7 @@ int _tmain(int argc, _TCHAR* argv[])
 	//Solution2::KthSmallestElementInABST::Main(); // Medium
 	//Solution2::ValidNumber::Main(); // Hard
 	//Solution2::Sqrt::Main // Medium
-Solution2::NumberOfDigitOne::Main(); // Medium
+	//Solution2::NumberOfDigitOne::Main(); // Medium
 
 
 
