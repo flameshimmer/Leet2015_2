@@ -13,6 +13,7 @@
 #include <complex> // for math abs
 #include <queue> // for priority queue
 #include <utility> // for make_pair
+#include <deque> // for double ended queue
 
 #include <windows.h>
 #include <vector>

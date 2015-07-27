@@ -290,13 +290,16 @@ int _tmain(int argc, _TCHAR* argv[])
 // 7/25/2015
 	//Solution2::WordLadderII::Main(); // Hard
 	//Solution2::TheSkylineProblem::Main(); // Hard ---------------------------------> had some issues, completely forget the solve
-Solution2::SlidingWindowMaximum::Main(); // Hard
-//Solution2::ValidNumber::Main(); // Hard
-//Solution2::SearchA2DMatrixII::Main(); // Medium
-//Solution2::NumberOfDigitOne::Main(); // Medium
-//Solution2::MajorityElementII::Main(); // Medium
-//Solution2::KthSmallestElementInABST::Main(); // Medium
-//Solution2::Sqrt::Main // Medium
+
+
+// 7/26/2015
+	//Solution2::SlidingWindowMaximum::Main(); // Hard
+	//Solution2::SearchA2DMatrixII::Main(); // Medium
+	//Solution2::MajorityElementII::Main(); // Medium
+	//Solution2::KthSmallestElementInABST::Main(); // Medium
+	//Solution2::ValidNumber::Main(); // Hard
+	//Solution2::Sqrt::Main // Medium
+Solution2::NumberOfDigitOne::Main(); // Medium
 
 
 

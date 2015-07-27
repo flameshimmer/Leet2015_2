@@ -32,6 +32,19 @@ namespace Solution2
 			}
 			return end;
 		}
+
+		namespace NewtonsMethod
+		{
+			int mySqrt(int x)
+			{
+				double r = 1;
+				do
+				{
+					r = r - r / 2 + x / r / 2;
+				} while (abs(x - r*r) >= 1);
+				return int(r);
+			}
+		}
         void Main()
         {
          

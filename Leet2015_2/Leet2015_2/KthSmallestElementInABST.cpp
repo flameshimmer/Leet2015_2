@@ -12,11 +12,48 @@ namespace Solution2
 {
 	namespace KthSmallestElementInABST
 	{
+		void getKth(TreeNode* node, int& k, int& v)
+		{
+			if (!node || k == 0) { return; }
+			getKth(node->left, k, v);
+			if (k == 1){ v = node->val;}
+			k--;
+			getKth(node->right, k, v);
+		}
+		
+		int kthSmallest(TreeNode* root, int k) {
+			int result = 0;
+			getKth(root, k, result);
+			return result;
+		}
 
-		//int kthSmallest(TreeNode* root, int k) {
 
-		//}
+		namespace inOrderTraversal{
+			int kthSmallest(TreeNode* root, int k) {
+				if (!root) { return 0; }
 
+				stack<TreeNode*> s;
+				TreeNode* cur = root;
+				int count = 0;
+				while (!s.empty() || cur)
+				{
+					if (cur)
+					{
+						s.push(cur);
+						cur = cur->left;
+					}
+					else
+					{
+						TreeNode* top = s.top();
+						s.pop();
+						count++;
+						if (count == k) { return top->val; }
+						cur = top->right;
+					}
+				}
+				return 0;
+			}
+		}
 		void Main()
 		{
 		
