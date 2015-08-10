@@ -17,7 +17,7 @@ namespace Solution2
 			{
 				if (i > k)
 				{
-					set.erase(i-k-1);
+					set.erase(nums[i-k-1]);
 				}
 
 				auto it = set.lower_bound(nums[i] - t);

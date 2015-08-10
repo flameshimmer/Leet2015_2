@@ -32,7 +32,7 @@ namespace Solution2
 				{
 					if (s[i] == s[j] && (j - i < 2 || P[i + 1][j - 1]))
 					{
-						P[i][j] = false;
+						P[i][j] = true;
 						D[i] = min(D[i], D[j + 1] + 1);
 					}
 				}
