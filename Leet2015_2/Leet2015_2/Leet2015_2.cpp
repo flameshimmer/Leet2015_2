@@ -33,7 +33,7 @@ int _tmain(int argc, _TCHAR* argv[])
 	//Solution2_5::MaximumProductSubarray::Main(); // Medium ----------------------------------> had some issues
 	//Solution2_5::MergeKSortedLists::Main();  // Hard ----------------------------------> found a better way of doing it
 	//Solution2_5::MedianOfTwoSortedArrays::Main(); // Hard----------------------------------> need some work still
-	//Solution2_5::OneEditDistance::Main(); // Medium ----------------------------------> had some issues
+	//Solution2::OneEditDistance::Main(); // Medium ----------------------------------> had some issues
 	//Solution2_5::PalindromeNumber::Main(); // Easy ----------------------------------> not any extra space?
 	//Solution2_5::PalindromePartitioningII::Main(); // Hard ----------------------------------> had some issues
 	//Solution2_5::PathSum::Main(); // Easy  ----------------------------------> had some issues
@@ -355,7 +355,42 @@ int _tmain(int argc, _TCHAR* argv[])
 	//Solution2::Sqrt::Main // Medium
 	//Solution2::NumberOfDigitOne::Main(); // Medium
 
+// 8/27/2015
+	//Solution2::VerifyPreorderSequenceInBinarySearchTree::Main();
 
+// 8/28/2015
+Solution2::ClosestBinarySearchTreeValue::Main(); // Easy
+//Solution2::AlienDictionary::Main(); // Hard
+//Solution2::MissingNumber::Main(); // Medium
+//Solution2::PalindromePermutationII::Main(); // Medium
+//Solution2::PalindromePermutation::Main(); // Easy
+//Solution2::PaintHouseII::Main(); // Hard
+//Solution2::UglyNumberII::Main(); // Medium
+//Solution2::UglyNumber::Main(); // Easy
+//Solution2::GraphValidTree::Main(); // Medium
+//Solution2::SingleNumberIII::Main(); // Medium
+
+// 8/29/2015
+//Solution2::3SumSmaller::Main(); // Medium
+//Solution2::AddDigits::Main(); // Medium
+//Solution2::BinaryTree::Main(); // Medium
+//Solution2::PaintHouse::Main(); // Medium
+//Solution2::FactorCombinations::Main(); // Medium
+//Solution2::MeetingRoomsII::Main(); // Medium
+//Solution2::MeetingRooms::Main(); // Medium
+//Solution2::Flatten2DVector::Main(); // Medium
+//Solution2::CountUnivalueSubtrees::Main(); // Medium
+
+// 8/30/2015
+//Solution2::GroupShiftedStrings::Main(); // Medium
+//Solution2::StrobogrammaticNumberIII::Main(); // Medium
+//Solution2::StrobogrammaticNumberII::Main(); // Medium
+//Solution2::StrobogrammaticNumber::Main(); // Medium
+//Solution2::ShortestWordDistanceIII::Main(); // Medium
+//Solution2::ShortestWordDistanceII::Main(); // Medium
+//Solution2::ShortestWordDistance::Main(); // Medium
+//Solution2::ValidAnagram::Main(); // Medium
+//Solution2::DifferentWaystoAddParentheses::Main(); // Medium
 
 
 	// Runtime end marker

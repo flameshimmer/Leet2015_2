@@ -7,41 +7,93 @@ namespace Solution2
 {
     namespace OneEditDistance
     {
-     
-		bool isOneEditDistance(string s, string t) 
-		{
-			if (s.length() < t.length()) { swap(s, t); }
-			int lens = s.length();
-			int lent = t.length();
-			if (lens - lent > 1) { return false; }
 
-			int i1 = 0;
-			int i2 = 0;
-			int count = 0;
-			while (i1 < lens || i2 < lent)
+		// To execute C++, please define "int main()"
+
+		static unordered_map<int, vector<pair<int, int>>> map;
+		int curTime = 0;
+
+
+		int time()
+		{
+			curTime++;
+			return curTime;
+		}
+
+
+		void put(int key, int v)
+		{
+			if (map.find(key) == map.end())
 			{
-				if (i1 >= lens || i2 >= lent || s[i1] != t[i2])
+				map[key] = vector<pair<int, int>>(1, make_pair(time(), v));
+			}
+			else
+			{
+				map[key].push_back(make_pair(time(), v));
+			}
+		}
+
+
+		int get(int k, int t, int& result)
+		{
+			if (map.find(k) == map.end()) { return -1; }
+			vector<pair<int, int>> entry = map[k];
+
+			int len = entry.size();
+			result = -2;
+
+			if (entry[0].first >= t) { result = entry[0].second; }
+			else if (entry[len - 1].first <= t) { result = entry[len - 1].second; }
+			else
+			{
+				for (int i = 0; i<len; i++)
 				{
-					count++;
-					if (count > 1) { return false; }
-					if (lens == lent) { i2++; }
-					i1++;
-				}
-				else
-				{
-					i1++;
-					i2++;
+					if (entry[i].first == t || (i + 1 < len && entry[i + 1].first > t))
+					{
+						result = entry[i].second;
+						break;
+					}
 				}
 			}
-			return count == 1;
+			return 0;
 		}
-     
-     
-        void Main()
-        {
-			print(isOneEditDistance("a", ""));
-			print(isOneEditDistance("teacher", "detacher"));
-			print(isOneEditDistance("", "A"));
-        }
+
+
+		void  Main()
+		{
+			int result = -1;
+
+			get(1, 1, result);
+			cout << "get(1, 1) " << result << endl;
+
+			put(1, 1);
+			put(2, 2);
+			get(1, 1, result);
+			cout << "get(1, 1) " << result << endl;
+
+			get(2, 2, result);
+			cout << "get(2, 2) " << result << endl;
+
+			put(3, 2);
+			put(3, 5);
+			put(3, 6);
+			put(3, 6);
+
+			get(3, 2, result);
+			cout << "get(3, 2) " << result << endl;
+
+			get(3, 0, result);
+			cout << "get(3, 0) " << result << endl;
+
+			get(3, 4, result);
+			cout << "get(3, 4) " << result << endl;
+
+			get(3, 6, result);
+			cout << "get(3, 6) " << result << endl;
+
+			get(3, 9, result);
+			cout << "get(3, 9) " << result << endl;
+
+		}
     }
 }

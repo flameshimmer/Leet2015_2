@@ -222,4 +222,33 @@ namespace Solution2
 	namespace SlidingWindowMaximum{ void Main(); }
 	namespace SearchA2DMatrixII{ void Main(); }
 	namespace KthSmallestElementInABST{ void Main(); }
+	namespace VerifyPreorderSequenceInBinarySearchTree{ void Main(); }
+	namespace ClosestBinarySearchTreeValue{ void Main(); }
+	namespace AlienDictionary{ void Main(); }
+	namespace MissingNumber{ void Main(); }
+	namespace PalindromePermutationII{ void Main(); }
+	namespace PalindromePermutation{ void Main(); }
+	namespace PaintHouseII{ void Main(); }
+	namespace UglyNumberII{ void Main(); }
+	namespace UglyNumber{ void Main(); }
+	namespace GraphValidTree{ void Main(); }
+	namespace SingleNumberIII{ void Main(); }
+	namespace ThreeSumSmaller{ void Main(); }
+	namespace AddDigits{ void Main(); }
+	namespace BinaryTree{ void Main(); }
+	namespace PaintHouse{ void Main(); }
+	namespace FactorCombinations{ void Main(); }
+	namespace MeetingRoomsII{ void Main(); }
+	namespace MeetingRooms{ void Main(); }
+	namespace Flatten2DVector{ void Main(); }
+	namespace CountUnivalueSubtrees{ void Main(); }
+	namespace GroupShiftedStrings{ void Main(); }
+	namespace StrobogrammaticNumberIII{ void Main(); }
+	namespace StrobogrammaticNumberII{ void Main(); }
+	namespace StrobogrammaticNumber{ void Main(); }
+	namespace ShortestWordDistanceIII{ void Main(); }
+	namespace ShortestWordDistanceII{ void Main(); }
+	namespace ShortestWordDistance{ void Main(); }
+	namespace ValidAnagram{ void Main(); }
+	namespace DifferentWaystoAddParentheses{ void Main(); }
 };

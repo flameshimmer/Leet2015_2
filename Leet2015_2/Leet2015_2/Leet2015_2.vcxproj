@@ -85,6 +85,7 @@
     <ClInclude Include="targetver.h" />
   </ItemGroup>
   <ItemGroup>
+    <ClCompile Include="ClosestBinarySearchTreeValue.cpp" />
     <ClCompile Include="DeleteNodeInALinkedList.cpp" />
     <ClCompile Include="ImplementQueueUsingStacks.cpp" />
     <ClCompile Include="KthSmallestElementInABST.cpp" />
@@ -97,6 +98,7 @@
     <ClCompile Include="ProductOfArrayExceptSelf.cpp" />
     <ClCompile Include="SearchA2DMatrixII.cpp" />
     <ClCompile Include="SlidingWindowMaximum.cpp" />
+    <ClCompile Include="TreeHelper.cpp" />
     <ClCompile Include="TwoSum.cpp" />
     <ClCompile Include="ThreeSum.cpp" />
     <ClCompile Include="ThreeSumClosest.cpp" />
@@ -308,6 +310,7 @@
     <ClCompile Include="ValidPalindrome.cpp" />
     <ClCompile Include="ValidParentheses.cpp" />
     <ClCompile Include="ValidSudoku.cpp" />
+    <ClCompile Include="VerifyPreorderSequenceInBinarySearchTree.cpp" />
     <ClCompile Include="WildcardMatching.cpp" />
     <ClCompile Include="WordBreak.cpp" />
     <ClCompile Include="WordBreakII.cpp" />

@@ -719,5 +719,14 @@
     <ClCompile Include="MajorityElementII.cpp">
       <Filter>Solution2</Filter>
     </ClCompile>
+    <ClCompile Include="VerifyPreorderSequenceInBinarySearchTree.cpp">
+      <Filter>Solution2</Filter>
+    </ClCompile>
+    <ClCompile Include="ClosestBinarySearchTreeValue.cpp">
+      <Filter>Solution2</Filter>
+    </ClCompile>
+    <ClCompile Include="TreeHelper.cpp">
+      <Filter>Helpers</Filter>
+    </ClCompile>
   </ItemGroup>
 </Project>

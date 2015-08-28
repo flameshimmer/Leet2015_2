@@ -170,5 +170,11 @@ TreeNode* createTree(vector<int> data, int deliminator);
 void linkTreeNodes(TreeNode* root, TreeNode* l, TreeNode* r);
 void linkTreeNodes(TreeLinkNode* root, TreeLinkNode* l, TreeLinkNode* r);
 
+// decode tree and pretty print
+TreeNode* ReadBinaryTree(vector<string>& treeData, int& index);
+int printTree(TreeNode* root);
+int printTree(vector<string>& treeData);
+TreeNode* ReadBinaryTree(vector<string>& treeData);
+
 // set
 void print(unordered_set<string> set);
