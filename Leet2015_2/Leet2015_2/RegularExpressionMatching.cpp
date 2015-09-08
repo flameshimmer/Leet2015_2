@@ -86,9 +86,37 @@ namespace Solution2
 			return M[lens][lenp];
 		}
      
+		namespace c
+		{
+			bool matches(char* a, char* b)
+			{
+				return (*a != '\0' && *b != '\0') && (*a == *b || *b == '.');
+			}
+
+
+			bool isMatch(char* s, char* p) {
+				if (*p == '\0') { return *s == '\0'; }
+
+				if (p[1] != '*')
+				{
+					return matches(s, p) && isMatch(s + 1, p + 1);
+				}
+
+				while (matches(s, p))
+				{
+					if (isMatch(s, p + 2)) { return true; }
+					s++;
+				}
+				return isMatch(s, p + 2);
+			}
+		}
+
+
         void Main()
         {
-			print(isMatch("aa", "a*"));
+			print(c::isMatch("a", ".*..a*"));
+			print(c::isMatch("ab", ".*c"));
+			print(c::isMatch("aa", "a*"));
 			print(isMatch("aa", "a"));
 			print(isMatch("a", "..a*"));
 			print(isMatch("a", "ab*"));

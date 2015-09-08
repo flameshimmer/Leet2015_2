@@ -121,7 +121,7 @@ int _tmain(int argc, _TCHAR* argv[])
 	//Solution2::ContainsDuplicateII::Main(); // Easy
 
 //7/4/2015
-	Solution2::ContainsDuplicateIII::Main(); // Medium ----------------------------------> had some issues
+	//Solution2::ContainsDuplicateIII::Main(); // Medium ----------------------------------> had some issues
 	//Solution2::ContainerWithMostWater::Main(); // Medium
 	//Solution2::ConstructBinaryTreeFromInorderAndPostorderTraversal::Main(); // Medium
 	//Solution2::ConstructBinaryTreeFromPreorderAndInorderTraversal::Main(); // Medium
@@ -271,7 +271,7 @@ int _tmain(int argc, _TCHAR* argv[])
 	//Solution2::BestTimeToBuyAndSellStockII::Main(); // Medium
 	//Solution2::BestTimeToBuyAndSellStockIII::Main(); // Hard
 	//Solution2::BestTimeToBuyAndSellStockIV::Main(); // Hard----------------------------------> had some issues, completely forget the solve
-	//Solution2::RegularExpressionMatching::Main(); // Hard ----------------------------------> had some issues
+	Solution2::RegularExpressionMatching::Main(); // Hard ----------------------------------> had some issues
 	//Solution2::WildcardMatching::Main(); // Hard----------------------------------> had some issues
 	//Solution2::ValidParentheses::Main(); // Easy
 	//Solution2::SymmetricTree::Main(); // Easy
