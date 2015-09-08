@@ -1,5 +1,5 @@
 // Leet2015.cpp : Defines the entry point for the console application.
-//
+//reverse
 #include "stdafx.h"
 #include "Solution2.h"
 
@@ -121,7 +121,7 @@ int _tmain(int argc, _TCHAR* argv[])
 	//Solution2::ContainsDuplicateII::Main(); // Easy
 
 //7/4/2015
-	//Solution2::ContainsDuplicateIII::Main(); // Medium ----------------------------------> had some issues
+	Solution2::ContainsDuplicateIII::Main(); // Medium ----------------------------------> had some issues
 	//Solution2::ContainerWithMostWater::Main(); // Medium
 	//Solution2::ConstructBinaryTreeFromInorderAndPostorderTraversal::Main(); // Medium
 	//Solution2::ConstructBinaryTreeFromPreorderAndInorderTraversal::Main(); // Medium
@@ -358,8 +358,11 @@ int _tmain(int argc, _TCHAR* argv[])
 // 8/27/2015
 	//Solution2::VerifyPreorderSequenceInBinarySearchTree::Main();
 
-// 8/28/2015
-Solution2::ClosestBinarySearchTreeValue::Main(); // Easy
+//9/7/2015
+	//Solution2::ThreeSumSmaller::Main(); // Medium
+	//Solution2::DotProduct::Main(); // Medium
+
+//Solution2::ClosestBinarySearchTreeValue::Main(); // Easy
 //Solution2::AlienDictionary::Main(); // Hard
 //Solution2::MissingNumber::Main(); // Medium
 //Solution2::PalindromePermutationII::Main(); // Medium
@@ -369,8 +372,6 @@ Solution2::ClosestBinarySearchTreeValue::Main(); // Easy
 //Solution2::UglyNumber::Main(); // Easy
 //Solution2::GraphValidTree::Main(); // Medium
 //Solution2::SingleNumberIII::Main(); // Medium
-
-// 8/29/2015
 //Solution2::3SumSmaller::Main(); // Medium
 //Solution2::AddDigits::Main(); // Medium
 //Solution2::BinaryTree::Main(); // Medium
@@ -380,8 +381,6 @@ Solution2::ClosestBinarySearchTreeValue::Main(); // Easy
 //Solution2::MeetingRooms::Main(); // Medium
 //Solution2::Flatten2DVector::Main(); // Medium
 //Solution2::CountUnivalueSubtrees::Main(); // Medium
-
-// 8/30/2015
 //Solution2::GroupShiftedStrings::Main(); // Medium
 //Solution2::StrobogrammaticNumberIII::Main(); // Medium
 //Solution2::StrobogrammaticNumberII::Main(); // Medium

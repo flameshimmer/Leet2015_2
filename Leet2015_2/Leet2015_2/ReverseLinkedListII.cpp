@@ -15,14 +15,40 @@
 namespace Solution2
 {
     namespace ReverseLinkedListII
-    {
-		namespace other
-		{
-			ListNode* reverse(ListNode* head)
+    {     
+		ListNode* reverseBetween(ListNode* head, int m, int n) {
+			if (!head || !head->next || m == n) { return head; }
+			
+			ListNode* dummy = new ListNode(-1);
+			dummy->next = head;
+			ListNode* prev = dummy;
+			for (int i = 0; i < m - 1; i++)
 			{
-				if (!head || !head->next) { return head; }
-				ListNode* cur = head;
-				ListNode* next = cur->next;
+				prev = prev->next;
+			}
+
+			ListNode* cur = prev->next;
+			for (int i = 0; i < n - m; i++)
+			{
+				ListNode* move = cur->next;
+				cur->next = move->next;
+				move->next = prev->next;
+				prev->next = move;
+			}
+			
+			ListNode* result = dummy->next;
+			delete dummy;
+			return result;
+		}
+     
+
+		namespace other{
+		
+			void reverse(ListNode* root, ListNode*& newHead, ListNode*& newTail)
+			{
+				if (!root || !root->next) { newHead = newTail = root; }
+				ListNode* cur = root;
+				ListNode* next = root->next;
 				ListNode* nN;
 				cur->next = NULL;
 				while (next)
@@ -32,83 +58,46 @@ namespace Solution2
 					cur = next;
 					next = nN;
 				}
-				return cur;
+				newHead = cur;
+				newTail = root;
 			}
 
-			ListNode* reverseBetween(ListNode* head, int m, int n)
-			{
+
+			ListNode* reverseBetween(ListNode* head, int m, int n) {
 				if (!head || !head->next) { return head; }
 
 				ListNode* dummy = new ListNode(-1);
-
 				dummy->next = head;
+
 				ListNode* cur = dummy;
-				ListNode* prev = NULL;
-				ListNode* end = NULL;
-
-				m--;
-				n--;
 				int step = 0;
-				while (cur)
-				{
-					if (step == m)
-					{
-						prev = cur;
-					}
-					if (step == n)
-					{
-						end = cur->next;
-						break;
-					}
-					cur = cur->next;
-					step++;
-				}
+				while (cur && step < m - 1) { cur = cur->next; step++; }
+				if (!cur) { return head; }
+				ListNode* prev = cur;
 
-				if (prev->next == NULL || end == NULL || prev->next == end)
-				{
-					return dummy->next;
-				}
-				ListNode* next = end->next;
-				end->next = NULL;
+				while (cur && step < n) { cur = cur->next; step++; }
+				if (!cur) { return head; }
+				ListNode* post = cur->next;
+				cur->next = NULL;
 
-				ListNode* newTail = prev->next;
-				ListNode* newHead = reverse(prev->next);
+				ListNode* newHead;
+				ListNode* newTail;
+				reverse(prev->next, newHead, newTail);
 				prev->next = newHead;
-				newTail->next = next;
+				newTail->next = post;
 
-				return dummy->next;
+				ListNode* result = dummy->next;
+				delete dummy;
+				return result;
 			}
-
 		}
-     
-		ListNode* reverseBetween(ListNode* head, int m, int n) {
-			if (!head || !head->next || m == n) { return head; }
 
-			ListNode* dummy = new ListNode(-1);
-			dummy->next = head;
 
-			ListNode* pre = dummy;
-			for (int i = 0; i < m - 1; i++)
-			{
-				pre = pre->next;
-			}
-
-			ListNode* cur = pre->next;
-			for (int i = 0; i < n - m; i++)
-			{
-				ListNode* move = cur->next;
-				cur->next = move->next;
-				move->next = pre->next;
-				pre->next = move;
-			}
-			return dummy->next;
-		}
-     
         void Main()
         {
 			ListNode* l;
 			l = createList({ 3, 5 });
-			print(reverseBetween(l, 1, 2));
+			print(other::reverseBetween(l, 1, 2));
 
 			l = createList({ 3, 5 });
 			print(reverseBetween(l, 2, 2));

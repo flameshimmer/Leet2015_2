@@ -30,50 +30,46 @@ namespace Solution2
 		void reverseWords(string &s) 
 		{
 			int len = s.length();
+			if (len == 0) { return; }
 
-			// Trim begin
 			int start = 0;
-			while (start < len && s[start] == ' ')
-			{
-				start++;
-			}
+			while (start < len && s[start] == ' '){ start++; }
 			s.erase(s.begin(), s.begin() + start);
-			
-			// Trim end
+
 			int end = 0;
-			while (end < len  && s[len-1-end] == ' ')
-			{
-				end++;
-			}
+			while (end < s.size() && s[len - 1 - end] == ' '){ end++; }
 			s.erase(s.end() - end, s.end());
 
-			reverse(s, 0, len - 1);
 			start = 0;
-			end = -1;
-			while (start < len)
+			while (start < s.size())
 			{
-				while (start < len && s[start] == ' ')
-				{
-					start++;
-				}
-				if (start - end - 1 > 1)
-				{
-					s.replace(s.begin() + end, s.begin() + start-1, 1, ' ');
-				}
 				end = start + 1;
-				while (end < len && s[end] != ' ')
-				{
-					end++;
-				}
+				while (end < s.size() && s[end] != ' '){ end++; }
 				end--;
 				reverse(s, start, end);
 				start = end + 1;
+				if (start >= s.size()) { break; }
+
+				end = start + 1;
+				while (end < s.size() && s[end] == ' ') { end++; }
+				end--;
+				if (start != end)
+				{
+					s.replace(s.begin() + start, s.begin() + end, 1, ' ');
+				}
+				start = end + 1;
 			}
+			reverse(s, 0, s.length() - 1);
 		}
      
         void Main()
         {
 			string input;
+
+			input = "a b";
+			print(input);
+			reverseWords(input);
+			print(input);
 
 			input = "the sky is blue";
 			print(input);

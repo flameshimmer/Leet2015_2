@@ -251,4 +251,6 @@ namespace Solution2
 	namespace ShortestWordDistance{ void Main(); }
 	namespace ValidAnagram{ void Main(); }
 	namespace DifferentWaystoAddParentheses{ void Main(); }
+	namespace ThreeSumSmaller{ void Main(); }
+	namespace DotProduct{ void Main(); }
 };

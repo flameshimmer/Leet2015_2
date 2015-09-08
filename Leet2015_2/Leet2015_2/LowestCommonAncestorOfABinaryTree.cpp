@@ -6,33 +6,37 @@ namespace Solution2
 	namespace LowestCommonAncestorOfABinaryTree
 	{
 
-		TreeNode* getAncestor(TreeNode* node, TreeNode*&p, TreeNode*& q)
-		{
-			if (!node) { return NULL; }
-			
+		TreeNode* lowestCommonAncestorImpl(TreeNode* root, TreeNode*& p, TreeNode*& q) {
+			if (!root) { return NULL; }
 			TreeNode* p2 = p;
 			TreeNode* q2 = q;
-			
-			TreeNode* l = getAncestor(node->left, p, q);
-			TreeNode* r = getAncestor(node->right, p2, q2);
-			if (l || r) { return l ? l : r; }
+			TreeNode* L = lowestCommonAncestorImpl(root->left, p, q);
+			TreeNode* R = lowestCommonAncestorImpl(root->right, p2, q2);
 
-			if (!p2) { p = NULL; }
-			if (!q2) { q = NULL; }
-			if (!p && !q) { return node; }
-			if (!p && node == q) { return node; }
-			if (!q && node == p) { return node; }
+			if (L || R) { return L ? L : R; }
 
-			if (node == p) { p = NULL; }
-			if (node == q) { q = NULL; }
-			return NULL;			
+			if (p2 == NULL || root == p) { p = NULL; }
+			if (q2 == NULL || root == q) { q = NULL; }
+			if (!p && !q) { return root; }
+			return NULL;
 		}
 
-
-		TreeNode* lowestCommonAncestor(TreeNode* root, TreeNode* p, TreeNode* q) 
-		{
+		TreeNode* lowestCommonAncestor(TreeNode* root, TreeNode* p, TreeNode* q) {
 			if (!root || !p || !q) { return NULL; }
-			return getAncestor(root, p, q);
+			return lowestCommonAncestorImpl(root, p, q);
+		}
+
+		namespace other
+		{
+			TreeNode* lowestCommonAncestor(TreeNode* root, TreeNode* p, TreeNode* q) {
+				if (!root || !p || !q) { return NULL; }
+				if (root == p || root == q) { return root; }
+
+				TreeNode* L = lowestCommonAncestor(root->left, p, q);
+				TreeNode* R = lowestCommonAncestor(root->right, p, q);
+				if (L&&R) { return root; }
+				else { return L ? L : R; }
+			}
 		}
 
 		void Main()

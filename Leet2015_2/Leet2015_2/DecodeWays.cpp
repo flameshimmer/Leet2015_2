@@ -33,9 +33,31 @@ namespace Solution2
 			return M[len];
 		}
      
+		namespace recursion
+		{
+			int getNum(string s, int i)
+			{
+				if (i < 0) { return 0; }
+				if (i == 0) { return s[0] == '0' ? 0 : 1; }
+				
+				int result = 0;
+				if (s[i] != '0') { result = getNum(s, i - 1); }
+				if (i - 1 >= 0 && (s[i - 1] == '1' || (s[i - 1] == '2' && s[i] <= '6'))) { result += getNum(s, i - 2); }
+				return result;
+			}
+
+			int numDecodings(string s) {
+				int len = s.size();
+				if (len == 0) { return 0; }
+
+				return getNum(s, len - 1);
+			}
+		}
+
         void Main()
         {
-			print(numDecodings("26"));
+			print(recursion::numDecodings("11"));
+			print(recursion::numDecodings("26"));
         }
     }
 }

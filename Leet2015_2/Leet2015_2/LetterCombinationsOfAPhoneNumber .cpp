@@ -22,40 +22,41 @@ namespace Solution2
 {
     namespace LetterCombinationsOfAPhoneNumber 
     {
-		void combine(string digits, int level, vector<string>& candidates, string& result, vector<string>& results)
+		void impl(string digits, int level, vector<string>& candidates, string& result, vector<string>& results)
 		{
-			if (level == digits.size())
+			if (level == digits.length())
 			{
 				results.push_back(result);
 				return;
 			}
+			string can = candidates[digits[level] - '0'];
+			if (can.size() == 0) { impl(digits, level + 1, candidates, result, results); }
 
-			int v = digits[level] - '0';
-			for (char c : candidates[v])
+			for (char c : can)
 			{
 				result.push_back(c);
-				combine(digits, level + 1, candidates, result, results);
+				impl(digits, level + 1, candidates, result, results);
 				result.pop_back();
 			}
 		}
-     
-		vector<string> letterCombinations(string digits) 
-		{
+
+
+		vector<string> letterCombinations(string digits) {
+			vector<string> can = { "", "", "abc", "def", "ghi", "jkl", "mno", "pqrs", "tuv", "wxyz" };
+
 			vector<string> results;
-			int len = digits.size();
+			int len = digits.length();
+
 			if (len == 0) { return results; }
-
-			vector<string> candidates = {"", "", "abc", "def", "ghi", "jkl", "mno", "pqrs", "tuv", "wxyz"};
-
 			string result;
-			combine(digits, 0, candidates, result, results);
+			impl(digits, 0, can, result, results);
 			return results;
 		}
      
      
         void Main()
         {
-         
+			print(letterCombinations(""));
         }
     }
 }

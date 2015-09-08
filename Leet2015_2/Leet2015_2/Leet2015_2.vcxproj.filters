@@ -728,5 +728,11 @@
     <ClCompile Include="TreeHelper.cpp">
       <Filter>Helpers</Filter>
     </ClCompile>
+    <ClCompile Include="ThreeSumSmaller.cpp">
+      <Filter>Solution2</Filter>
+    </ClCompile>
+    <ClCompile Include="DotProduct.cpp">
+      <Filter>Solution2</Filter>
+    </ClCompile>
   </ItemGroup>
 </Project>

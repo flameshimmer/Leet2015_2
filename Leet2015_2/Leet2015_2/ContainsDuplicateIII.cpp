@@ -10,7 +10,7 @@ namespace Solution2
 		bool containsNearbyAlmostDuplicate(vector<int>& nums, int k, int t)
 		{
 			int len = nums.size();
-			if (k <= 0 || t < 0 || len < 2) { return false; }
+			if (k < 0 || t < 0 || len < 2) { return false; }
 
 			set<int> set;
 			for (int i = 0; i < len; i++)
@@ -30,6 +30,7 @@ namespace Solution2
         
 		void Main()
         {
+			print(containsNearbyAlmostDuplicate(createVector({ 1, 2 }), 0, 1));
 			print(containsNearbyAlmostDuplicate(createVector({1, 1, 1}), 2, 0));
         }
     }

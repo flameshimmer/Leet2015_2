@@ -87,6 +87,7 @@
   <ItemGroup>
     <ClCompile Include="ClosestBinarySearchTreeValue.cpp" />
     <ClCompile Include="DeleteNodeInALinkedList.cpp" />
+    <ClCompile Include="DotProduct.cpp" />
     <ClCompile Include="ImplementQueueUsingStacks.cpp" />
     <ClCompile Include="KthSmallestElementInABST.cpp" />
     <ClCompile Include="LowestCommonAncestorOfABinarySearchTree.cpp" />
@@ -98,6 +99,7 @@
     <ClCompile Include="ProductOfArrayExceptSelf.cpp" />
     <ClCompile Include="SearchA2DMatrixII.cpp" />
     <ClCompile Include="SlidingWindowMaximum.cpp" />
+    <ClCompile Include="ThreeSumSmaller.cpp" />
     <ClCompile Include="TreeHelper.cpp" />
     <ClCompile Include="TwoSum.cpp" />
     <ClCompile Include="ThreeSum.cpp" />
