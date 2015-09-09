@@ -13,42 +13,40 @@ namespace Solution2
 	namespace ClosestBinarySearchTreeValue
 	{
 		int closestValue(TreeNode* root, double target) {
-			bool seenSmaller = false;
-			bool seenLarger = false;
-
-			int result = root->val;
 			TreeNode* cur = root;
+			int result = root->val;
+
 			while (cur)
 			{
-				if (seenSmaller && seenLarger) { break; }
-				if (cur->val == target) { result = target; break; }
-				else if (cur->val < target)
-				{
-					seenSmaller = true;
-					if (target - cur->val < abs(result -target))
-					{
-						result = cur->val;
-					}
-					cur = cur->right;
-				}
-				else
-				{
-					seenLarger = true;
-					if (cur->val - target < abs(result - target))
-					{
-						result = cur->val;
-					}
-					cur = cur->left;
-				}
+				if (cur->val == target) { return cur->val; }
+				else if (abs(cur->val - target) < abs(result - target)) { result = cur->val; }
+				if (cur->val < target) { cur = cur->right; }
+				else { cur = cur->left; }
 			}
 			return result;
 		}
 
+
+		namespace recursive
+		{
+			void getResult(TreeNode* node, double target, double& result)
+			{
+				if (!node) { return; }
+				if (abs((double)node->val - target) < abs(result - target)) {result = (double)node->val; }
+
+				if ((double)node->val < target) { getResult(node->right, target, result); }
+				else { getResult(node->left, target, result); }
+			}
+
+			int closestValue(TreeNode* root, double target) {
+				double result = (double)root->val;
+				getResult(root, target, result);
+				return (int)result;
+			}
+		}
 		void Main()
 		{
-			vector<string> treeData = { "41", "37", "44", "24", "39", "42", "48", "1", "35", "38", "40", "null", "43", "46", "49", "0", "2", "30", "36", "null", "null", "null", "null", "null", "null", "45", "47", "null", "null", "null", "null", "null", "4", "29", "32", "null", "null", "null", "null", "null", "null", "3", "9", "26", "null", "31", "34", "null", "null", "7", "11", "25", "27", "null", "null", "33", "null", "6", "8", "10", "16", "null", "null", "null", "28", "null", "null", "5", "null", "null", "null", "null", "null", "15", "19", "null", "null", "null", "null", "12", "null", "18", "20", "null", "13", "17", "null", "null", "22", "null", "14", "null", "null", "21", "23" };
-			treeData = { "1", "2", "3", "null", "null", "null", "null" };
-			printTree(treeData);
+			print(closestValue(new TreeNode(1), 4.428571));
 		}
 	}
 }

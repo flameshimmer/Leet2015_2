@@ -734,5 +734,11 @@
     <ClCompile Include="DotProduct.cpp">
       <Filter>Solution2</Filter>
     </ClCompile>
+    <ClCompile Include="LongestIncreasingContinuousSubsequence.cpp">
+      <Filter>Solution2</Filter>
+    </ClCompile>
+    <ClCompile Include="LongestIncreasingSubsequence.cpp">
+      <Filter>Solution2</Filter>
+    </ClCompile>
   </ItemGroup>
 </Project>

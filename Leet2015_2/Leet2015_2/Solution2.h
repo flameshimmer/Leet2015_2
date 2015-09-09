@@ -253,4 +253,6 @@ namespace Solution2
 	namespace DifferentWaystoAddParentheses{ void Main(); }
 	namespace ThreeSumSmaller{ void Main(); }
 	namespace DotProduct{ void Main(); }
+	namespace LongestIncreasingContinuousSubsequence{ void Main(); }
+	namespace LongestIncreasingSubsequence{ void Main(); }
 };

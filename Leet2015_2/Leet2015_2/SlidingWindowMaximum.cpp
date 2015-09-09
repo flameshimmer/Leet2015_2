@@ -125,10 +125,11 @@ namespace Solution2
 			}
 		}
 
+
 		void Main()
 		{
 			vector<int> input;
-			
+
 			input = { 1 };
 			print(Heap::maxSlidingWindow(input, 1));
 			

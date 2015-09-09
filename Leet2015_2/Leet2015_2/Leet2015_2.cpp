@@ -271,7 +271,7 @@ int _tmain(int argc, _TCHAR* argv[])
 	//Solution2::BestTimeToBuyAndSellStockII::Main(); // Medium
 	//Solution2::BestTimeToBuyAndSellStockIII::Main(); // Hard
 	//Solution2::BestTimeToBuyAndSellStockIV::Main(); // Hard----------------------------------> had some issues, completely forget the solve
-	Solution2::RegularExpressionMatching::Main(); // Hard ----------------------------------> had some issues
+	//Solution2::RegularExpressionMatching::Main(); // Hard ----------------------------------> had some issues
 	//Solution2::WildcardMatching::Main(); // Hard----------------------------------> had some issues
 	//Solution2::ValidParentheses::Main(); // Easy
 	//Solution2::SymmetricTree::Main(); // Easy
@@ -362,7 +362,11 @@ int _tmain(int argc, _TCHAR* argv[])
 	//Solution2::ThreeSumSmaller::Main(); // Medium
 	//Solution2::DotProduct::Main(); // Medium
 
-//Solution2::ClosestBinarySearchTreeValue::Main(); // Easy
+//9/8/2015
+	//Solution2::LongestIncreasingContinuousSubsequence::Main();
+	//Solution2::LongestIncreasingSubsequence::Main();
+
+Solution2::ClosestBinarySearchTreeValue::Main(); // Easy
 //Solution2::AlienDictionary::Main(); // Hard
 //Solution2::MissingNumber::Main(); // Medium
 //Solution2::PalindromePermutationII::Main(); // Medium

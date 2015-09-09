@@ -90,6 +90,8 @@
     <ClCompile Include="DotProduct.cpp" />
     <ClCompile Include="ImplementQueueUsingStacks.cpp" />
     <ClCompile Include="KthSmallestElementInABST.cpp" />
+    <ClCompile Include="LongestIncreasingContinuousSubsequence.cpp" />
+    <ClCompile Include="LongestIncreasingSubsequence.cpp" />
     <ClCompile Include="LowestCommonAncestorOfABinarySearchTree.cpp" />
     <ClCompile Include="LowestCommonAncestorOfABinaryTree.cpp" />
     <ClCompile Include="MajorityElementII.cpp" />
