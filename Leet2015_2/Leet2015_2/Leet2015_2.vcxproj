@@ -96,6 +96,9 @@
     <ClCompile Include="LowestCommonAncestorOfABinaryTree.cpp" />
     <ClCompile Include="MajorityElementII.cpp" />
     <ClCompile Include="NumberOfDigitOne.cpp" />
+    <ClCompile Include="PaintFence.cpp" />
+    <ClCompile Include="PaintHouse.cpp" />
+    <ClCompile Include="PaintHouseII.cpp" />
     <ClCompile Include="PalindromeLinkedList.cpp" />
     <ClCompile Include="PowerOfTwo.cpp" />
     <ClCompile Include="ProductOfArrayExceptSelf.cpp" />

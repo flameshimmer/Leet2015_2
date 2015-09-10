@@ -740,5 +740,14 @@
     <ClCompile Include="LongestIncreasingSubsequence.cpp">
       <Filter>Solution2</Filter>
     </ClCompile>
+    <ClCompile Include="PaintFence.cpp">
+      <Filter>Solution2</Filter>
+    </ClCompile>
+    <ClCompile Include="PaintHouse.cpp">
+      <Filter>Solution2</Filter>
+    </ClCompile>
+    <ClCompile Include="PaintHouseII.cpp">
+      <Filter>Solution2</Filter>
+    </ClCompile>
   </ItemGroup>
 </Project>

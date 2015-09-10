@@ -365,13 +365,19 @@ int _tmain(int argc, _TCHAR* argv[])
 //9/8/2015
 	//Solution2::LongestIncreasingContinuousSubsequence::Main();
 	//Solution2::LongestIncreasingSubsequence::Main();
+	//Solution2::ClosestBinarySearchTreeValue::Main(); // Easy
 
-Solution2::ClosestBinarySearchTreeValue::Main(); // Easy
+//9/9/2015
+//Solution2::PaintFence::Main(); // Medium
+//Solution2::PaintHouse::Main(); // Medium
+//Solution2::PaintHouseII::Main(); // Hard
+
+
 //Solution2::AlienDictionary::Main(); // Hard
 //Solution2::MissingNumber::Main(); // Medium
 //Solution2::PalindromePermutationII::Main(); // Medium
 //Solution2::PalindromePermutation::Main(); // Easy
-//Solution2::PaintHouseII::Main(); // Hard
+
 //Solution2::UglyNumberII::Main(); // Medium
 //Solution2::UglyNumber::Main(); // Easy
 //Solution2::GraphValidTree::Main(); // Medium
@@ -379,7 +385,7 @@ Solution2::ClosestBinarySearchTreeValue::Main(); // Easy
 //Solution2::3SumSmaller::Main(); // Medium
 //Solution2::AddDigits::Main(); // Medium
 //Solution2::BinaryTree::Main(); // Medium
-//Solution2::PaintHouse::Main(); // Medium
+
 //Solution2::FactorCombinations::Main(); // Medium
 //Solution2::MeetingRoomsII::Main(); // Medium
 //Solution2::MeetingRooms::Main(); // Medium
@@ -394,6 +400,9 @@ Solution2::ClosestBinarySearchTreeValue::Main(); // Easy
 //Solution2::ShortestWordDistance::Main(); // Medium
 //Solution2::ValidAnagram::Main(); // Medium
 //Solution2::DifferentWaystoAddParentheses::Main(); // Medium
+Solution2::HIndex::Main(); // Medium
+//Solution2::HIndexII::Main(); // Medium
+
 
 
 	// Runtime end marker

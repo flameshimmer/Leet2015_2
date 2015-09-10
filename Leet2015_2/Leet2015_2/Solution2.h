@@ -255,4 +255,7 @@ namespace Solution2
 	namespace DotProduct{ void Main(); }
 	namespace LongestIncreasingContinuousSubsequence{ void Main(); }
 	namespace LongestIncreasingSubsequence{ void Main(); }
+	namespace PaintFence{ void Main(); }
+	namespace HIndex{ void Main(); }
+	namespace HIndexII{ void Main(); }
 };

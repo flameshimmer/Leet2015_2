@@ -30,25 +30,28 @@ namespace Solution2
 			}
 		}
 
-		ListNode* swapPairs(ListNode* head)
-		{
+		ListNode* swapPairs(ListNode* head) {
 			if (!head || !head->next) { return head; }
-						
-			ListNode* prev = NULL;
-			ListNode* cur = head;
-			ListNode* next = NULL;
-			ListNode* nN = NULL;
+
 			ListNode* result = head->next;
 
-			while (cur && cur->next)
+			ListNode* cur = head;
+			ListNode* next = cur->next;
+			ListNode* nN;			
+			ListNode* prev = NULL;
+
+			while (next)
 			{
-				next = cur->next;
 				nN = next->next;
 				next->next = cur;
 				cur->next = nN;
-				if (prev) { prev->next = next; }
+
+				if (prev){ prev->next = next; }
 				prev = cur;
-				cur = cur->next;
+
+				cur = nN;
+				next = NULL;
+				if (cur) { next = nN->next; }
 			}
 			return result;
 		}
@@ -56,9 +59,10 @@ namespace Solution2
 
         void Main()
         {
+			print(swapPairs(createList({ 1, 2, 3, 4 })));
 			print(swapPairs(createList({ 1, 2 })));
 			print(swapPairs(createList({ 1, 2, 3})));
-			print(swapPairs(createList({ 1, 2, 3, 4 })));
+			
         }
     }
 }
