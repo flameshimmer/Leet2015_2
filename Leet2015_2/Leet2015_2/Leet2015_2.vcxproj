@@ -88,6 +88,7 @@
     <ClCompile Include="Alien Dictionary.cpp" />
     <ClCompile Include="ClosestBinarySearchTreeValue.cpp" />
     <ClCompile Include="DeleteNodeInALinkedList.cpp" />
+    <ClCompile Include="DifferentWaysToAddParentheses.cpp" />
     <ClCompile Include="DotProduct.cpp" />
     <ClCompile Include="EncodeAndDecodeStrings.cpp" />
     <ClCompile Include="FactorCombinations.cpp" />

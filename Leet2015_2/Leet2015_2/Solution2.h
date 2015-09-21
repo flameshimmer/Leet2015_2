@@ -267,6 +267,8 @@ namespace Solution2
 	namespace PeekIterator{ void Main(); }
 	namespace WiggleSort{ void Main(); }
 	namespace PerfectSquares{ void Main(); }
+	namespace DifferentWaysToAddParentheses{ void Main(); }
+	
 	
 	
 };
