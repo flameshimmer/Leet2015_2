@@ -258,4 +258,15 @@ namespace Solution2
 	namespace PaintFence{ void Main(); }
 	namespace HIndex{ void Main(); }
 	namespace HIndexII{ void Main(); }
+	namespace AlienDictionary{ void Main(); }
+	namespace MoveZeros{ void Main(); }
+	namespace MissingNumber{ void Main(); }
+	namespace EncodeAndDecodeStrings{ void Main(); }
+	namespace FactorCombinations{ void Main(); }
+	namespace UTF8Validator{ void Main(); }	
+	namespace PeekIterator{ void Main(); }
+	namespace WiggleSort{ void Main(); }
+	namespace PerfectSquares{ void Main(); }
+	
+	
 };

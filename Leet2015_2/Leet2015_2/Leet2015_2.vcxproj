@@ -85,9 +85,12 @@
     <ClInclude Include="targetver.h" />
   </ItemGroup>
   <ItemGroup>
+    <ClCompile Include="Alien Dictionary.cpp" />
     <ClCompile Include="ClosestBinarySearchTreeValue.cpp" />
     <ClCompile Include="DeleteNodeInALinkedList.cpp" />
     <ClCompile Include="DotProduct.cpp" />
+    <ClCompile Include="EncodeAndDecodeStrings.cpp" />
+    <ClCompile Include="FactorCombinations.cpp" />
     <ClCompile Include="ImplementQueueUsingStacks.cpp" />
     <ClCompile Include="KthSmallestElementInABST.cpp" />
     <ClCompile Include="LongestIncreasingContinuousSubsequence.cpp" />
@@ -95,11 +98,15 @@
     <ClCompile Include="LowestCommonAncestorOfABinarySearchTree.cpp" />
     <ClCompile Include="LowestCommonAncestorOfABinaryTree.cpp" />
     <ClCompile Include="MajorityElementII.cpp" />
+    <ClCompile Include="MissingNumber.cpp" />
+    <ClCompile Include="MoveZeros.cpp" />
     <ClCompile Include="NumberOfDigitOne.cpp" />
     <ClCompile Include="PaintFence.cpp" />
     <ClCompile Include="PaintHouse.cpp" />
     <ClCompile Include="PaintHouseII.cpp" />
     <ClCompile Include="PalindromeLinkedList.cpp" />
+    <ClCompile Include="PeekIterator.cpp" />
+    <ClCompile Include="PerfectSquares.cpp" />
     <ClCompile Include="PowerOfTwo.cpp" />
     <ClCompile Include="ProductOfArrayExceptSelf.cpp" />
     <ClCompile Include="SearchA2DMatrixII.cpp" />
@@ -312,12 +319,14 @@
     <ClCompile Include="UniqueBinarySearchTreesII.cpp" />
     <ClCompile Include="UniquePaths.cpp" />
     <ClCompile Include="uniquePathsII.cpp" />
+    <ClCompile Include="UTF8Validator.cpp" />
     <ClCompile Include="ValidateBinarySearchTree.cpp" />
     <ClCompile Include="ValidNumber.cpp" />
     <ClCompile Include="ValidPalindrome.cpp" />
     <ClCompile Include="ValidParentheses.cpp" />
     <ClCompile Include="ValidSudoku.cpp" />
     <ClCompile Include="VerifyPreorderSequenceInBinarySearchTree.cpp" />
+    <ClCompile Include="WiggleSort.cpp" />
     <ClCompile Include="WildcardMatching.cpp" />
     <ClCompile Include="WordBreak.cpp" />
     <ClCompile Include="WordBreakII.cpp" />

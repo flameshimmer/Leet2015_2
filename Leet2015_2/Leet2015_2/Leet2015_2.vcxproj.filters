@@ -749,5 +749,32 @@
     <ClCompile Include="PaintHouseII.cpp">
       <Filter>Solution2</Filter>
     </ClCompile>
+    <ClCompile Include="Alien Dictionary.cpp">
+      <Filter>Solution2</Filter>
+    </ClCompile>
+    <ClCompile Include="MoveZeros.cpp">
+      <Filter>Solution2</Filter>
+    </ClCompile>
+    <ClCompile Include="MissingNumber.cpp">
+      <Filter>Solution2</Filter>
+    </ClCompile>
+    <ClCompile Include="EncodeAndDecodeStrings.cpp">
+      <Filter>Solution2</Filter>
+    </ClCompile>
+    <ClCompile Include="FactorCombinations.cpp">
+      <Filter>Solution2</Filter>
+    </ClCompile>
+    <ClCompile Include="UTF8Validator.cpp">
+      <Filter>Solution2</Filter>
+    </ClCompile>
+    <ClCompile Include="PeekIterator.cpp">
+      <Filter>Solution2</Filter>
+    </ClCompile>
+    <ClCompile Include="WiggleSort.cpp">
+      <Filter>Solution2</Filter>
+    </ClCompile>
+    <ClCompile Include="PerfectSquares.cpp">
+      <Filter>Solution2</Filter>
+    </ClCompile>
   </ItemGroup>
 </Project>

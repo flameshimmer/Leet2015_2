@@ -373,6 +373,18 @@ int _tmain(int argc, _TCHAR* argv[])
 //Solution2::PaintHouseII::Main(); // Hard
 
 
+//9/20/2015
+//Solution2::AlienDictionary::Main(); // Medium
+//Solution2::MoveZeros::Main(); // Medium
+//Solution2::MissingNumber::Main(); // Medium
+//Solution2::EncodeAndDecodeStrings::Main(); // Medium
+//Solution2::FactorCombinations::Main(); // Medium
+//Solution2::UTF8Validator::Main(); // Medium
+//Solution2::PeekIterator::Main(); // Medium
+//Solution2::WiggleSort::Main(); // Medium
+Solution2::PerfectSquares::Main(); // Medium
+
+
 //Solution2::AlienDictionary::Main(); // Hard
 //Solution2::MissingNumber::Main(); // Medium
 //Solution2::PalindromePermutationII::Main(); // Medium
@@ -400,8 +412,9 @@ int _tmain(int argc, _TCHAR* argv[])
 //Solution2::ShortestWordDistance::Main(); // Medium
 //Solution2::ValidAnagram::Main(); // Medium
 //Solution2::DifferentWaystoAddParentheses::Main(); // Medium
-Solution2::HIndex::Main(); // Medium
+//Solution2::HIndex::Main(); // Medium
 //Solution2::HIndexII::Main(); // Medium
+
 
 
 
