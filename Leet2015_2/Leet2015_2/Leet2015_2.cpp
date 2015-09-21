@@ -383,7 +383,8 @@ int _tmain(int argc, _TCHAR* argv[])
 //Solution2::PeekIterator::Main(); // Medium
 //Solution2::WiggleSort::Main(); // Medium
 //Solution2::PerfectSquares::Main(); // Medium
-Solution2::DifferentWaysToAddParentheses::Main(); // Medium
+//Solution2::DifferentWaysToAddParentheses::Main(); // Medium
+Solution2::CountUnivalueSubtrees::Main(); // Medium
 
 
 //Solution2::AlienDictionary::Main(); // Hard
